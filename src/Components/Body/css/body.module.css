@@ -282,7 +282,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 5%;
   }
   .con .hide {
     display: block;
@@ -292,13 +291,23 @@
   }
   .con .content {
     width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .con .content h1 {
     width: 100%;
     font-size: 2rem;
   }
   .con .content .iconsCon {
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 50%;
     margin-right: 50%;
     -webkit-transform: translate(-50%);

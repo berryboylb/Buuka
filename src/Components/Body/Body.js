@@ -26,26 +26,26 @@ const Body = () => {
         tl.current = gsap.timeline({defaults:{duration: 1.5}})
         .from(q('p'), {x: -100, opacity: 0, ease: 'elastic'})
         .from(q('h1'), {x: -100, opacity: 0, ease: 'elastic'})
-        .from(q('div img'), {x: -100, opacity: 0, ease: 'elastic'})
         .from(q('form'), {x: -100, scale:1.5, opacity: 0, ease: 'elastic'})
         .from(q('div a'), {stagger: 0.3, opacity: 0})
         .from(r('img'), {x: 100, opacity: 0, duration: 1.5, scale: 2}, "-=3.5")
-
     }, [q,r])
     return (
         <div className={`${Styles.myContainer} ${Styles.con}`}>
             <div className={Styles.content} ref={box}>
+                <div>
                 <p ref={para}>Coming Soon</p>
 
                 <h1 ref={header}>Get Notified When We Launch</h1>
-                <div  className={`${Styles.imgCon} ${Styles.hide}`}>
+                {/* <div  className={`${Styles.imgCon} ${Styles.hide}`}>
                     <img  src="./right-img.png" alt="Launch" />
-                </div>
+                </div> */}
 
                 <form action="" ref={form}>
                     <input type="email" name="email" id="email" placeholder= "Enter your email address" />
                     <button type="submit">Notify Me</button>
                 </form>
+                </div>
 
                 <div className={Styles.iconsCon} ref={icons}>
                         <a href="https://goggle.com"><FontAwesomeIcon className= "icons" icon={faFacebook} /></a>
