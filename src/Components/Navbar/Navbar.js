@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useMediaQuery } from 'react-responsive';
+//import { useMediaQuery } from 'react-responsive';
 import "./css/styles.css"
 
 const Index = () => {
     const [mobileNav, setmobileNav] = useState(false);
-    const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
+    //const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
     const handleMobileNav = () => {
         //if(isMobile){
             setmobileNav(!mobileNav);
@@ -16,7 +16,7 @@ const Index = () => {
         <nav >
            <div className="myContainer con">
            <div className="logo">
-              <a to = "/"><img src="./buuka logo.png" alt="logo"/></a>
+              <a href="buuka.app"><img src="./buuka logo.png" alt="logo"/></a>
            </div>
            <ul className={mobileNav ? "nav-active" : "nav-links"}>
                 {/* <li><a onClick={handleMobileNav}  >HOME</a></li>

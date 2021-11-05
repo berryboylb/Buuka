@@ -1,7 +1,7 @@
 import {useRef, useEffect} from "react";
 import { gsap } from "gsap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import Styles from "./css/body.module.css"
 const Body = () => {
     const para = useRef();
@@ -31,7 +31,7 @@ const Body = () => {
         .from(q('div a'), {stagger: 0.3, opacity: 0})
         .from(r('img'), {x: 100, opacity: 0, duration: 1.5, scale: 2}, "-=3.5")
 
-    }, [])
+    }, [q,r])
     return (
         <div className={`${Styles.myContainer} ${Styles.con}`}>
             <div className={Styles.content} ref={box}>
@@ -39,7 +39,7 @@ const Body = () => {
 
                 <h1 ref={header}>Get Notified When We Launch</h1>
                 <div  className={`${Styles.imgCon} ${Styles.hide}`}>
-                    <img  src="./right-img.png" alt="image" />
+                    <img  src="./right-img.png" alt="Launch" />
                 </div>
 
                 <form action="" ref={form}>
@@ -55,7 +55,7 @@ const Body = () => {
             </div>
 
             <div  className={`${Styles.imgCon} ${Styles.show}`} ref={box2}>
-                <img onMouseEnter={onEnter} onMouseLeave={onLeave} ref={image} src="./right-img.png" alt="image" />
+                <img onMouseEnter={onEnter} onMouseLeave={onLeave} ref={image} src="./right-img.png" alt="Launch" />
             </div>
         </div>
     )

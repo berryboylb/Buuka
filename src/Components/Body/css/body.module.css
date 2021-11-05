@@ -313,6 +313,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 5%;
   }
   .con .content .iconsCon a {
     margin-top: 5%;
@@ -346,7 +347,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 1%;
+    padding: 2%;
     border: 2px solid #B5B5B5;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
