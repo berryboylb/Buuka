@@ -474,9 +474,22 @@
   .login .inner {
     height: 100vh;
     overflow-y: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .login .inner .top {
-    height: 10vh;
+    display: none;
   }
   .login .inner .top button {
     font-size: 1.2rem;
@@ -485,20 +498,13 @@
   .login .inner form {
     width: 100%;
     padding: 5%;
-    height: 90vh;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     overflow-y: scroll;
+    margin-left: 50%;
+    margin-right: 50%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   .login .inner form .names {
     margin-top: 3%;

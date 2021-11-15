@@ -499,10 +499,19 @@
   .signup .inner {
     height: 100vh;
     overflow-y: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .signup .inner .top {
+    display: none;
     margin-top: 0;
-    height: 10vh;
   }
   .signup .inner .top button {
     font-size: 1.2rem;
@@ -511,7 +520,6 @@
   .signup .inner form {
     width: 100%;
     padding: 5%;
-    height: 90vh;
     overflow-y: scroll;
   }
   .signup .inner form .names {

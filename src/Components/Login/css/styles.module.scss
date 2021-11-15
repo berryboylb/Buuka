@@ -362,8 +362,12 @@
         .inner {
             height: 100vh;
             overflow-y: scroll;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           flex-direction: column;
             .top {
-                height: 10vh;
+                display: none;
                 button {
                     font-size: 1.2rem;
                     padding: 2%;
@@ -373,13 +377,11 @@
             form {
                 width: 100%;
                 padding: 5%;
-                height: 90vh;
                 flex-wrap: nowrap;
-    
-               display: flex;
-               justify-content: space-evenly;
-               flex-direction: column;
                overflow-y: scroll;
+               margin-left: 50%;
+               margin-right: 50%;
+               transform: translate(0);
                 
                 .names {
                     margin-top: 3%;
