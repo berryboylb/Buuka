@@ -1,0 +1,189 @@
+.mobileApp {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #fff;
+}
+
+.mobileApp .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobileApp .inner .hide {
+  display: none;
+}
+
+.mobileApp .inner .content {
+  width: 50%;
+}
+
+.mobileApp .inner .content h3 {
+  line-height: 54px;
+  color: #3423A6;
+}
+
+.mobileApp .inner .content p {
+  margin-top: 5%;
+  width: 100%;
+  font-size: 1.375rem;
+}
+
+.mobileApp .inner .content .links {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobileApp .inner .content .links a {
+  padding: 2%;
+  border-radius: 15px;
+  width: 40%;
+  text-align: center;
+  -webkit-box-shadow: 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436), 0px 6.16784px 6.94968px rgba(0, 0, 0, 0.0665564), 0px 2.43877px 2.74791px rgba(0, 0, 0, 0.0465028);
+          box-shadow: 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436), 0px 6.16784px 6.94968px rgba(0, 0, 0, 0.0665564), 0px 2.43877px 2.74791px rgba(0, 0, 0, 0.0465028);
+}
+
+.mobileApp .inner .content .links a:hover {
+  opacity: 0.8;
+  scale: 1.2;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.mobileApp .inner .content .links .goggle {
+  background: #3423A6;
+}
+
+.mobileApp .inner .content .links .apple {
+  margin-left: 5%;
+}
+
+.mobileApp .inner .imgCon {
+  width: 50%;
+  height: 100%;
+}
+
+.mobileApp .inner .imgCon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobileApp .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobileApp .inner .content {
+    width: 50%;
+  }
+  .mobileApp .inner .content h3 {
+    line-height: 1.5;
+  }
+  .mobileApp .inner .content p {
+    font-size: 1rem;
+  }
+  .mobileApp .inner .content .links {
+    margin-top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobileApp .inner .imgCon {
+    width: 50%;
+    height: 100%;
+  }
+  .mobileApp .inner .imgCon img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mobileApp .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobileApp .inner .show {
+    display: none;
+  }
+  .mobileApp .inner .hide {
+    display: block;
+  }
+  .mobileApp .inner .content {
+    width: 100%;
+  }
+  .mobileApp .inner .content h3 {
+    text-align: center;
+  }
+  .mobileApp .inner .content p {
+    text-align: center;
+    line-height: 2;
+  }
+  .mobileApp .inner .content .links {
+    margin-top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobileApp .inner .content .links a {
+    width: 80%;
+  }
+  .mobileApp .inner .content .links .apple {
+    margin-left: 0;
+    margin-top: 5%;
+  }
+  .mobileApp .inner .imgCon {
+    width: 50%;
+    height: 100%;
+  }
+  .mobileApp .inner .imgCon img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

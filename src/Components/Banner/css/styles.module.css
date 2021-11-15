@@ -1,0 +1,346 @@
+.myContainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .myContainer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .myContainer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .myContainer {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .myContainer {
+    width: 1140px;
+  }
+}
+
+.banner {
+  background: url("../Banner_bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 500px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.banner h1 {
+  display: block;
+}
+
+.banner p {
+  margin-top: 2%;
+  position: relative;
+  width: 60%;
+}
+
+.banner .linkForm {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.banner .linkForm a {
+  background: #3423A6;
+  -webkit-box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 25.9162px 29.2013px rgba(0, 0, 0, 0.103497), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436), 0px 6.16784px 6.94968px rgba(0, 0, 0, 0.0665564), 0px 2.43877px 2.74791px rgba(0, 0, 0, 0.0465028);
+          box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 25.9162px 29.2013px rgba(0, 0, 0, 0.103497), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436), 0px 6.16784px 6.94968px rgba(0, 0, 0, 0.0665564), 0px 2.43877px 2.74791px rgba(0, 0, 0, 0.0465028);
+  border-radius: 15px;
+  padding: 3%;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.banner .linkForm a:hover {
+  background: none;
+  border: 1px solid #3423A6;
+  color: #3423A6;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.banner .linkForm a .icon {
+  margin-left: 20px;
+}
+
+.banner .linkForm form {
+  background: #fff;
+  padding: 3%;
+  margin-left: 5%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+          box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+}
+
+.banner .linkForm form input {
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #B5B5B5;
+  outline: none;
+  position: relative;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+  width: 160px;
+}
+
+.banner .linkForm form input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #B5B5B5;
+}
+
+.banner .linkForm form input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #B5B5B5;
+}
+
+.banner .linkForm form input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #B5B5B5;
+}
+
+.banner .linkForm form input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #B5B5B5;
+}
+
+.banner .linkForm form input:focus {
+  width: 300px;
+}
+
+@media (min-width: 1440px) {
+  .banner {
+    background: none;
+    padding-top: 0%;
+  }
+  .banner .inner {
+    background: url("../Banner_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 500px;
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    padding-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    background: none;
+    width: 100% !important;
+    height: 100%;
+  }
+  .banner h1 {
+    width: 100%;
+    line-height: 1.5;
+  }
+  .banner p {
+    margin-top: 2%;
+    width: 100%;
+    line-height: 2;
+  }
+  .banner .linkForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-left: 50%;
+    margin-right: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .banner .linkForm a {
+    padding: 3%;
+    font-size: 0.8rem;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+  }
+  .banner .linkForm a:hover {
+    background: none;
+    border: 1px solid #3423A6;
+    color: #3423A6;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .banner .linkForm a .icon {
+    margin-left: 0px;
+  }
+  .banner .linkForm form {
+    background: #fff;
+    padding: 3%;
+    margin-left: 5%;
+    border-radius: 15px;
+    width: 40%;
+    -webkit-box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+            box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+  }
+  .banner .linkForm form input {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #B5B5B5;
+    outline: none;
+    position: relative;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    width: 100%;
+  }
+  .banner .linkForm form input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input::placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input:focus {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .banner {
+    background: none;
+    width: 100% !important;
+    height: 100%;
+  }
+  .banner h1 {
+    width: 100%;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .banner p {
+    margin-top: 2%;
+    width: 100%;
+    line-height: 2;
+    text-align: center;
+  }
+  .banner .linkForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-left: 50%;
+    margin-right: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .banner .linkForm a {
+    padding: 3%;
+    font-size: 0.8rem;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+  }
+  .banner .linkForm a:hover {
+    background: none;
+    border: 1px solid #3423A6;
+    color: #3423A6;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .banner .linkForm a .icon {
+    margin-left: 0px;
+  }
+  .banner .linkForm form {
+    background: #fff;
+    padding: 3%;
+    margin-left: 5%;
+    border-radius: 15px;
+    width: 40%;
+    -webkit-box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+            box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+  }
+  .banner .linkForm form input {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #B5B5B5;
+    outline: none;
+    position: relative;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    width: 100%;
+  }
+  .banner .linkForm form input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input::placeholder {
+    font-size: 0.8rem;
+  }
+  .banner .linkForm form input:focus {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,307 @@
+.povider {
+  background: #fff;
+  width: 100%;
+}
+
+.provider {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.provider .carousel {
+  margin-top: 5%;
+}
+
+.provider .carousel .card {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 50%;
+  margin-right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.provider .carousel .card:hover .lot {
+  height: 100%;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  padding-top: 5%;
+  border-radius: 15px;
+}
+
+.provider .carousel .card:hover .star {
+  display: none;
+}
+
+.provider .carousel .card a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.provider .carousel .card a .imgCon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.provider .carousel .card a .imgCon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.provider .carousel .card a .lot {
+  padding: 5%;
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(356.87deg, #000000 -9.91%, rgba(0, 0, 0, 0) 76.77%);
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 15px 15px;
+}
+
+.provider .carousel .card a .lot .cons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.provider .carousel .card a .lot .cons .motto {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 27px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 4;
+  font-weight: 500;
+  width: 85%;
+}
+
+.provider .carousel .card a .lot .cons .star {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 27px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 4;
+  font-weight: 500;
+  width: 15%;
+}
+
+.provider .carousel .card a .lot .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.provider .carousel .card a .lot .bottom .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.provider .carousel .card a .lot .bottom .rate div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.provider .carousel .card a .lot .bottom .rate div .con {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.provider .carousel .card a .lot .bottom .rate p {
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 4;
+  font-weight: 500;
+}
+
+.provider .carousel .card a .lot .bottom button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.provider .carousel .card a .lot .bottom button .ico {
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.provider .carousel .card a .lot .bottom button:hover {
+  opacity: 0.8;
+  -webkit-transition: all .3 ease-in;
+  transition: all .3 ease-in;
+}
+
+.provider .carousel .card a .title {
+  text-decoration: none !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 27px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+}
+
+.provider .carousel .card a .address {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 27px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 4;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+  .provider .carousel {
+    margin-top: 2%;
+  }
+  .provider .carousel .card a .lot .cons .motto {
+    font-size: 0.6rem;
+  }
+  .provider .carousel .card a .lot .cons .star {
+    font-size: 0.6rem;
+  }
+  .provider .carousel .card a .lot .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .provider .carousel .card a .lot .bottom .rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .provider .carousel .card a .lot .bottom .rate div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .provider .carousel .card a .lot .bottom .rate div .con {
+    color: #fff;
+    font-size: 0.875rem;
+  }
+  .provider .carousel .card a .lot .bottom .rate p {
+    margin-left: 10px;
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+  .provider .carousel .card a .lot .bottom button .ico {
+    font-size: 0.6rem;
+  }
+  .provider .carousel .card a .title {
+    font-size: 1rem;
+  }
+  .provider .carousel .card a .address {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .provider h3 {
+    text-align: center;
+  }
+  .provider .carousel {
+    margin-top: 5%;
+  }
+  .provider .carousel .card {
+    width: 100%;
+    height: 200px;
+  }
+  .provider .carousel .card a .lot {
+    padding: 5%;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(356.87deg, #000000 -9.91%, rgba(0, 0, 0, 0) 76.77%);
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+  }
+  .provider .carousel .card a .lot .cons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

@@ -1,88 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-.myContainer {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-} 
-@media (min-width: 576px) {
-    .myContainer {
-        width: 100%;
-    }
-}
-@media (min-width: 768px) {
-    .myContainer {
-        width: 100%;
-    }
-}
-@media (min-width: 992px) {
-    .myContainer {
-        width: 960px;
-    }
-}
-@media (min-width: 1200px) {
-    .myContainer {
-        width: 1140px;
-    }
-}
 nav {
-    width: 100%;
-    //background: linear-gradient(#FDF4EB 90%,#FAF1FE 10%);
-    background: #FAF1FE;
-}
-nav .con{
     display: flex;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    height: 10vh;
-    position: relative;
+    height: 8vh;
     z-index: 2;
-    //padding: 2%;
-
-    .mobile-con, .pub {
-        display: none;
-    }
+    padding: 3%;
+    width: 100%;
 
     .logo {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
-        //margin-top: 2.5%;
 
         img {
             margin-right: 3%;
-            height: 30px;
-            object-fit: contain;
-            z-index: 99;
-            position: relative;
+            height: 48px;
         } 
     }
 
     .nav-links {
         display: flex;
-        width: 70%; 
+        width: 50%; 
         justify-content: space-between;
         text-transform: capitalize;
     }
     
     .nav-links li {
         list-style: none;
-        display: none;
     }
     
     .nav-links a {
-        color: #a5acb6;
+        color: #000;
         text-decoration: none;
         letter-spacing: 3px;
         font-weight: 500;
-        font-size: 0.8rem;
+        font-size: 1rem;
         position: relative;
-        font-family: 'Inter', sans-serif;
-        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .nav-links a:hover {
@@ -104,7 +60,7 @@ nav .con{
         margin: auto;
         transition: all .4s;
         opacity: 0;
-        background-color: #3423A6;
+        background-color: #000;
     }
 
     .nav-links a:hover::after{
@@ -112,23 +68,13 @@ nav .con{
         opacity: 1;
     }
 
-    .nav-links .address {
-        background: #3423A6;
-        color: #fff;
-        padding: 5px;
-        border-radius: 8px;
-
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-
     .activate {
-        color: #3423A6 !important;
+        color: #000 !important;
+        font-weight: bold !important;
     }
 
     .burger {
-        // display: none;
+        display: none;
         cursor: pointer;
         z-index: 99;
         transform: rotateY(180deg);
@@ -138,7 +84,7 @@ nav .con{
     .burger .line0 {
         width: 30px;
         height: 3px;
-        background: #3423A6;
+        background: #213654;
         margin: 5px;
         border-radius: 8px;
         transition: all 0.3s ease;
@@ -147,7 +93,7 @@ nav .con{
     .burger .line1 {
         width: 25px;
         height: 3px;
-        background: #3423A6;
+        background: #213654;
         margin: 5px;
         border-radius: 8px;
         transition: all 0.3s ease;
@@ -156,14 +102,14 @@ nav .con{
     .burger .line2 {
         width: 20px;
         height: 3px;
-        background: #3423A6;
+        background: #213654;
         margin: 5px;
         border-radius: 8px;
         transition: all 0.3s ease;
     }
 
     .bro {
-        //display: none;
+        display: none;
         cursor: pointer;
         z-index: 99;
     }
@@ -175,14 +121,14 @@ nav .con{
         margin: 5px;
         border-radius: 8px;
         transform: rotate(-45deg) translate(-5px, 6px);
-        background: #3423A6;
+        background: #213654;
         transition: all 0.3s ease;
     }
     
     .bro .line1 {
         width: 30px;
         height: 3px;
-        background: #3423A6;
+        background: #213654;
         margin: 5px;
         border-radius: 8px;
         transition: all 0.3s ease;
@@ -192,7 +138,7 @@ nav .con{
     .bro .line2 {
         width: 30px;
         height: 3px;
-        background: #3423A6;
+        background: #213654;
         margin: 5px;
         border-radius: 8px;
         transition: all 0.3s ease;
@@ -202,21 +148,45 @@ nav .con{
 
     
 
+    .login {
+        a {
+            color:  #223256;
+            border-radius: 7px;
+            padding: 10px 15px;
+            
+            &:hover {
+                background: #3423A6;
+                color: #fff !important;
+                opacity: 1 !important;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                top: 25px;
+                width: 0%;
+                height: 0px;
+                border-radius: 10px;
+                margin: auto;
+                transition: all .4s;
+            }
+        }
+       
+    }
+
     .request {
-        font-family: 'Open Sans', sans-serif;
-        button {
+        a {
             color:  #fff;
-            border-radius: 5px;
-            padding: 5px 15px !important;
+            border-radius: 7px;
+            padding: 10px 15px !important;
             background: #3423A6;
-            cursor: pointer;
-            display: inline;
-            border: none;
             &:hover {
                 border: 1px solid #3423A6;
-                color: #3423A6;
                 background: none;
-                transition: all 1s;
+                color: #3423A6;
+                transition: all .3s;
             }
 
             &::after{
@@ -240,7 +210,7 @@ nav .con{
         // justify-content: space-evenly;
         
         .nav-links {
-            width: 80%; 
+            width: 60%; 
             a {
                 font-size: 0.8rem;
             }
@@ -250,7 +220,7 @@ nav .con{
 }
 
 @media screen and (max-width:768px) {
-
+    
     nav {
         .nav-links {
             display: none;
@@ -262,47 +232,20 @@ nav .con{
             font-size: 12px;
         }
     
-        .pub {
-            display: flex;
-            align-items: center;
-        }
-
-        .request {
-            margin-left: 0;
+        .burger, .bro {
+            display: block;
         }
 
         .logo {
            z-index: 5;
-           //margin-top: 5%;
             img {
-                height: 150px;
-                width: 100px;
+                height: 25px;
                 align-self: center;
                 justify-self: center;
                 margin-top: 5.5px;
             } 
            
         }
-
-        .mobile-con {
-            display: block;
-            button {
-                width: 70px;
-                height: 27px;
-            }
-
-            .address {
-                background: #3423A6;
-                color: #fff;
-                padding: 5px;
-                border-radius: 8px;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        }
-
     }
 
     @keyframes navlinkFade {
@@ -319,34 +262,32 @@ nav .con{
 }
 
 .nav-active {
-    transform: translate(0%);
     position: absolute;
     right: 0;
-    bottom: 0;
+    left: 0;
     height: 100vh;
     top: 10vh;
-    background:#FAF1FE;
-    color: #573F7B;
+    color: #3423A6;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    transition: transform 0.5s ease-in;
     z-index: 4;
+    background: #3423A6;
 
     li {
         list-style: none;
     }
     
     a {
-        color: #BFAFAF;
+        color: #000;
         text-decoration: none;
         letter-spacing: 3px;
-        font-weight: 700;
-        font-size: 1rem;
+        font-weight: 500;
+        font-size: 0.8rem;
         position: relative;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
 
     a:hover {

@@ -1,0 +1,578 @@
+.signup {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.signup .inner .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup .inner .top button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
+.signup .inner .top button:hover {
+  background: #3423A6;
+  color: #fff;
+  border-radius: 15px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.signup .inner .top .burger {
+  cursor: pointer;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.signup .inner .top .line0 {
+  width: 30px;
+  height: 3px;
+  background: #213654;
+  margin: 5px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.signup .inner .top .line1 {
+  width: 25px;
+  height: 3px;
+  background: #213654;
+  margin: 5px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.signup .inner .top .line2 {
+  width: 20px;
+  height: 3px;
+  background: #213654;
+  margin: 5px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.signup .inner form {
+  background: #fff;
+  width: 40%;
+  border-radius: 15px;
+  padding: 2%;
+  margin-top: 2%;
+  margin-left: 50%;
+  margin-right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.signup .inner form h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+
+.signup .inner form .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.signup .inner form .names input {
+  width: 48%;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  outline: none;
+  padding: 4%;
+  font-size: 1.125rem;
+  -webkit-box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+          box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+}
+
+.signup .inner form .names input::-webkit-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .names input:-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .names input::-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .names input::placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .names input:focus {
+  border: 1px solid #3423A6;
+}
+
+.signup .inner form .pswcon {
+  position: relative;
+}
+
+.signup .inner form .fields {
+  width: 100%;
+  margin-top: 3%;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  outline: none;
+  padding: 4%;
+  font-size: 1.125rem;
+  -webkit-box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+          box-shadow: 0px 71px 80px rgba(0, 0, 0, 0.15), 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436);
+}
+
+.signup .inner form .fields::-webkit-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .fields:-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .fields::-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .fields::placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .fields:focus {
+  border: 1px solid #3423A6;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.signup .inner form span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 2%;
+  bottom: 20%;
+}
+
+.signup .inner form span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.signup .inner form .submit {
+  width: 100%;
+  margin-top: 10%;
+  border-radius: 15px;
+  background: #3423A6;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 4%;
+  font-size: 1.125rem;
+  -webkit-box-shadow: 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436), 0px 6.16784px 6.94968px rgba(0, 0, 0, 0.0665564), 0px 2.43877px 2.74791px rgba(0, 0, 0, 0.0465028);
+          box-shadow: 0px 12.5818px 14.1767px rgba(0, 0, 0, 0.0834436), 0px 6.16784px 6.94968px rgba(0, 0, 0, 0.0665564), 0px 2.43877px 2.74791px rgba(0, 0, 0, 0.0465028);
+}
+
+.signup .inner form .submit::-webkit-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .submit:-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .submit::-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .submit::placeholder {
+  font-size: 1.125rem;
+  color: #9F9F9F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup .inner form .submit:hover {
+  border: 1px solid #3423A6;
+  background: none;
+  color: #3423A6;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.signup .inner form .already {
+  width: 100%;
+  margin-top: 3%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.signup .inner form .already a {
+  text-decoration: none;
+  color: #3423A6;
+  font-weight: bold;
+}
+
+.signup .inner form .already a:hover {
+  opacity: 0.8;
+}
+
+.signup .inner form hr {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.signup .inner form .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signup .inner form .bottom p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.signup .inner form .bottom a {
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 2%;
+  background: #E5E5E5;
+  border-radius: 7px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup .inner form .bottom a:hover {
+  background: #3423A6;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.signup .inner form .bottom a:hover .icon {
+  color: #fff;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.signup .inner form .bottom a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.signup .inner form .bottom a .icon {
+  font-size: 0.8rem;
+  color: #4285F4;
+}
+
+@media (min-width: 1440px) {
+  .signup .inner {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: scroll;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .signup .inner .top {
+    width: 100%;
+  }
+  .signup .inner form {
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .signup .inner .top button {
+    font-size: 1.2rem;
+    padding: 2%;
+  }
+  .signup .inner form {
+    width: 50%;
+  }
+  .signup .inner form h3 {
+    font-size: 1.2rem;
+  }
+  .signup .inner form .names {
+    margin-top: 3%;
+  }
+  .signup .inner form .names input {
+    padding: 4%;
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input::placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields {
+    margin-top: 4%;
+    padding: 4%;
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields::placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form span {
+    width: 15px;
+    height: 15px;
+    right: 5%;
+    bottom: 30%;
+  }
+  .signup .inner form .submit {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit::placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .already {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .already a {
+    text-decoration: none;
+    color: #3423A6;
+    font-weight: bold;
+  }
+  .signup .inner form hr {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .signup .inner form .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .signup .inner form .bottom p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    width: 70%;
+  }
+  .signup .inner form .bottom a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2%;
+    background: #E5E5E5;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .signup .inner form .bottom a .icon {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .signup .inner .top button {
+    font-size: 1.2rem;
+    padding: 2%;
+  }
+  .signup .inner form {
+    width: 100%;
+    padding: 5%;
+  }
+  .signup .inner form .names {
+    margin-top: 3%;
+  }
+  .signup .inner form .names input {
+    padding: 4%;
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .names input::placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields {
+    margin-top: 4%;
+    padding: 4%;
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .fields::placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .submit::placeholder {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .already {
+    font-size: 0.8rem;
+  }
+  .signup .inner form .already a {
+    text-decoration: none;
+    color: #3423A6;
+    font-weight: bold;
+  }
+  .signup .inner form hr {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .signup .inner form .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .signup .inner form .bottom p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .signup .inner form .bottom a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2%;
+    background: #E5E5E5;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .signup .inner form .bottom a .icon {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

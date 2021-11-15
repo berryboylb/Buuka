@@ -1,0 +1,307 @@
+.povider {
+    background: #fff;
+    width: 100%;
+}
+
+.provider {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+
+    .carousel {
+        margin-top: 5%;
+
+        .card {
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            position: relative;
+            margin-left: 50%;
+            margin-right: 50%;
+            transform: translate(-50%);
+            &:hover .lot {
+                height: 100%;
+                transition: all .5s ease-in;
+                padding-top: 5%;
+                border-radius: 15px;
+            }
+
+
+
+            &:hover .star {
+                display: none;
+            }
+
+        
+            
+            a {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                text-decoration: none;
+
+                .imgCon {
+                    position: absolute;top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    border-radius: 15px;
+                    z-index: 2;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 15px;
+                        z-index: 2;
+                    }
+                }
+
+                .lot {
+                    padding: 5%;
+                    height: 40%;
+                    width: 100%;
+                    background: linear-gradient(356.87deg, #000000 -9.91%, rgba(0, 0, 0, 0) 76.77%);
+                    z-index: 5;
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 0 0 15px 15px;
+
+                    .cons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .motto {
+                            text-decoration: none;
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: bold;
+                            font-size: 0.875rem;
+                            line-height: 27px;
+                            color: #FFFFFF;
+                            position: relative;
+                            z-index: 4;
+                            font-weight: 500;
+                            width: 85%;
+                        }
+
+                        .star {
+                            text-decoration: none;
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: bold;
+                            font-size: 0.875rem;
+                            line-height: 27px;
+                            color: #FFFFFF;
+                            position: relative;
+                            z-index: 4;
+                            font-weight: 500;
+                            width: 15%;
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .rate {
+                            display: flex;
+                        align-items: center;
+                        justify-content: space-between; 
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .con {
+                                color: #fff;
+                                font-size: 0.875rem;
+                            } 
+                        }
+
+                        p {
+                            margin-left: 20px;
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: bold;
+                            font-size: 0.875rem;
+                            color: #FFFFFF;
+                            position: relative;
+                            z-index: 4;
+                            font-weight: 500;
+                        }
+                        }
+
+                        button {
+                            border: none;
+                            outline: none;
+                            background: none;
+                           
+
+                            .ico {
+                                font-size: 0.875rem;
+                                color: #fff;
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                                transition: all .3 ease-in;
+                            }
+                        }
+                    }
+                }
+                
+
+                .title {
+                    text-decoration: none !important;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                    position: relative;
+                    z-index: 4;
+                    width: 100%;
+                }
+
+                .address{
+                    text-decoration: none;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: bold;
+                    font-size: 0.875rem;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                    position: relative;
+                    z-index: 4;
+                    font-weight: 500;
+                    display: block;
+                    width: 100%;
+                    opacity: 0.7;
+                    margin-top: 2%;
+                }
+
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .provider {
+    
+        .carousel {
+            margin-top: 2%;
+    
+            .card {
+                a {
+    
+    
+                    .lot {
+    
+                        .cons {
+    
+                            .motto {
+                                font-size: 0.6rem;
+                            }
+    
+                            .star {
+                                font-size: 0.6rem;
+                            }
+                        }
+    
+                        .bottom {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .rate {
+                                display: flex;
+                            align-items: center;
+                            justify-content: space-between; 
+    
+                            div {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                .con {
+                                    color: #fff;
+                                    font-size: 0.875rem;
+                                } 
+                            }
+    
+                            p {
+                                margin-left: 10px;
+                                font-size: 0.6rem;
+                                font-weight: 500;
+                            }
+                            }
+    
+                            button {    
+                                .ico {
+                                    font-size: 0.6rem;
+                                }
+                            }
+                        }
+                    }
+                    
+    
+                    .title {
+                        font-size: 1rem;
+                    }
+    
+                    .address{
+                        font-size: 0.6rem;
+                    }
+    
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .provider {
+    h3 {
+        text-align: center;
+    }
+        .carousel {
+            margin-top: 5%;
+    
+            .card {
+                width: 100%;
+                height: 200px;
+    
+
+    
+            
+                
+                a {
+    
+                   
+    
+                    .lot {
+                        padding: 5%;
+                        height: 40%;
+                        width: 100%;
+                        background: linear-gradient(356.87deg, #000000 -9.91%, rgba(0, 0, 0, 0) 76.77%);
+                        z-index: 5;
+                        position: absolute;
+                        bottom: 0;
+    
+                        .cons {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+    
+                            
+    
+                           
+                        }
+    
+                       
+                    }
+    
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,306 @@
+.testimonies {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #fff;
+
+    .carousel {
+        margin-top: 5%;
+
+        .card {
+            background: rgba(250, 241, 254, 0.6);
+            border-radius: 15px;
+            position: relative;
+            width: 300px;
+            height: 450px;
+            padding: 5%;
+            margin-left: 50%;
+            margin-right: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+
+            span {
+                transition: 0.5s;
+                opacity: 0;
+            }
+            
+            &:hover span {
+                opacity: 1;
+            }
+
+            span:nth-child(1){
+                position: absolute;
+                top: 0%;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: #3423A6;
+                animation: animate1 2s linear infinite;
+            }
+            
+            @keyframes animate1 {
+                0%{
+                    transform: translateX(-100%);
+                }
+                100%{
+                    transform: translateX(100%);
+                }
+            }
+            
+            span:nth-child(2){
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3px;
+                height: 100%;
+                background: #3423A6;
+                animation: animate2 2s linear infinite;
+                animation-delay: 1s;
+            }
+            
+            @keyframes animate2 {
+                0%{
+                    transform: translateY(-100%);
+                }
+                100%{
+                    transform: translateY(100%);
+                }
+            }
+            
+            
+             span:nth-child(3){
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: #3423A6;
+                animation: animate3 2s linear infinite;
+            }
+            
+            @keyframes animate3 {
+                0%{
+                    transform: translateX(100%);
+                }
+                100%{
+                    transform: translateX(-100%);
+                }
+            }
+            
+            span:nth-child(4){
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 100%;
+                background: #3423A6;
+                animation: animate4 2s linear infinite;
+                animation-delay: 1s;
+            }
+            
+            @keyframes animate4 {
+                0%{
+                    transform: translateY(100%);
+                }
+                100%{
+                    transform: translateY(-100%);
+                }
+            }
+
+            .head {
+                display: flex;
+                justify-content: space-between;
+
+                .imgCon {
+                    width: 30%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .content {
+                    width: 70%;
+                    padding: 5%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 27px;
+
+                        color: #000000;
+                    }
+
+                    .stars {
+                       display: flex;
+                       align-items: center;
+                       width: 50%;
+                       margin-top: 2%;
+
+                       .con {
+                           font-size: 0.8rem;
+                           color: #FF9F00;
+                       }
+                    }
+                }
+            }
+
+            .body {
+
+                p {
+                    width: 100%;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.125rem;
+                    line-height: 1.7;
+                    color: #000000;
+                }
+
+                .remark {
+                    margin-top: 5%;
+                }
+            }
+
+            .line {
+                margin-top: 5%;
+            }
+
+            .time {
+                margin-top: 2%;
+                p {
+                    
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                font-size: 0.875rem;
+                color: #000000;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .testimonies {
+    
+        .carousel {
+    
+            .card {
+                width: 300px;
+                height: 400px;
+                
+                
+                 
+                
+                
+                .head {
+    
+                    .content {
+    
+                        h4 {
+                            font-size: 1rem;
+                        }
+    
+                        .stars {
+    
+                           .con {
+                               font-size: 0.6rem;
+                           }
+                        }
+                    }
+                }
+    
+                .body {
+    
+                    p {
+                        font-size: 1rem;
+                    }
+    
+                    .remark {
+                        margin-top: 5%;
+                    }
+                }
+    
+                .line {
+                    margin-top: 5%;
+                }
+    
+                .time {
+                    margin-top: 2%;
+                    p {
+                    font-size: 0.6rem;
+                    color: #000000;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .testimonies {
+        h3 {
+            text-align: center;
+        }
+        .carousel {
+    
+            .card {
+                width: 90%;
+                height: 100%;
+                
+                
+                 
+                
+                
+                .head {
+    
+                    .content {
+    
+                        h4 {
+                            font-size: 1rem;
+                        }
+    
+                        .stars {
+    
+                           .con {
+                               font-size: 0.6rem;
+                           }
+                        }
+                    }
+                }
+    
+                .body {
+    
+                    p {
+                        font-size: 1rem;
+                    }
+    
+                    .remark {
+                        margin-top: 5%;
+                    }
+                }
+    
+                .line {
+                    margin-top: 5%;
+                }
+    
+                .time {
+                    margin-top: 2%;
+                    p {
+                    font-size: 0.6rem;
+                    color: #000000;
+    
+                    }
+                }
+            }
+        }
+    }
+}

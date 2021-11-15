@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+.footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #3423A6;
+
+    .inner {
+
+        .content {
+            display: flex;
+            justify-self: space-between;
+            align-items: center;
+
+            .connin {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+
+                .main {
+                    width: 30%;
+
+                   .mail {
+                       display: block;
+                       text-decoration: none;
+                       font-family: 'Raleway', sans-serif;
+                       color: #fff;
+                       margin-top: 5%;
+                       font-size: 1.125rem;
+                   }
+
+                   .socials {
+                       display: flex;
+                       justify-content: space-between;
+                       align-items: center;
+                       width: 50%;
+                       margin-top: 5%;
+                       a {
+                           font-size: 1.5rem;
+                           text-decoration: none;
+                           color: #fff;
+                           &:hover {
+                               opacity: 0.8;
+                           }
+                       }
+                   }
+                }
+
+                
+
+                .links {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    div {
+                        h3 {
+                            font-family: 'Raleway', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            color: #FFFFFF;
+                        }
+
+                            a {
+                                display: inline-block;
+                                text-decoration: none;
+                                color: #fff;
+                                font-family: 'Raleway', sans-serif;
+                                font-size: 1.125rem;
+                                margin-top: 3%;
+                                position: relative;
+
+                                &:hover {
+                                    opacity: 0.9;
+                                }
+                                &:focus {
+                                    opacity: 0.7;
+                                }
+                                
+                                &::after{
+                                    position: absolute;
+                                    content: '';
+                                    bottom: 0;
+                                    left: 0;
+                                    top: 25px;
+                                    width: 0%;
+                                    height: 2px;
+                                    border-radius: 10px;
+                                    margin: auto;
+                                    transition: all .4s;
+                                    opacity: 0;
+                                    background-color: #fff;
+                                }
+                            
+                                &:hover::after{
+                                    width: 100%;
+                                    opacity: 1;
+                                }
+
+                            }
+                    }
+                }
+            }
+
+
+
+            .store {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                a {
+                    display: block;
+                    padding: 3%;
+                    border-radius: 15px;
+                    background: #fff;
+                    text-decoration: none;
+                    width: 50%;
+                    margin: 0.5rem;
+                    padding: 3%;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                    
+                    color: #fff;
+
+                    &:hover {
+                        opacity: 0.8;
+                        transition: all .3s ease;
+                    }
+                }
+            }
+        }
+
+        hr {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            color: #FFF;
+        }
+
+        .right {
+             display: flex;
+
+             p {
+                font-family: 'Raleway', sans-serif;
+                font-size: 1rem;
+                color: #FFFFFF;
+             }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .footer {
+        .inner {
+
+            .content {
+    
+                .connin {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .main {
+                        width: 30%;
+                        img {
+                            height: 30px;
+                            object-fit: contain;
+                        }
+    
+                       .mail {
+                           font-size: 1rem;
+                       }
+    
+                       .socials {
+                           a {
+                               font-size: 1.2rem;
+                               text-decoration: none;
+                           }
+                       }
+                    }
+    
+                    
+    
+                    .links {
+                        width: 70%;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        div {
+                            h3 {
+                                font-size: 1.2rem;
+                            }
+    
+                                a {
+                                    font-size: 1rem;
+                                    display: block;
+    
+                                }
+                        }
+                    }
+                }
+    
+    
+    
+                .store {
+                    width: 20%;
+    
+                    a {
+                        display: block;
+                        padding: 5%;
+                        border-radius: 15px;
+                        background: #fff;
+                        text-decoration: none;
+                        width: 50%;
+                        margin: 0.5rem;
+    
+                        &:hover {
+                            opacity: 0.8;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+            }
+    
+            
+    
+            .right {
+    
+                 p {
+                    font-size: 0.8rem;
+                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+        .footer {
+            .inner {
+    
+                .content {
+                    flex-direction: column;
+                    .connin {
+                        width: 80%;
+                        flex-direction: column;
+        
+                        .main {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                height: 30px;
+                                object-fit: contain;
+                            }
+        
+                           .mail {
+                               text-align: center;
+                           }
+        
+                           
+                        }
+        
+                        
+        
+                        .links {
+                            width: 100%;
+                            flex-direction: column;
+        
+                            div {
+                                margin-top: 2%;
+                                h3 {
+                                    text-align: center;
+                                }
+        
+                                    a {
+                                        display: block;
+                                        text-align: center;
+        
+                                    }
+                            }
+                        }
+                    }
+        
+        
+        
+                    .store {
+                        width: 80%;
+                        margin-top: 2%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: row;
+        
+                        a {
+                            display: block;
+                            padding: 3%;
+                            width: 30%;
+                        }
+                    }
+                }
+        
+                
+        
+                .right {
+                    width: 100%;
+        
+                     p {
+                        text-align: center;
+                        width: 100%;
+                     }
+                }
+            }
+        }
+    }
+
+
+@media screen and (max-width:540px) {
+        .footer {
+            .inner {
+    
+                .content {
+                    flex-direction: column;
+                    .connin {
+                        width: 100%;
+                        flex-direction: column;
+        
+                        .main {
+                            width: 100%;
+                            
+        
+                           
+        
+                           
+                        }
+        
+                        
+        
+                        .links {
+                            width: 100%;
+                            flex-direction: column;
+        
+                            div {
+                                margin-top: 5%;
+                               
+                            }
+                        }
+                    }
+        
+        
+        
+                    .store {
+                        width: 100%;;
+        
+                        a {
+                            width: 40%;
+                        }
+                    }
+                }
+        
+                
+        
+                .right {
+                    width: 100%;
+        
+                     p {
+                        text-align: center;
+                        width: 100%;
+                     }
+                }
+            }
+        }
+    }
