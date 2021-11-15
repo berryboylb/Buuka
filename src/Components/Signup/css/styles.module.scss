@@ -258,7 +258,15 @@
 @media screen and (max-width:1024px) {
     .signup {
         .inner {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll;
             .top {
+                margin-top: 5%;
+                width: 100%;
                 button {
                     font-size: 1.2rem;
                     padding: 2%;
@@ -267,7 +275,9 @@
     
             form {
                 width: 50%;
-    
+                margin-left: 0;
+                margin-right: 0;
+                transform: translate(0);
                 h3 {
                     font-size: 1.2rem;
                 }
@@ -360,25 +370,36 @@
 @media screen and (max-width:540px) {
     .signup {
         .inner {
+            height: 100vh;
+            overflow-y: scroll;
             .top {
+                margin-top: 0;
                 button {
                     font-size: 1.2rem;
                     padding: 2%;
                 }
+                height: 10vh;
             }
     
             form {
                 width: 100%;
                 padding: 5%;
-    
+                height: 90vh;
+                // display: flex;
+                // justify-content: space-evenly;
+                // flex-direction: column;
+                overflow-y: scroll;
                
     
                 .names {
                     margin-top: 3%;
+                    flex-direction: column;
     
                     input {
                         padding: 4%;
+                        margin-top: 4%;
                         font-size: 0.8rem;
+                        width: 100%;
                         &::placeholder {
                             font-size: 0.8rem;
                         }

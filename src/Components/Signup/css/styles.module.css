@@ -357,12 +357,37 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .signup .inner {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: scroll;
+  }
+  .signup .inner .top {
+    margin-top: 5%;
+    width: 100%;
+  }
   .signup .inner .top button {
     font-size: 1.2rem;
     padding: 2%;
   }
   .signup .inner form {
     width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   .signup .inner form h3 {
     font-size: 1.2rem;
@@ -471,6 +496,14 @@
 }
 
 @media screen and (max-width: 540px) {
+  .signup .inner {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .signup .inner .top {
+    margin-top: 0;
+    height: 10vh;
+  }
   .signup .inner .top button {
     font-size: 1.2rem;
     padding: 2%;
@@ -478,13 +511,21 @@
   .signup .inner form {
     width: 100%;
     padding: 5%;
+    height: 90vh;
+    overflow-y: scroll;
   }
   .signup .inner form .names {
     margin-top: 3%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .signup .inner form .names input {
     padding: 4%;
+    margin-top: 4%;
     font-size: 0.8rem;
+    width: 100%;
   }
   .signup .inner form .names input::-webkit-input-placeholder {
     font-size: 0.8rem;

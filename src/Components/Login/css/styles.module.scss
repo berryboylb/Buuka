@@ -360,7 +360,10 @@
 @media screen and (max-width:540px) {
     .login {
         .inner {
+            height: 100vh;
+            overflow-y: scroll;
             .top {
+                height: 10vh;
                 button {
                     font-size: 1.2rem;
                     padding: 2%;
@@ -370,9 +373,14 @@
             form {
                 width: 100%;
                 padding: 5%;
+                height: 90vh;
+                flex-wrap: nowrap;
     
-               
-    
+               display: flex;
+               justify-content: space-evenly;
+               flex-direction: column;
+               overflow-y: scroll;
+                
                 .names {
                     margin-top: 3%;
     
