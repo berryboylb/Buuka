@@ -274,7 +274,8 @@ nav {
     align-items: center;
     width: 100%;
     z-index: 4;
-    background: #3423A6;
+    //background: rgba($color: #fff, $alpha: 0.7);
+    background: linear-gradient(90deg, rgba(253, 244, 235, 0.9) 2.92%, rgba(250, 241, 254, 0.9) 95.69%);
 
     li {
         list-style: none;

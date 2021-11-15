@@ -308,7 +308,8 @@ nav .request a::after {
           align-items: center;
   width: 100%;
   z-index: 4;
-  background: #3423A6;
+  background: -webkit-gradient(linear, left top, right top, color-stop(2.92%, rgba(253, 244, 235, 0.9)), color-stop(95.69%, rgba(250, 241, 254, 0.9)));
+  background: linear-gradient(90deg, rgba(253, 244, 235, 0.9) 2.92%, rgba(250, 241, 254, 0.9) 95.69%);
 }
 
 .nav-active li {
