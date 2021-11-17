@@ -9,20 +9,26 @@ const Footer = () => {
         {
             id:1,
             title: "About Buuka",
-            link1: "Customer support",
-            link2: "Blog"
+            link1: "About",
+            link2: "FAQs",
+            link3: "Customer support",
+            link4: "Blog"
         },
         {
             id:2,
             title: "Business",
             link1: "For Sellers",
-            link2: "Pricing"
+            link2: "Pricing",
+            link3: "Buy Giftcards",
+            link4: "Refer & Earn"
         },
         {
             id:3,
             title: "Legal",
             link1: "Booking Terms",
-            link2: "Privacy Policy"
+            link2: "Privacy Policy",
+            link3: "Buyer Protection",
+            link4: "Disclaimer"
         },
     ]
     return (
@@ -35,9 +41,9 @@ const Footer = () => {
                                 <img src="./images/white.png" alt="Logo" />
                                 <a className={Styles.mail} href="mailto:Info@Harxplus.com" >info@buuka.com</a>
                                 <div className={Styles.socials}>
-                                <a href="/"><FontAwesomeIcon className= "icons" icon={faInstagram} /></a>
-                                <a href="/"><FontAwesomeIcon className= "icons" icon={faFacebook} /></a>
-                                <a href="/"><FontAwesomeIcon className= "icons" icon={faTwitter} /></a>
+                                <a href="/"><FontAwesomeIcon className= "icons" icon={faInstagram} /> <span>@buuka.app</span></a>
+                                <a href="/"><FontAwesomeIcon className= "icons" icon={faFacebook} /> <span>@mybuukaapp</span></a>
+                                <a href="/"><FontAwesomeIcon className= "icons" icon={faTwitter} /> <span>@buuka.app</span></a>
                                 </div>
                             </div>
                             <div className={Styles.links}>
@@ -53,7 +59,7 @@ const Footer = () => {
                     </div>
                         <hr />
                     <div className={Styles.right}>
-                        <p>© 2021  buuka.com  · All right reserved.</p>
+                        <p>© 2021 buuka.app All rights reserved.</p>
                     </div>
                 </div>
             </div>

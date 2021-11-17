@@ -8,8 +8,8 @@ const MobileApp = () => {
                         <img src="./images/phone.png" alt="phone" />
                    </div>
                    <div className={Styles.content}>
-                       <h3>Download our MobileApp for better experience</h3>
-                       <p>Book unforgettable service and professional experiences with the Buuka mobile app – the best way to dicover top-rated professionals & businesses.</p>
+                       <h3>Download our MobileApp for a Seamless Experience</h3>
+                       <p>The Universe of Services at your Finger Tip with the Buuka Mobile App - Suitable for Both Clients and Sellers.</p>
 
                        <div className={Styles.links}>
                            <a  className={Styles.goggle} href="/"><img src="./images/goggle play.png" alt="Google playstore" /></a>

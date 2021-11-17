@@ -45,17 +45,31 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .footer .inner .content .connin .main .socials a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.footer .inner .content .connin .main .socials a span {
+  font-size: 1.125rem;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 5px;
 }
 
 .footer .inner .content .connin .main .socials a:hover {
@@ -81,12 +95,12 @@
 }
 
 .footer .inner .content .connin .links div a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 1.125rem;
-  margin-top: 3%;
+  margin-top: 5%;
   position: relative;
 }
 
@@ -200,9 +214,17 @@
   .footer .inner .content .connin .main .mail {
     font-size: 1rem;
   }
+  .footer .inner .content .connin .main .socials {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .footer .inner .content .connin .main .socials a {
     font-size: 1.2rem;
     text-decoration: none;
+  }
+  .footer .inner .content .connin .main .socials a span {
+    font-size: 1rem;
   }
   .footer .inner .content .connin .links {
     width: 70%;

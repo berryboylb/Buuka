@@ -7,10 +7,10 @@ const Numbers = () => {
     const [appointments, setAppointments] = useState("");
 
     useEffect(()=> {
-        setAppointments("21,000")
-        setCountries("32")
-        setPartners("52,000")
-        setProfessionals("52,000")
+        setAppointments("11,000")
+        setCountries("2")
+        setPartners("2,000")
+        setProfessionals("5,000")
     }, [])
    
     return (
@@ -18,8 +18,8 @@ const Numbers = () => {
             <div className= "my-container">
                 <div className={Styles.inner}>
                     <div className={Styles.paid}>
-                        <h3>Best place to get connected with experts.</h3>
-                        <p>Easily book for any service with experts around you at affordable price.</p>
+                        <h3>Become a seller! Get connected to clients.</h3>
+                        <p>Reach thousands of clients for free and become a service provider on Buuka.</p>
                     </div>
                     <div className= {Styles.grid}>
                         <div>

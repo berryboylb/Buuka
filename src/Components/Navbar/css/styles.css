@@ -30,7 +30,9 @@ nav .logo {
 
 nav .logo img {
   margin-right: 3%;
-  height: 48px;
+  height: 28px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 nav .nav-links {
@@ -252,7 +254,7 @@ nav .request a::after {
     z-index: 5;
   }
   nav .logo img {
-    height: 25px;
+    height: 20px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;

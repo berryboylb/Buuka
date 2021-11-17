@@ -32,7 +32,6 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    height: 500px;
     padding-top: 5%;
     padding-bottom: 5%;
 
@@ -109,21 +108,36 @@
     
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1540px) {
     .banner {
         background: none;
         padding-top: 0%;
+        height: 100%;
         .inner {
             background: url("../Banner_bg.png");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: right;
-            min-height: 500px;
+            height: 500px;
             padding-top: 5%;
         }
     }
 
    
+}
+@media screen and (min-width:1024px){
+    .banner {
+        padding-top: 0%;
+        height: 500px;
+        // .inner {
+        //     background: url("../Banner_bg.png");
+        //     background-repeat: no-repeat;
+        //     background-size: contain;
+        //     background-position: right;
+        //     height: 500px;
+        //     padding-top: 5%;
+        // }
+    }
 }
 
 @media screen and (max-width:1024px){

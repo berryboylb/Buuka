@@ -36,7 +36,7 @@ const Banner = () => {
             <div className={mobileNav ?  Styles.myContainer : `${Styles.inner} ${Styles.myContainer}` }>
                 {/* {window.innerWidth} */}
                 <h1>Why Stress?{newline && <br/>} Book Services at a Go.</h1>
-                <p>Easily book for any service with experts around you at affordable price.</p>
+                <p>Easily book  services with experts around you at the best prices.</p>
                 <div className={Styles.linkForm}>
                     <Link to ="/">Get Started <FontAwesomeIcon className={Styles.icon} icon={faChevronCircleRight} /></Link>
                     <form action="">

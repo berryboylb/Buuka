@@ -16,7 +16,8 @@ nav {
 
         img {
             margin-right: 3%;
-            height: 48px;
+            height: 28px;
+            object-fit: contain;
         } 
     }
 
@@ -239,7 +240,7 @@ nav {
         .logo {
            z-index: 5;
             img {
-                height: 25px;
+                height: 20px;
                 align-self: center;
                 justify-self: center;
                 margin-top: 5.5px;
