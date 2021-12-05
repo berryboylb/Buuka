@@ -1,0 +1,1008 @@
+.cash {
+  background: #3423A6;
+  border-radius: 20px;
+  padding: 5%;
+  color: #fff;
+  background-image: url("../mask.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+}
+
+.cash .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cash .inner .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.cash .inner .money div h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.cash .inner .money div h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-top: 3%;
+}
+
+.cash .inner .money .total {
+  margin-left: 5%;
+}
+
+.cash .inner .fund {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cash .inner .fund button {
+  background: rgba(71, 54, 189, 0.3);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10%;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .cash .inner .money div h3 {
+    font-size: 1rem;
+  }
+  .cash .inner .money div h2 {
+    font-size: 2rem;
+  }
+  .cash .inner .fund button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cash .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .cash .inner .money {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .cash .inner .money div {
+    width: 100%;
+  }
+  .cash .inner .money div h3 {
+    font-size: 1rem;
+  }
+  .cash .inner .money div h2 {
+    font-size: 1.5rem;
+  }
+  .cash .inner .money .total {
+    margin-left: 0%;
+    margin-top: 5%;
+  }
+  .cash .inner .fund {
+    margin-top: 5%;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cash .inner .fund button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1rem;
+    padding: 5%;
+  }
+}
+
+.addCard {
+  margin-top: 5%;
+}
+
+.addCard .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addCard .add h3 {
+  font-family: 'Open Sans',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #636363;
+}
+
+.addCard .add button {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: 'Open Sans',sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #3423A6;
+  cursor: pointer;
+}
+
+.addCard .add button:hover {
+  opacity: 0.8;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.addCard .cardNo .single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addCard .cardNo .single button {
+  font-size: 2rem;
+  color: #636363;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.addCard .cardNo .single button:hover {
+  opacity: 0.8;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.addCard .cardNo .single div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.addCard .cardNo .single div h2 {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.25rem;
+  color: #636363;
+}
+
+.addCard .cardNo .single div img {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .addCard {
+    margin-top: 5%;
+  }
+  .addCard .add h3 {
+    font-size: 1rem;
+  }
+  .addCard .add button {
+    font-size: 1rem;
+  }
+  .addCard .cardNo {
+    margin-top: 5%;
+  }
+  .addCard .cardNo .single button {
+    font-size: 1rem;
+  }
+  .addCard .cardNo .single div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  .addCard .cardNo .single div h2 {
+    font-size: 1rem;
+  }
+  .addCard .cardNo .single div img {
+    height: 30px;
+    width: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 2%;
+  }
+}
+
+.AddCardForm {
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(229, 229, 229, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+}
+
+.AddCardForm form {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2%;
+  width: 40%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.AddCardForm form .ball {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  z-index: 9999;
+}
+
+.AddCardForm form .burn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AddCardForm form .burn p {
+  display: inline;
+}
+
+.AddCardForm form .burn img {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.AddCardForm form .success {
+  font-size: 0.875rem;
+  color: green;
+  border: 1px solid green;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 15px;
+  padding: 2%;
+  width: 100%;
+  display: inline;
+}
+
+.AddCardForm form .error {
+  font-size: 0.6rem;
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+.AddCardForm form::-webkit-scrollbar {
+  width: 0px;
+}
+
+.AddCardForm form h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #636363;
+  text-align: center;
+}
+
+.AddCardForm form .big {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.AddCardForm form .big label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.AddCardForm form .big input {
+  margin-top: 2%;
+  background: none;
+  outline: none;
+  padding: 3%;
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  color: #636363;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.AddCardForm form .big input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .big input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .big input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .big input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .big input:focus {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+}
+
+.AddCardForm form .frame {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AddCardForm form .frame div {
+  width: 48%;
+}
+
+.AddCardForm form .frame div label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.AddCardForm form .frame div input {
+  margin-top: 5%;
+  background: none;
+  outline: none;
+  padding: 7%;
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  color: #636363;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.AddCardForm form .frame div input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .frame div input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .frame div input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .frame div input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.AddCardForm form .frame div input:focus {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+}
+
+.AddCardForm form p {
+  margin-top: 2%;
+  color: #CCCCCC;
+  font-size: 0.875rem;
+}
+
+.AddCardForm form .btns {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AddCardForm form .btns button {
+  width: 48%;
+  font-size: 0.875rem;
+  border-radius: 20px;
+  padding: 4%;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.AddCardForm form .btns .cancel {
+  background: none;
+  border: 2px solid #F2F2F2;
+  color: #636363;
+}
+
+.AddCardForm form .btns .cancel:hover {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.AddCardForm form .btns .save {
+  background: #3423A6;
+  border: 2px solid #3423A6;
+  color: #fff;
+}
+
+.AddCardForm form .btns .save:hover {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  background: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .AddCardForm form h3 {
+    font-size: 1rem;
+  }
+  .AddCardForm form .big label {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .big input {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .big input::-webkit-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .big input:-ms-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .big input::-ms-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .big input::placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .frame div {
+    width: 48%;
+  }
+  .AddCardForm form .frame div label {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .frame div input {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .frame div input::-webkit-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .frame div input:-ms-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .frame div input::-ms-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .frame div input::placeholder {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form p {
+    font-size: 0.675rem;
+  }
+  .AddCardForm form .btns button {
+    font-size: 0.675rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AddCardForm form {
+    width: 90%;
+    padding: 5%;
+  }
+  .AddCardForm form .cardo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .AddCardForm form .cardo {
+    display: none;
+    width: 100%;
+  }
+}
+
+.fundAccount {
+  background: rgba(229, 229, 229, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20%;
+  z-index: 3;
+}
+
+.fundAccount form {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 2%;
+  width: 70%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.fundAccount form .ball {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.fundAccount form .error {
+  font-size: 0.6rem;
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+.fundAccount form::-webkit-scrollbar {
+  width: 5px;
+}
+
+.fundAccount form::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 0 15px 15px 0;
+}
+
+.fundAccount form::-webkit-scrollbar-thumb {
+  background: #3423A6;
+  border-radius: 10px;
+}
+
+.fundAccount form h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #636363;
+  text-align: center;
+}
+
+.fundAccount form p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.fundAccount form .No {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.fundAccount form .No::-webkit-scrollbar {
+  height: 5px;
+}
+
+.fundAccount form .No::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 0 15px 15px 0;
+}
+
+.fundAccount form .No::-webkit-scrollbar-thumb {
+  background: #3423A6;
+  border-radius: 10px;
+}
+
+.fundAccount form .No .ping {
+  background: #E5E5E5;
+  border-radius: 11px;
+  padding: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0.5rem;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.fundAccount form .No .ping img {
+  display: inline;
+  height: 20px;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fundAccount form .No .ping h2 {
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6785rem;
+  color: #636363;
+  margin-left: 0.5rem;
+}
+
+.fundAccount form .No .active {
+  background: #E5E5E5;
+  border: 2px solid #3423A6;
+  border-radius: 11px;
+  padding: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0.5rem;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.fundAccount form .No .active img {
+  display: inline;
+  height: 20px;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fundAccount form .No .active h2 {
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6785rem;
+  color: #636363;
+  margin-left: 0.5rem;
+}
+
+.fundAccount form .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1%;
+}
+
+.fundAccount form .settings button {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: 'Open Sans',sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #3423A6;
+  cursor: pointer;
+}
+
+.fundAccount form .settings button:hover {
+  opacity: 0.8;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.fundAccount form .amount {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.fundAccount form .amount label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.fundAccount form .amount input {
+  margin-top: 2%;
+  background: none;
+  outline: none;
+  padding: 3%;
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  color: #636363;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fundAccount form .amount input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.fundAccount form .amount input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.fundAccount form .amount input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.fundAccount form .amount input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.fundAccount form .amount input:focus {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+}
+
+.fundAccount form .bottom {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fundAccount form .bottom button {
+  width: 48%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 4%;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.fundAccount form .bottom .cancel {
+  border: 1px solid #F2F2F2;
+}
+
+.fundAccount form .bottom .cancel:hover {
+  border: 1px solid #3423A6;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.fundAccount form .bottom .log {
+  background: #3423A6;
+  color: #fff;
+  border: 1px solid #3423A6;
+}
+
+.fundAccount form .bottom .log:hover {
+  background: none;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .fundAccount form {
+    padding: 3%;
+  }
+  .fundAccount form .ball {
+    font-size: 1.1rem;
+  }
+  .fundAccount form .error {
+    font-size: 0.6rem;
+  }
+  .fundAccount form h3 {
+    font-size: 1rem;
+  }
+  .fundAccount form p {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .fundAccount form .No .ping {
+    padding: 2%;
+    width: 70px;
+    height: 40px;
+  }
+  .fundAccount form .No .active {
+    padding: 2%;
+    width: 70px;
+    height: 40px;
+  }
+  .fundAccount form .settings {
+    margin-top: 2%;
+  }
+  .fundAccount form .settings button {
+    font-size: 0.7rem;
+  }
+  .fundAccount form .amount {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .fundAccount form .amount label {
+    font-size: 0.6rem;
+  }
+  .fundAccount form .amount input {
+    font-size: 0.6rem;
+  }
+  .fundAccount form .amount input::-webkit-input-placeholder {
+    font-size: 0.6rem;
+  }
+  .fundAccount form .amount input:-ms-input-placeholder {
+    font-size: 0.6rem;
+  }
+  .fundAccount form .amount input::-ms-input-placeholder {
+    font-size: 0.6rem;
+  }
+  .fundAccount form .amount input::placeholder {
+    font-size: 0.6rem;
+  }
+  .fundAccount form .bottom {
+    margin-top: 5%;
+  }
+  .fundAccount form .bottom button {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fundAccount {
+    padding: 0;
+  }
+  .fundAccount form {
+    padding: 5%;
+    width: 90%;
+  }
+  .fundAccount form .settings {
+    margin-top: 5%;
+  }
+  .fundAccount form .settings button {
+    font-size: 0.7rem;
+  }
+  .fundAccount form .amount {
+    margin-top: 5%;
+  }
+  .fundAccount form .amount input {
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .fundAccount form .bottom {
+    margin-top: 5%;
+  }
+  .fundAccount form .bottom button {
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

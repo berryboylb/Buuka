@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.pending {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    h2 {
+        font-size: 1.5rem;
+        color: #636363;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .grid {
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2rem;
+
+        .pend {
+            background: #FCF7F7;
+            border-radius: 20px;
+            padding: 5%;
+            position: relative;
+            z-index: 1;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+
+                .name {
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        color: #000000;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 0.875rem;
+                        color: #636363;
+                        margin-top: 2%;
+                        line-height: 1;
+                        width: 100%;
+                    }
+                }
+
+                .trigger {
+                    button {
+                        background: none;
+                        border: none;
+                        outline: none;
+                        font-size: 1rem;
+                        color: #636363;
+                    }
+                }
+
+                .book {
+                    //background: #fff;
+                    padding: 2%;
+                    box-shadow: -4px 4px 35px -9px rgba(0, 0, 0, 0.2);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    button {
+                        background: none;
+                        border: none;
+                        outline: none;
+                        font-size: 1rem;
+                        color: #636363;
+                        }
+                    &:hover button {
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        background: #3423A6;
+                        color: #fff;
+                    }
+                }
+
+
+            }
+
+            hr {
+                margin-top: 15%;
+                margin-bottom: 5%;
+                border: 1px solid #EDEDED;
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                //justify-content: space-between;
+                h4 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.875rem;
+                    color: #636363;
+                }
+
+                span {
+                    margin-left: 2%;
+                    margin-right: 2%;
+                }
+            }
+
+            .triggerBox {
+                position: absolute;
+                background: #fff;
+                top: 10%;
+                right: 12%;
+                padding: 5%;
+                box-shadow: -4px 4px 35px -9px rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                z-index: 5;
+                button {
+                    display: block;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 2%;
+                    font-weight: 300;
+                    color: #636363;
+                    font-size: 1.125rem;
+                    font-family: 'Open Sans', sans-serif;
+                    &:hover {
+                        opacity: 0.7;
+                        transition: all .5s ease-in;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .pending {
+        h2 {
+            font-size: 1.1rem;
+        }
+    
+        .grid {
+            grid-template-columns: auto auto;
+            grid-gap: 2rem;
+    
+            .pend {
+                background: #FCF7F7;
+                border-radius: 20px;
+                padding: 5%;
+                position: relative;
+    
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .name {
+                        h4 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: 0.6rem;
+                            margin-top: 2%;
+                        }
+                    }
+    
+                    .trigger, .book {
+                        button {
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                   
+                }
+    
+                hr {
+                    margin-top: 15%;
+                    margin-bottom: 5%;
+                    border: 1px solid #EDEDED;
+                }
+    
+                .bottom {
+                    h4 {
+                        font-size: 0.675rem;
+                    }
+    
+                    span {
+                        margin-left: 2%;
+                        margin-right: 2%;
+                    }
+                }
+    
+                .triggerBox {
+                    position: absolute;
+                    background: #fff;
+                    top: 10%;
+                    right: 12%;
+                    padding: 5%;
+                    box-shadow: -4px 4px 35px -9px rgba(0, 0, 0, 0.2);
+                    border-radius: 20px;
+                    z-index: 5;
+                    button {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .pending {
+    
+        .grid {
+            grid-template-columns: auto;
+            grid-gap: 1rem;
+            margin-top: 5%;
+        }
+    }
+}
+

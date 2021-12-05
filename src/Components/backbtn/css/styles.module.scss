@@ -1,0 +1,21 @@
+.backbtn{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    &:hover {
+        background: #3423A6;
+        color: #fff;
+        border-radius: 15px;
+        transition:  all .3s ease-in;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .backbtn{
+        font-size: 1rem;
+    }
+}

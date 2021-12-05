@@ -1,0 +1,140 @@
+.others {
+  padding-bottom: 5%;
+}
+
+.others h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #636363;
+}
+
+.others .grid {
+  margin-top: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 2rem;
+}
+
+.others .grid a {
+  text-decoration: none;
+}
+
+.others .grid .othercus {
+  -webkit-box-shadow: 0px 119.178px 372.642px rgba(0, 0, 0, 0.09), 0px 35.9288px 112.341px rgba(0, 0, 0, 0.058643), 0px 14.923px 46.6606px rgba(0, 0, 0, 0.045), 0px 5.39735px 16.8762px rgba(0, 0, 0, 0.031357);
+          box-shadow: 0px 119.178px 372.642px rgba(0, 0, 0, 0.09), 0px 35.9288px 112.341px rgba(0, 0, 0, 0.058643), 0px 14.923px 46.6606px rgba(0, 0, 0, 0.045), 0px 5.39735px 16.8762px rgba(0, 0, 0, 0.031357);
+  padding: 5%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.others .grid .othercus .imagename {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.others .grid .othercus .imagename .imgCon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.others .grid .othercus .imagename .imgCon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.others .grid .othercus .imagename .name {
+  margin-left: 5%;
+}
+
+.others .grid .othercus .imagename .name p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #636363;
+}
+
+.others .grid .othercus .con .icon {
+  font-size: 2rem;
+  color: #CCD2E3;
+}
+
+.others .grid .othercus .con .icon:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .others {
+    padding-bottom: 5%;
+  }
+  .others h3 {
+    font-size: 1.5rem;
+  }
+  .others .grid .othercus .imagename {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .others .grid .othercus .imagename .imgCon {
+    width: 50px;
+    height: 50px;
+  }
+  .others .grid .othercus .imagename .name {
+    margin-left: 5%;
+  }
+  .others .grid .othercus .imagename .name p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .others .grid .othercus .con .icon {
+    font-size: 1.5rem;
+    color: #CCD2E3;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .others .grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 1rem;
+  }
+  .others .grid .othercus .imagename {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .others .grid .othercus .imagename .name {
+    margin-left: 5%;
+    width: 70%;
+  }
+  .others .grid .othercus .imagename .name p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .others .grid .othercus .con .icon {
+    font-size: 1.5rem;
+    color: #CCD2E3;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

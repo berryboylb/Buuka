@@ -1,47 +1,471 @@
 {
-    "providers" : [
+  "providers": [
+    {
+      "id": 1,
+      "name": "Bube designs",
+      "title": "UI/UX",
+      "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
+      "motto": "Innovative Digital Corporation.",
+      "img_src": "./providers/provideimg.png",
+      "stars": 4,
+      "images": [
+        "/providers/provideimg.png",
+        "/Images/test1.png",
+        "/Images/test2.png",
+        "/Images/test3.png"
+      ],
+      "schdule": [
         {
-            "id": 1,
-            "title": "UI/UX",
-            "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
-            "motto": "Innovative Digital Corporation.",
-            "img_src": "./providers/provideimg.png",
-            "stars": 4
-        },
-    
-        {
-            "id": 2,
-            "title": "Therapist/Counseling",
-            "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
-            "motto": "Innovative Digital Corporation.",
-            "img_src": "./providers/provideimg.png",
-            "stars": 4
-        },
-    
-        {
-            "id": 3,
-            "title": "Car Repair",
-            "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
-            "motto": "Innovative Digital Corporation.",
-            "img_src": "./providers/provideimg.png",
-            "stars": 4
-        },
-    
-        {
-            "id": 4,
-            "title": "Coaching",
-            "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
-            "motto": "Innovative Digital Corporation.",
-            "img_src": "./providers/provideimg.png",
-            "stars": 4
+          "day": "Monday",
+          "time": "7:30am - 6:00pm"
         },
         {
-            "id": 5,
-            "title": "Software Development",
-            "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
-            "motto": "Innovative Digital Corporation.",
-            "img_src": "./providers/provideimg.png",
-            "stars": 4.8
+          "day": "Tuesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Wednesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Friday",
+          "time": "9:00am - 4:00pm"
+        },
+        {
+          "day": "Saturday",
+          "time": "9:00am - 3:00pm"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed"
         }
-    ]
+      ],
+      "about": "Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the original meaning. The purpose here is to just get the writing started so that when the writer goes onto their day's writing projects, words are already flowing from their fingers.",
+      "type": "UI/UX",
+      "ratings": 123
+    },
+    {
+      "id": 2,
+      "name": "James Solutions",
+      "title": "Therapist/Counseling",
+      "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
+      "motto": "Innovative Digital Corporation.",
+      "img_src": "./providers/provideimg.png",
+      "stars": 4,
+      "images": [
+        "/providers/provideimg.png",
+        "/Images/test1.png",
+        "/Images/test2.png",
+        "/Images/test3.png"
+      ],
+      "schdule": [
+        {
+          "day": "Monday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Tuesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Wednesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Friday",
+          "time": "9:00am - 4:00pm"
+        },
+        {
+          "day": "Saturday",
+          "time": "9:00am - 3:00pm"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed"
+        }
+      ],
+      "about": "It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well. Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.",
+      "type": "therapy",
+      "ratings": 100
+    },
+    {
+      "id": 3,
+      "name": "Olumide car maintenance",
+      "title": "Car Repair",
+      "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
+      "motto": "Innovative Digital Corporation.",
+      "img_src": "./providers/provideimg.png",
+      "stars": 4,
+      "images": [
+        "/providers/provideimg.png",
+        "/Images/test1.png",
+        "/Images/test2.png",
+        "/Images/test3.png"
+      ],
+      "schdule": [
+        {
+          "day": "Monday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Tuesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Wednesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Friday",
+          "time": "9:00am - 4:00pm"
+        },
+        {
+          "day": "Saturday",
+          "time": "9:00am - 3:00pm"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed"
+        }
+      ],
+      "about": "No! All of the paragraphs in the generator are written by humans, not computers. When first building this generator we thought about using computers to generate the paragraphs, but they weren't very good and many times didn't make any sense at all. We therefore took the time to create paragraphs specifically for this generator to make it the best that we could.",
+      "type": "mechanic",
+      "ratings": 50
+    },
+    {
+      "id": 4,
+      "name": "Adaora Life coaching",
+      "title": "Coaching",
+      "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
+      "motto": "Innovative Digital Corporation.",
+      "img_src": "./providers/provideimg.png",
+      "stars": 4,
+      "images": [
+        "/providers/provideimg.png",
+        "/Images/test1.png",
+        "/Images/test2.png",
+        "/Images/test3.png"
+      ],
+      "schdule": [
+        {
+          "day": "Monday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Tuesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Wednesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Friday",
+          "time": "9:00am - 4:00pm"
+        },
+        {
+          "day": "Saturday",
+          "time": "9:00am - 3:00pm"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed"
+        }
+      ],
+      "about": "There are usually about 200 words in a paragraph, but this can vary widely. Most paragraphs focus on a single idea that's expressed with an introductory sentence, then followed by two or more supporting sentences about the idea. A short paragraph may not reach even 50 words while long paragraphs can be over 400 words long, but generally speaking they tend to be approximately 200 words in length.",
+      "type": "coaching",
+      "ratings": 70
+    },
+    {
+      "id": 5,
+      "name": "Computek software servcies",
+      "title": "Software Development",
+      "address": "10b Ajike Faleye Street Opposite Egbeda rd, Lagos.",
+      "motto": "Innovative Digital Corporation.",
+      "img_src": "./providers/provideimg.png",
+      "stars": 4.8,
+      "images": [
+        "/providers/provideimg.png",
+        "/Images/test1.png",
+        "/Images/test2.png",
+        "/Images/test3.png"
+      ],
+      "schdule": [
+        {
+          "day": "Monday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Tuesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Wednesday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:30am - 6:00pm"
+        },
+        {
+          "day": "Friday",
+          "time": "9:00am - 4:00pm"
+        },
+        {
+          "day": "Saturday",
+          "time": "9:00am - 3:00pm"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed"
+        }
+      ],
+      "about": "It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well. Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.",
+      "type": "web development",
+      "ratings": 500
+    }
+  ],
+  "giftcards": [
+    {
+      "id": 1,
+      "price": 5000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 2,
+      "price": 7000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 3,
+      "price": 10000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 4,
+      "price": 15000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 5,
+      "price": 25000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 6,
+      "price": 45000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 7,
+      "price": 5000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 8,
+      "price": 7000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 9,
+      "price": 10000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 10,
+      "price": 15000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 11,
+      "price": 25000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    },
+    {
+      "id": 12,
+      "price": 45000,
+      "note": "You can redeem on all services but Redeemable in Adara Beauty & Hairstyling salon only. You can also share with friends."
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Ralph Emmanuella",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/providers/provideimg.png",
+      "stars": 4
+    },
+    {
+      "id": 2,
+      "name": "Abigail Veronica",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test1.png",
+      "stars": 1
+    },
+    {
+      "id": 3,
+      "name": "Gabriel Maphuzik",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test3.png",
+      "stars": 3
+    },
+    {
+      "id": 4,
+      "name": "Gabriel Maphuzik",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test2.png",
+      "stars": 2
+    },
+    {
+      "id": 5,
+      "name": "Ralph Emmanuella",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/providers/provideimg.png",
+      "stars": 5
+    },
+    {
+      "id": 6,
+      "name": "Abigail Veronica",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test1.png",
+      "stars": 4
+    },
+    {
+      "id": 7,
+      "name": "Gabriel Maphuzik",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test3.png",
+      "stars": 1
+    },
+    {
+      "id": 8,
+      "name": "Gabriel Maphuzik",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test2.png",
+      "stars": 3
+    },
+    {
+      "id": 9,
+      "name": "Ralph Emmanuella",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/providers/provideimg.png",
+      "stars": 2
+    },
+    {
+      "id": 10,
+      "name": "Abigail Veronica",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test1.png",
+      "stars": 5
+    },
+    {
+      "id": 11,
+      "name": "Gabriel Maphuzik",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test3.png",
+      "stars": 2
+    },
+    {
+      "id": 12,
+      "name": "Gabriel Maphuzik",
+      "review": "No matter where you go, Buuka is the coolest, most professional services, fast, affordable and top-notch. Another thing is that the service providers are homely. I love this so much.",
+      "data": "09-10-2021",
+      "img_src": "/Images/test2.png",
+      "stars": 3,
+      "vame": {
+        "title": "mr",
+        "first": "c d ",
+        "last": "jfnjrf"
+      }
+    }
+  ],
+  "pending": [
+    {
+      "id": 1,
+      "name": "Tall Afro Haistyling",
+      "details": "30min with Benita Grace",
+      "date": "Friday 29th Oct, 2021",
+      "time": "10:00 - 10:30"
+    },
+    {
+      "id": 2,
+      "name": "Makeup",
+      "details": "20min with Ralph Make over",
+      "date": "Friday 30th Oct, 2021",
+      "time": "10:00 - 10:30"
+    },
+    {
+      "id": 3,
+      "name": "Cooking",
+      "details": "5min with David's kitchen",
+      "date": "Thursday 31th Oct, 2021",
+      "time": "10:00 - 10:30"
+    },
+    {
+      "id": 4,
+      "name": "Painting",
+      "details": "30min with Santan Dave",
+      "date": "Monday 1st Dec, 2021",
+      "time": "10:00 - 10:30"
+    },
+    {
+      "id": 5,
+      "name": "Eating",
+      "details": "50min with Daylor dave",
+      "date": "Tuesday 2nd Dec, 2021",
+      "time": "10:00 - 10:30"
+    },
+    {
+      "id": 6,
+      "name": "Drinking",
+      "details": "1hour with Meek Mill",
+      "date": "Tuesday 2nd Dec, 2021",
+      "time": "10:30 - 11:30"
+    }
+  ],
+  "cardDetails": [
+    {
+      "name": "Daramola OLorunfemi Winner",
+      "cardNo": "4000123456784266",
+      "expiryDate": "03/23",
+      "cvc": "699",
+      "cardtype": "Visa",
+      "id": 1
+    },
+    {
+      "name": "Daramola OLorunfemi Winner",
+      "cardNo": "5412751234123459",
+      "expiryDate": "12/23",
+      "cvc": "891",
+      "cardtype": "MasterCard",
+      "id": 2
+    }
+  ]
 }

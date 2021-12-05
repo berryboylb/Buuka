@@ -21,6 +21,70 @@ nav {
         } 
     }
 
+    .loggedin {
+        position: relative;
+        hr {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .profile-com {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            padding: 10%;
+            border: 1px solid #CCCCCC;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .login-menu {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(35px);
+            border-radius: 20px;
+            padding: 20%;
+            width: 200px;
+            box-shadow: 0px 119.178px 372.642px rgba(0, 0, 0, 0.09), 0px 35.9288px 112.341px rgba(0, 0, 0, 0.058643), 0px 14.923px 46.6606px rgba(0, 0, 0, 0.045), 0px 5.39735px 16.8762px rgba(0, 0, 0, 0.031357);
+            transform: translate(-110%);
+            margin-top: 0%;
+            
+
+            h3 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.125rem;
+                text-align: center;
+            }
+
+            ul {
+                margin-top: 0%;
+                li {
+                    margin-top: 5%;
+                    list-style: none;
+                    cursor: pointer;
+                    
+                   
+                    a {
+                        display: block;
+                        font-weight: 300;
+                        width: 100%;
+                        text-decoration: none;
+                        color: #000000;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 1.125rem;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .nav-links {
         display: flex;
         width: 50%; 
@@ -209,6 +273,39 @@ nav {
 @media screen and (max-width:1024px){
     nav {
         // justify-content: space-evenly;
+
+        .loggedin {
+            position: relative;
+            hr {
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+    
+            .profile-com {
+                height: 40px;
+                width: 40px;
+            }
+    
+            .login-menu {
+                padding: 40%;
+                z-index: 99;
+                transform: translate(-105%);
+    
+                h3 {
+                    font-size: 1rem;
+                }
+    
+                ul {
+                    margin-top: 0%;
+                    li {
+                        margin-top: 7%;
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
         
         .nav-links {
             width: 60%; 
@@ -319,3 +416,4 @@ nav {
         opacity: 1;
     }
 }
+

@@ -39,11 +39,11 @@ const Footer = () => {
                         <div  className={Styles.connin}>
                             <div className={Styles.main}>
                                 <img src="./images/white.png" alt="Logo" />
-                                <a className={Styles.mail} href="mailto:Info@Harxplus.com" >info@buuka.com</a>
+                                <a className={Styles.mail} href="mailto:support@buuka.app" >support@buuka.app</a>
                                 <div className={Styles.socials}>
-                                <a href="/"><FontAwesomeIcon className= "icons" icon={faInstagram} /> <span>@buuka.app</span></a>
-                                <a href="/"><FontAwesomeIcon className= "icons" icon={faFacebook} /> <span>@mybuukaapp</span></a>
-                                <a href="/"><FontAwesomeIcon className= "icons" icon={faTwitter} /> <span>@buuka.app</span></a>
+                                <a href="https://instagram.com/buuka.app"><FontAwesomeIcon className= "icons" icon={faInstagram} /></a>
+                                <a href="https://facebook.com/mybuukaapp"><FontAwesomeIcon className= "icons" icon={faFacebook} /></a>
+                                <a href="https://twitter.com/mybuukaapp/buuka.app"><FontAwesomeIcon className= "icons" icon={faTwitter} /></a>
                                 </div>
                             </div>
                             <div className={Styles.links}>

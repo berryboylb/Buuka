@@ -1,0 +1,255 @@
+.review {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.review .inner a, .review .inner button {
+  display: block;
+  border: none;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 2%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  background: #3423A6;
+  color: #fff;
+  padding: 2%;
+}
+
+.review .inner a:hover, .review .inner button:hover {
+  border: 1px solid #3423A6;
+  background: none;
+  color: #3423A6;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.review .inner .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .inner .top h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #636363;
+}
+
+.review .inner .top form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .inner .top form h3 {
+  font-size: 1.375rem;
+  color: #C4C4C4;
+}
+
+.review .inner .top form select {
+  width: 100px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #FF9F00;
+}
+
+.review .inner .top form select option {
+  font-size: 1rem;
+  color: #C4C4C4;
+}
+
+.review .inner .singlereview {
+  background: rgba(250, 241, 254, 0.6);
+  border-radius: 15px;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.review .inner .singlereview p {
+  margin-top: 2%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #000000;
+  width: 100%;
+}
+
+.review .inner .singlereview .oui {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .inner .singlereview .oui .nameImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .inner .singlereview .oui .nameImg .imgCon {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.review .inner .singlereview .oui .nameImg .imgCon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.review .inner .singlereview .oui .nameImg .name {
+  margin-left: 10px;
+}
+
+.review .inner .singlereview .oui .nameImg .name h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.review .inner .singlereview .oui .nameImg .name p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #C4C4C4;
+}
+
+.review .inner .singlereview .oui .nameImg .name .hide {
+  display: none;
+}
+
+.review .inner .singlereview .oui .iconn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.review .inner .singlereview .oui .iconn .icon {
+  font-size: 1rem;
+  color: #FF9F00;
+}
+
+@media screen and (max-width: 1024px) {
+  .review .inner a {
+    font-size: 1rem;
+    padding: 2%;
+  }
+  .review .inner .top h3 {
+    font-size: 1.5rem;
+  }
+  .review .inner .top form h3 {
+    font-size: 1rem;
+  }
+  .review .inner .top form select option {
+    font-size: 0.8rem;
+    color: #C4C4C4;
+  }
+  .review .inner .singlereview p {
+    font-size: 1rem;
+  }
+  .review .inner .singlereview .oui .nameImg .imgCon {
+    width: 70px;
+    height: 70px;
+  }
+  .review .inner .singlereview .oui .nameImg .name {
+    margin-left: 15px;
+  }
+  .review .inner .singlereview .oui .nameImg .name h3 {
+    font-size: 1rem;
+  }
+  .review .inner .singlereview .oui .nameImg .name p {
+    font-size: 1rem;
+  }
+  .review .inner .singlereview .oui .iconn .icon {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .review .inner a, .review .inner button {
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .review .inner .top h3 {
+    font-size: 1.5rem;
+  }
+  .review .inner .top form h3 {
+    font-size: 1rem;
+  }
+  .review .inner .top form select option {
+    font-size: 0.8rem;
+    color: #C4C4C4;
+  }
+  .review .inner .singlereview {
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .review .inner .singlereview .oui {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review .inner .singlereview .oui .nameImg {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .review .inner .singlereview .oui .nameImg .name .hide {
+    display: block;
+  }
+  .review .inner .singlereview .oui .nameImg .name .iconn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .review .inner .singlereview .oui .nameImg .name .iconn .icon {
+    font-size: 0.8rem;
+    color: #FF9F00;
+  }
+  .review .inner .singlereview .oui .show {
+    display: none;
+  }
+  .review .inner .singlereview .oui .iconn {
+    width: 100%;
+    margin-top: 2%;
+  }
+  .review .inner .singlereview .oui .iconn .icon {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */
