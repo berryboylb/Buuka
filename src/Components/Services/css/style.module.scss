@@ -1,0 +1,173 @@
+.services {
+    margin-bottom: 5%;
+    .inner {
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2rem;
+            color: #636363;
+        }
+
+        .tabs {
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-between;
+
+            .tablist {
+                width: 48%;
+                background: #FBFBFB;
+                border-radius: 15px;
+                padding: 2%;
+                height: 100%;
+
+                .tab {
+                    display: block;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.2rem;
+                    color: #636363;
+                    background: none;
+                    padding: 2%;
+
+                   &:hover {
+                    background-color: #ddd;
+                    color: #3423A6;
+                   }
+                }
+                .active {
+                    border-left: 3px solid #3423A6;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.2rem;
+                    color: #636363;
+                    background: none;
+                    padding: 2%;
+                    list-style: none;
+                    background: #F6F6F8;
+                }
+            }
+
+            .tabpanel {
+                background: #3423A6;
+                width: 48%;
+                background: #FBFBFB;
+                border-radius: 15px;
+                padding: 2%;
+                form {
+                    .bruh {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h3 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.375rem;
+                            color: #636363;
+                        }
+
+                        div {
+                            width: 20%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            label {
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.375rem;
+                                color: #636363;
+                            }
+                            input {
+                                padding: 2%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .services {
+        .inner {
+            h3 {
+                font-size: 1.5rem;
+            }
+    
+            .tabs {
+    
+                .tablist {
+    
+                    .tab {
+                        font-size: 1rem;
+                    }
+                }
+    
+                .tabpanel {
+                    form {
+                        .bruh {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 2%;
+                            h3 {
+                                font-size: 1rem;
+                            }
+    
+                            div {
+                                width: 20%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                label {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .services {
+        
+        .inner {
+    
+            .tabs {
+                flex-direction: column;
+                .tablist {
+                    width: 100%;
+                    padding: 5%;
+    
+                    .tab {
+                        font-size: 1rem;
+                    }
+                }
+    
+                .tabpanel {
+                    width: 100%;
+                    margin-top: 5%;
+                    padding: 5%;
+                    form {
+                        .bruh {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            h3 {
+                                font-size: 1rem;
+                            }
+    
+                            div {
+                                width: 30%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                label {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

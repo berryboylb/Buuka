@@ -1,0 +1,896 @@
+.cash {
+    background: #3423A6;
+    border-radius: 20px;
+    padding: 5%;
+    color: #fff;
+    background-image: url('../mask.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .money {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            div {
+                h3 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                    color: #fff;
+                    line-height: 1;
+                }
+
+                h2 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 2.5rem;
+                    line-height: 1;
+                    margin-top: 3%;
+                }
+            }
+
+            .total {
+                margin-left: 5%;
+            }
+        }
+
+        .fund {
+            width: 20%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            button {
+                background: rgba(71, 54, 189, 0.3);
+                border: none;
+                border-radius: 50%;
+                outline: none;
+                font-size: 1.5rem;
+                color: #fff;
+                padding: 10%;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .cash {
+    
+        .inner {
+    
+            .money {
+                div {
+                    h3 {
+                        font-size: 1rem;
+                    }
+    
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+    
+            .fund {
+                button {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .cash {
+    
+        .inner {
+            flex-direction: column;
+            position: relative;
+    
+            .money {
+                flex-direction: column;
+                width: 100%;
+                
+                div {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+    
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .total {
+                    margin-left: 0%;
+                    margin-top: 5%;
+                }
+            }
+    
+            .fund {
+                margin-top: 5%;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                
+                
+                button {
+                    position: absolute;
+                    top: 5%;
+                    right: 5%;
+                    font-size: 1rem;
+                    padding: 5%;
+                }
+            }
+        }
+    }
+    
+}
+
+
+//addcard starts here
+.addCard {
+    margin-top: 5%;
+
+    .add {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            font-family: 'Open Sans',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.25rem;
+            color: #636363;
+        }
+
+        button {
+            border: none;
+            background: none;
+            outline: none;
+            font-family: 'Open Sans',sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 1.25rem;
+            color: #3423A6;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    .cardNo {
+
+    .single {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                font-size: 2rem;
+                color: #636363;
+                border: none;
+                background: none;
+                outline: none;
+                &:hover {
+                    opacity: 0.8;
+                    transition: all .3s ease-in;
+                }
+            }
+            div {
+                display: flex;
+                align-items: center;
+                width: 80%;
+                h2 {
+                    font-family: 'Open Sans',sans-serif;
+                    font-size: 1.25rem;
+                    color: #636363;
+                }
+
+                img {
+                    display: inline;
+                    height: 50px;
+                    width: 50px;
+                    object-fit: contain;
+                    margin-left: 5%;
+                }
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .addCard {
+        margin-top: 5%;
+    
+        .add {
+            h3 {
+                font-size: 1rem;
+            }
+    
+            button {
+                font-size: 1rem;
+            }
+        }
+
+        .cardNo {
+            margin-top: 5%;
+            .single {
+        
+                    button {
+                        font-size: 1rem;
+                    }
+                    div {
+                        display: flex;
+                        align-items: center;
+                        width: 80%;
+                        h2 {
+                            font-size: 1rem;
+                        }
+        
+                        img {
+                            height: 30px;
+                            width: 30px;
+                            object-fit: contain;
+                            margin-left: 2%;
+                        }
+                    }
+                   
+                }
+            }
+    }
+    
+}
+
+
+//add card form starts here
+.AddCardForm {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(229, 229, 229, 0.8);
+    backdrop-filter: blur(10px);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+     justify-content: center;
+     z-index: 5;
+    // align-items: center;
+
+    form {
+        background: #fff;
+        border-radius: 15px;
+        padding: 2%;
+        width: 40%;
+        overflow-y: scroll;
+        position: relative;
+
+        .ball {
+            display: none;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background: none;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            z-index: 9999;
+        }
+
+        .burn {
+            display: flex;
+            align-items: center;
+            p {
+                display: inline;
+            }
+            img {
+                display: inline;
+                height: 50px;
+                width: 50px;
+                object-fit: contain;
+            }
+
+           
+        }
+        .success {
+            font-size: 0.875rem;
+            color: green;
+            border: 1px solid green;
+            font-family: 'Open Sans', sans-serif;
+            border-radius: 15px;
+            padding: 2%;
+            width: 100%;
+            display: inline;
+        }
+
+        .error {
+            font-size: 0.6rem;
+            color: red;
+            font-family: 'Open Sans', sans-serif;
+            width: 100%;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+        // &::-webkit-scrollbar-track {
+        //     background: #f1f1f1;
+        //     border-radius: 0 15px 15px 0;
+        // }
+        // &::-webkit-scrollbar-thumb {
+        //     background: #3423A6;
+        //     border-radius: 10px;
+        // }
+          
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #636363;
+            text-align: center;
+        }
+
+        .big {
+            width: 100%;
+            margin-top: 5%;
+            label {
+                display: block;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 0.875rem;
+                color: #636363;
+            }
+
+            input {
+                margin-top: 2%;
+                 background: none;
+                 outline: none;
+                 padding: 3%;
+                 width: 100%;
+                 border: 2px solid #F2F2F2;
+                 border-radius: 15px;
+                 color: #636363;
+                 font-size: 0.875rem;
+                 font-family: 'Open Sans', sans-serif;
+                 &::placeholder {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.875rem;
+                    color: #CCCCCC;
+                 }
+
+                 &:focus {
+                     border: 2px solid #3423A6;
+                     color: #3423A6;
+                 }
+            }
+        }
+
+        .frame {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            div {
+                width: 48%;
+                label {
+                    display: block;
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 0.875rem;
+                    color: #636363;
+                }
+    
+                input {
+                    margin-top: 5%;
+                     background: none;
+                     outline: none;
+                     padding: 7%;
+                     width: 100%;
+                     border: 2px solid #F2F2F2;
+                     border-radius: 15px;
+                     color: #636363;
+                     font-size: 0.875rem;
+                     font-family: 'Open Sans', sans-serif;
+                     &::placeholder {
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 0.875rem;
+                        color: #CCCCCC;
+                     }
+    
+                     &:focus {
+                         border: 2px solid #3423A6;
+                         color: #3423A6;
+                     }
+                }  
+            }
+        }
+
+        p {
+            margin-top: 2%;
+            color: #CCCCCC;
+            font-size: 0.875rem;
+        }
+
+        .btns {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                width: 48%;
+                font-size: 0.875rem;
+                border-radius: 20px;
+                padding: 4%;
+                outline: none;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .cancel {
+                background: none;
+                border: 2px solid #F2F2F2;
+                color: #636363;
+                &:hover {
+                    border: 2px solid #3423A6;
+                    color: #3423A6;
+                    transition:  all .3s ease-in;
+                }
+            }
+
+            .save {
+                background: #3423A6;
+                border: 2px solid #3423A6;
+                color: #fff;
+                &:hover {
+                    border: 2px solid #3423A6;
+                    color: #3423A6;
+                    transition:  all .3s ease-in;
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .AddCardForm {
+    
+        form {
+            h3 {
+                font-size: 1rem;
+            }
+    
+            .big {
+                label {
+                    font-size: 0.675rem;
+                }
+    
+                input {
+                     font-size: 0.675rem;
+                     &::placeholder {
+                        font-size: 0.675rem;
+                     }
+                }
+            }
+    
+            .frame {
+                
+                div {
+                    width: 48%;
+                    label {
+                        font-size: 0.675rem;
+                    }
+        
+                    input {
+                         font-size: 0.675rem;
+                         &::placeholder {
+                            font-size: 0.675rem;
+                         }
+                    }  
+                }
+            }
+    
+            p {
+                font-size: 0.675rem;
+            }
+    
+            .btns {
+    
+                button {
+                    font-size: 0.675rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .AddCardForm {
+    
+        form {
+            width: 90%;
+            padding: 5%;
+
+            .cardo {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+    .AddCardForm {
+    
+        form {
+
+            .cardo {
+                display: none;
+                width: 100%;
+            }
+        }
+    }
+}
+
+//fund card styles
+.fundAccount {
+    background: rgba(229, 229, 229, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    z-index: 3;
+    form {
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding: 2%;
+        width: 70%;
+        overflow-y: scroll;
+        //height: 80%;
+        position: relative;
+
+        .ball {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background: none;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+        }
+
+        .error {
+            font-size: 0.6rem;
+            color: red;
+            font-family: 'Open Sans', sans-serif;
+            width: 100%;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: none;
+            border-radius: 0 15px 15px 0;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #3423A6;
+            border-radius: 10px;
+        }
+
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #636363;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: #636363;
+        }
+
+        .No {
+            display: flex;
+            overflow-x: scroll;
+            
+            &::-webkit-scrollbar {
+                height: 5px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #fff;
+                border-radius: 0 15px 15px 0;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #3423A6;
+                border-radius: 10px;
+            }
+        
+            .ping {
+                background: #E5E5E5;
+                border-radius: 11px;
+                padding: 3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin: 0.5rem;
+                width: 100px;
+                height: 50px;
+                cursor: pointer;
+                img {
+                    display: inline;
+                    height: 20px;
+                    width: 20px;
+                    object-fit: contain;
+                }
+                h2 {
+                    display: inline;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.6785rem;
+                    color: #636363;
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .active {
+                background: #E5E5E5;
+                border: 2px solid #3423A6;
+                border-radius: 11px;
+                padding: 3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin: 0.5rem;
+                width: 100px;
+                height: 50px;
+                cursor: pointer;
+                img {
+                    display: inline;
+                    height: 20px;
+                    width: 20px;
+                    object-fit: contain;
+                }
+                h2 {
+                    display: inline;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.6785rem;
+                    color: #636363;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        .settings {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1%;
+
+            button {
+                border: none;
+                background: none;
+                outline: none;
+                font-family: 'Open Sans',sans-serif;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 0.875rem;
+                color: #3423A6;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.8;
+                    transition: all .3s ease;
+                }  
+            }
+        }
+
+        .amount {
+            width: 100%;
+            margin-top: 5%;
+            label {
+                display: block;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 0.875rem;
+                color: #636363;
+            }
+
+            input {
+                margin-top: 2%;
+                 background: none;
+                 outline: none;
+                 padding: 3%;
+                 width: 100%;
+                 border: 2px solid #F2F2F2;
+                 border-radius: 15px;
+                 color: #636363;
+                 font-size: 0.875rem;
+                 font-family: 'Open Sans', sans-serif;
+                 &::placeholder {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.875rem;
+                    color: #CCCCCC;
+                 }
+
+                 &:focus {
+                     border: 2px solid #3423A6;
+                     color: #3423A6;
+                 }
+            }
+        }
+
+        .bottom {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            button {
+                width: 48%;
+                font-family: 'Open Sans', sans-serif;
+                padding: 4%;
+                border-radius: 20px;
+                font-size: 0.875rem;
+                outline: none;
+            }
+
+            .cancel {
+                border: 1px solid #F2F2F2;
+                &:hover {
+                    border: 1px solid #3423A6;
+                    color: #3423A6;
+                    transition: all .3s ease;
+                }
+            }
+
+            .log {
+                background: #3423A6;
+                color: #fff;
+                border: 1px solid #3423A6;
+                &:hover {
+                    background: none;
+                    color: #3423A6;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .fundAccount {
+        form {
+            padding: 3%;
+    
+            .ball {
+                font-size: 1.1rem;
+            }
+    
+            .error {
+                font-size: 0.6rem;
+            }
+    
+            h3 {
+                font-size: 1rem;
+            }
+    
+            p {
+                font-size: 0.6rem;
+                width: 100%;
+            }
+    
+            .No {
+            
+            
+                .ping {
+                    padding: 2%;
+                    width: 70px;
+                    height: 40px;
+                }
+    
+                .active {
+                    padding: 2%;
+                    width: 70px;
+                    height: 40px;
+                }
+            }
+            .settings {
+                margin-top: 2%;
+    
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+    
+            .amount {
+                width: 100%;
+                margin-top: 5%;
+                label {
+                    font-size: 0.6rem;
+                }
+    
+                input {
+                     font-size: 0.6rem;
+                     &::placeholder {
+                        font-size: 0.6rem;
+                     }
+                }
+            }
+    
+            .bottom {
+                margin-top: 5%;
+                button {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .fundAccount {
+        padding: 0;
+        form {
+            padding: 5%;
+            width: 90%;
+            .settings {
+                margin-top: 5%;
+    
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+    
+            .amount {
+                margin-top: 5%;
+    
+                input {
+                    margin-top: 5%;
+                     padding: 5%;
+                }
+            }
+    
+            .bottom {
+                margin-top: 5%;
+                button {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+

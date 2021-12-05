@@ -1,0 +1,1320 @@
+.profile {
+  background: #3423A6;
+  border-radius: 20px;
+  padding: 5%;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .hide {
+  display: none;
+}
+
+.profile .main {
+  width: 70%;
+}
+
+.profile .main .edit {
+  background: none;
+  outline: none;
+  border: none;
+  color: #C4C4C4;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.125rem;
+  margin-top: 2%;
+}
+
+.profile .main .edit:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-style: normal;
+}
+
+.profile .main h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin-bottom: 2%;
+}
+
+.profile .main .names {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+}
+
+.profile .main .names div {
+  margin-top: 2%;
+}
+
+.profile .main .names div h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+.profile .main .names div p {
+  width: 100%;
+  margin-top: 3%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+.profile .main .names .alt {
+  margin-left: 0;
+}
+
+.profile form {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile form div {
+  border-radius: 50%;
+  background: rgba(225, 225, 225, 0.1);
+  height: 250px;
+  width: 250px;
+  padding: 10%;
+  position: relative;
+}
+
+.profile form div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.profile form div label {
+  position: absolute;
+  background: #C4C4C4;
+  padding: 5%;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: #545454;
+  bottom: -7%;
+  right: 40%;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile form div label:hover {
+  background: #545454;
+  color: #C4C4C4;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.profile form input {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile .main {
+    width: 70%;
+  }
+  .profile .main .edit {
+    font-size: 1rem;
+  }
+  .profile .main h3 {
+    font-size: 1.1rem;
+  }
+  .profile .main .names div h4 {
+    font-size: 0.8rem;
+  }
+  .profile .main .names div p {
+    font-size: 0.8rem;
+  }
+  .profile form div {
+    height: 200px;
+    width: 200px;
+  }
+  .profile form div label {
+    font-size: 0.8rem;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile .main {
+    width: 100%;
+  }
+  .profile .main .edit {
+    margin-top: 5%;
+  }
+  .profile .main .names {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .profile form {
+    width: 100%;
+  }
+  .profile form div {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .profile .show {
+    display: none;
+  }
+  .profile .hide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profile .main {
+    margin-top: 5%;
+  }
+  .profile .main h3 {
+    text-align: center;
+  }
+  .profile .main .names {
+    -ms-grid-columns: 48% 48%;
+        grid-template-columns: 48% 48%;
+    grid-gap: 0rem;
+  }
+  .profile .main .names div {
+    margin-top: 5%;
+    overflow-wrap: break-word;
+  }
+  .profile .main .edit {
+    margin-left: 50%;
+    margin-right: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 80%;
+  }
+  .profile form {
+    margin-top: 5%;
+  }
+  .profile form div {
+    height: 100px;
+    width: 100px;
+  }
+  .profile form div label {
+    right: 5%;
+    bottom: 70%;
+  }
+}
+
+.address {
+  background: #FBFBFB;
+  border-radius: 20px;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+.address .con {
+  width: 80%;
+  overflow-wrap: break-word;
+}
+
+.address .con h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+}
+
+.address .con p {
+  color: #636363;
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.address .btncon {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address .btncon button {
+  font-size: 2rem;
+  border: none;
+  background: none;
+  outline: none;
+  color: #545454;
+  padding: 10%;
+  border-radius: 50%;
+  background: #F2F2F2;
+  cursor: pointer;
+}
+
+.address .btncon button:hover {
+  background: #545454;
+  color: #F2F2F2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .address .con h3 {
+    font-size: 1.1rem;
+  }
+  .address .con p {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
+  .address .btncon button {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .address {
+    margin-top: 5%;
+  }
+  .address .con h3 {
+    font-size: 1.1rem;
+  }
+  .address .con p {
+    font-size: 0.8rem;
+  }
+  .address .btncon button {
+    padding: 20%;
+    font-size: 1rem;
+  }
+}
+
+.addressform {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(229, 229, 229, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: scroll;
+}
+
+.addressform form {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 2%;
+  width: 40%;
+  position: relative;
+}
+
+.addressform form .cancel {
+  position: absolute;
+  border: none;
+  background: none;
+  outline: none;
+  right: 5%;
+  top: 5%;
+  font-size: 1rem;
+}
+
+.addressform form .cancel:hover {
+  opacity: 0.8;
+}
+
+.addressform form h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #636363;
+  text-align: center;
+}
+
+.addressform form .type {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addressform form .type .boxx {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.addressform form .type .boxx .icon {
+  color: #3423A6;
+  font-size: 0.875rem;
+}
+
+.addressform form .type .boxx h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.addressform form .type .active {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3423A6;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.addressform form .type .active .icon {
+  color: #3423A6;
+  font-size: 0.875rem;
+}
+
+.addressform form .type .active h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.addressform form .new {
+  margin-top: 5%;
+}
+
+.addressform form .new label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.addressform form .new textarea {
+  margin-top: 2%;
+  width: 100%;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  padding: 2%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  height: 150px;
+}
+
+.addressform form .new textarea:focus {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+}
+
+.addressform form .new .errors {
+  font-size: 0.6rem;
+  margin-top: 2%;
+  color: red;
+  width: 100%;
+  line-height: 1;
+}
+
+.addressform form .bottom {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.addressform form .bottom button {
+  width: 48%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 4%;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.addressform form .bottom .cancell {
+  border: 1px solid #F2F2F2;
+}
+
+.addressform form .bottom .cancell:hover {
+  border: 1px solid #3423A6;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.addressform form .bottom .save {
+  background: #3423A6;
+  color: #fff;
+  border: 1px solid #3423A6;
+}
+
+.addressform form .bottom .save:hover {
+  background: none;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .addressform form .cancel {
+    font-size: 0.8rem;
+  }
+  .addressform form h3 {
+    font-size: 0.9rem;
+  }
+  .addressform form .type .boxx {
+    width: 70px;
+    height: 70px;
+  }
+  .addressform form .type .boxx .icon {
+    font-size: 0.675rem;
+  }
+  .addressform form .type .boxx h4 {
+    font-size: 0.675rem;
+  }
+  .addressform form .type .active {
+    width: 70px;
+    height: 70px;
+  }
+  .addressform form .type .active .icon {
+    font-size: 0.675rem;
+  }
+  .addressform form .type .active h4 {
+    font-size: 0.675rem;
+  }
+  .addressform form .new label {
+    font-size: 0.675rem;
+  }
+  .addressform form .new textarea {
+    font-size: 0.675rem;
+  }
+  .addressform form .bottom button {
+    font-size: 0.675rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .addressform form {
+    width: 90%;
+    padding: 5%;
+  }
+  .addressform form .cancel {
+    font-size: 0.8rem;
+  }
+  .addressform form h3 {
+    font-size: 0.9rem;
+  }
+  .addressform form .type .boxx {
+    width: 50px;
+    height: 50px;
+  }
+  .addressform form .type .boxx .icon {
+    font-size: 0.675rem;
+  }
+  .addressform form .type .boxx h4 {
+    font-size: 0.675rem;
+  }
+  .addressform form .type .active {
+    width: 50px;
+    height: 50px;
+  }
+  .addressform form .type .active .icon {
+    font-size: 0.675rem;
+  }
+  .addressform form .type .active h4 {
+    font-size: 0.675rem;
+  }
+  .addressform form .new textarea {
+    font-size: 0.675rem;
+    height: 100px;
+  }
+}
+
+.paymentMethod {
+  background: #FBFBFB;
+  border-radius: 20px;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+.paymentMethod .payment {
+  width: 80%;
+}
+
+.paymentMethod .payment h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+}
+
+.paymentMethod .payment p {
+  line-height: 1;
+  width: 80%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #636363;
+}
+
+.paymentMethod .payment .cards {
+  margin-top: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  width: 60%;
+}
+
+.paymentMethod .payment .cards::-webkit-scrollbar {
+  width: 5px;
+}
+
+.paymentMethod .payment .cards::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 0 15px 15px 0;
+}
+
+.paymentMethod .payment .cards::-webkit-scrollbar-thumb {
+  background: #3423A6;
+  border-radius: 10px;
+}
+
+.paymentMethod .payment .cards .singleCard {
+  background: #E5E5E5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+.paymentMethod .payment .cards .singleCard div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paymentMethod .payment .cards .singleCard div img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.paymentMethod .payment .cards .singleCard div h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #636363;
+  margin-left: 5%;
+}
+
+.paymentMethod .payment .cards .singleCard .remove {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1rem;
+  color: #636363;
+}
+
+.paymentMethod .payment .cards .active {
+  background: #E5E5E5;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+  border: 2px solid #3423A6;
+}
+
+.paymentMethod .payment .cards .active div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paymentMethod .payment .cards .active div img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.paymentMethod .payment .cards .active div h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #636363;
+  margin-left: 5%;
+}
+
+.paymentMethod .payment .cards .active .remove {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1rem;
+  color: #636363;
+}
+
+.paymentMethod .add {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paymentMethod .add button {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 2rem;
+  color: #636363;
+}
+
+@media screen and (max-width: 1024px) {
+  .paymentMethod .payment h3 {
+    font-size: 1.1rem;
+  }
+  .paymentMethod .payment p {
+    font-size: 0.8rem;
+    margin-top: 2%;
+    width: 100%;
+    line-height: 2;
+  }
+  .paymentMethod .payment .cards {
+    margin-top: 3%;
+    width: 50%;
+  }
+  .paymentMethod .payment .cards .singleCard div img {
+    height: 30px;
+    width: 30px;
+  }
+  .paymentMethod .payment .cards .singleCard div h2 {
+    font-size: 0.8rem;
+  }
+  .paymentMethod .payment .cards .singleCard .remove {
+    font-size: 0.8rem;
+  }
+  .paymentMethod .payment .cards .active div img {
+    height: 30px;
+    width: 30px;
+  }
+  .paymentMethod .payment .cards .active div h2 {
+    font-size: 0.8rem;
+  }
+  .paymentMethod .payment .cards .active .remove {
+    font-size: 0.8rem;
+  }
+  .paymentMethod .add button {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paymentMethod {
+    margin-top: 5%;
+  }
+  .paymentMethod .payment .cards {
+    margin-top: 3%;
+    width: 100%;
+  }
+}
+
+.logout {
+  background: rgba(229, 229, 229, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logout .inner {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 2%;
+  width: 40%;
+}
+
+.logout .inner h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+  text-align: center;
+}
+
+.logout .inner p {
+  font-size: 1.125rem;
+  color: #636363;
+  text-align: center;
+  line-height: 2;
+}
+
+.logout .inner div {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.logout .inner div button {
+  width: 40%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 4%;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.logout .inner div .cancel {
+  border: 1px solid #F2F2F2;
+}
+
+.logout .inner div .cancel:hover {
+  border: 1px solid #3423A6;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.logout .inner div .log {
+  background: #3423A6;
+  color: #fff;
+  border: 1px solid #3423A6;
+}
+
+.logout .inner div .log:hover {
+  background: none;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .logout .inner {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 2%;
+  }
+  .logout .inner h3 {
+    font-size: 1.2rem;
+  }
+  .logout .inner p {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 3%;
+  }
+  .logout .inner div button {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logout .inner {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 5%;
+    width: 90%;
+  }
+  .logout .inner h3 {
+    font-size: 1.2rem;
+  }
+  .logout .inner p {
+    width: 100%;
+    margin-top: 3%;
+  }
+  .logout .inner div {
+    margin-top: 5%;
+  }
+  .logout .inner div button {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logout .inner p {
+    width: 100%;
+    margin-top: 3%;
+    font-size: 0.8rem;
+  }
+}
+
+.social {
+  background: #FBFBFB;
+  border-radius: 20px;
+  padding: 5%;
+  margin-top: 3%;
+}
+
+.social h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+}
+
+.social p {
+  line-height: 2;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #636363;
+}
+
+.social hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border: 0.5px solid #E5E5E5;
+}
+
+.social .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.social .con .gig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.social .con .gig div {
+  width: 60px;
+  height: 60px;
+  background: #E5E5E5;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social .con .gig div:hover {
+  border: 2px solid #3423A6;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.social .con .gig div .face, .social .con .gig div .gg {
+  color: #8678DF;
+  font-size: 1.5rem;
+}
+
+.social .con .gig h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  color: #636363;
+  margin-left: 2%;
+}
+
+.social .con .BtnCon {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.social .con .BtnCon button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  color: #3423A6;
+  cursor: pointer;
+}
+
+.social .con .BtnCon button:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .social h3 {
+    font-size: 1.1rem;
+  }
+  .social p {
+    margin-top: 2%;
+    font-size: 0.8rem;
+  }
+  .social .con .gig div {
+    width: 40px;
+    height: 40px;
+  }
+  .social .con .gig div .face, .social .con .gig div .gg {
+    color: #8678DF;
+    font-size: 1rem;
+  }
+  .social .con .gig h4 {
+    font-size: 1rem;
+  }
+  .social .con .btncon button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social {
+    margin-top: 5%;
+  }
+  .social hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .social .con {
+    margin-top: 5%;
+  }
+  .social .con .gig {
+    width: 50%;
+  }
+  .social .con .gig h4 {
+    font-size: 0.8rem;
+    margin-left: 5%;
+  }
+  .social .con .BtnCon {
+    width: 40%;
+  }
+  .social .con .BtnCon button {
+    font-size: 0.8rem;
+  }
+}
+
+.SetNotifications {
+  background: #FBFBFB;
+  border-radius: 20px;
+  padding: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.SetNotifications h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+}
+
+.SetNotifications p {
+  line-height: 2;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #636363;
+}
+
+.SetNotifications hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border: 0.5px solid #E5E5E5;
+}
+
+.SetNotifications .pow div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.SetNotifications .pow div h4 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+}
+
+.SetNotifications .pow div .check {
+  background: #cccccc;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
+}
+
+.SetNotifications .pow div .check span {
+  display: block;
+  background: #fff;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-left: 2px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.SetNotifications .pow div .active {
+  background: #3423A6;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
+}
+
+.SetNotifications .pow div .active span {
+  display: block;
+  background: #fff;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-left: 31px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 1024px) {
+  .SetNotifications h3 {
+    font-size: 1.1rem;
+  }
+  .SetNotifications p {
+    margin-top: 2%;
+    font-size: 0.8rem;
+  }
+  .SetNotifications hr {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 0.5px solid #E5E5E5;
+  }
+  .SetNotifications .pow div h4 {
+    font-size: 1rem;
+  }
+  .SetNotifications .pow div .check {
+    height: 20px;
+    width: 40px;
+  }
+  .SetNotifications .pow div .check span {
+    display: block;
+    background: #fff;
+    height: 16px;
+    width: 16px;
+  }
+  .SetNotifications .pow div .active {
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+  }
+  .SetNotifications .pow div .active span {
+    height: 16px;
+    width: 16px;
+    margin-left: 21px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .SetNotifications {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .SetNotifications hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .SetNotifications .pow div {
+    margin-top: 5%;
+  }
+  .SetNotifications .pow div h4 {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

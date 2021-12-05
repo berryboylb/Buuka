@@ -1,0 +1,191 @@
+.services {
+  margin-bottom: 5%;
+}
+
+.services .inner h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #636363;
+}
+
+.services .inner .tabs {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services .inner .tabs .tablist {
+  width: 48%;
+  background: #FBFBFB;
+  border-radius: 15px;
+  padding: 2%;
+  height: 100%;
+}
+
+.services .inner .tabs .tablist .tab {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #636363;
+  background: none;
+  padding: 2%;
+}
+
+.services .inner .tabs .tablist .tab:hover {
+  background-color: #ddd;
+  color: #3423A6;
+}
+
+.services .inner .tabs .tablist .active {
+  border-left: 3px solid #3423A6;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #636363;
+  background: none;
+  padding: 2%;
+  list-style: none;
+  background: #F6F6F8;
+}
+
+.services .inner .tabs .tabpanel {
+  background: #3423A6;
+  width: 48%;
+  background: #FBFBFB;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+.services .inner .tabs .tabpanel form .bruh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .inner .tabs .tabpanel form .bruh h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.375rem;
+  color: #636363;
+}
+
+.services .inner .tabs .tabpanel form .bruh div {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .inner .tabs .tabpanel form .bruh div label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.375rem;
+  color: #636363;
+}
+
+.services .inner .tabs .tabpanel form .bruh div input {
+  padding: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+  .services .inner h3 {
+    font-size: 1.5rem;
+  }
+  .services .inner .tabs .tablist .tab {
+    font-size: 1rem;
+  }
+  .services .inner .tabs .tabpanel form .bruh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2%;
+  }
+  .services .inner .tabs .tabpanel form .bruh h3 {
+    font-size: 1rem;
+  }
+  .services .inner .tabs .tabpanel form .bruh div {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services .inner .tabs .tabpanel form .bruh div label {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services .inner .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .inner .tabs .tablist {
+    width: 100%;
+    padding: 5%;
+  }
+  .services .inner .tabs .tablist .tab {
+    font-size: 1rem;
+  }
+  .services .inner .tabs .tabpanel {
+    width: 100%;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .services .inner .tabs .tabpanel form .bruh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .services .inner .tabs .tabpanel form .bruh h3 {
+    font-size: 1rem;
+  }
+  .services .inner .tabs .tabpanel form .bruh div {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services .inner .tabs .tabpanel form .bruh div label {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.module.css.map */

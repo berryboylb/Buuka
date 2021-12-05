@@ -7,11 +7,13 @@ import Numbers from '../Numbers/Numbers';
 import MobileApp from '../MobileApp/MobileApp';
 import Textimonies from '../Testimonies/Textimonies';
 import Footer from '../Footer/Footer';
+import Logout from '../Logout/Logout';
 
-const Home = () => {
+const Home = ({logout, togglelogout}) => {
+    
     return (
         <div>
-            <Navbar/>
+            <Navbar togglelogout={togglelogout}/>
             <Banner/>
             <Provider/>
             <Categories/>
@@ -19,6 +21,7 @@ const Home = () => {
             <MobileApp/>
             <Textimonies/>
             <Footer/>
+            {logout && <Logout togglelogout={togglelogout}/>}
         </div>
     )
 }

@@ -45,10 +45,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   margin-top: 2%;
 }
@@ -222,9 +221,6 @@
   .footer .inner .content .connin .main .socials a {
     font-size: 1.2rem;
     text-decoration: none;
-  }
-  .footer .inner .content .connin .main .socials a span {
-    font-size: 1rem;
   }
   .footer .inner .content .connin .links {
     width: 70%;

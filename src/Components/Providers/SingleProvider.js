@@ -1,73 +1,162 @@
-// import { useEffect } from "react";
-// import { useParams } from "react-router-dom"
-// import Styles from "./css/styles.module.css"
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar, faComments } from '@fortawesome/free-solid-svg-icons'
+import { faStar, faComments, faBookmark } from '@fortawesome/free-solid-svg-icons'
 import Filter from "../Filter/Filter";
+import Backbtn from '../backbtn/Backbtn';
+import Styles from "./css/styles.module.css"
+import Giftcard from "../Giftcard/Giftcard";
+import Services from "../Services/Services";
+import Reviews from "../Reviews/Reviews";
+import DynamicFooter from "../Footer/DynamicFooter";
+import OtherCustomers from "../OtherCustomers/OtherCustomers";
 
 const SingleProvider = () => {
-    // const {id} = useParams();
+    //get id number from url
+    const {id} = useParams();
+    //fetch from endpoint
+    useEffect(() => {
+        if(id){
+            fetch(`http://localhost:8000/providers/${id}`)
+            .then(res => {
+            return  res.json()
+            })
+            .then(data => {
+                //console.log(data);
+                setProvider(data)
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+        }else {
+            setProvider(null);
+            return null;
+        }
+        
+    }, [id])
+    //declaring varisbles
+    const [schedule, setSchedule] = useState(false);
+    const [provider, setProvider] = useState(null)
+    const handleSchedule = () => {
+        setSchedule(!schedule);
+    }
 
-    // useEffect(() => {
-    //     fetch(`http://localhost:8000/providers/${id}`)
-    //     .then(res => {
-    //       return  res.json()
-    //     })
-    //     .then(data => {
-    //         console.log(data);
-    //     })
-    //     .catch(error => {
-    //         console.log(error.message)
-    //     })
-    // })
+    //count function
+    const count = (value)  => {
+        let arr = [];
+       //console.log(typeof value)
+        for(let i = 0; i < value; i++) {
+            arr.push(i)
+            //console.log(i)
+        }
+        //console.log(arr)
+        return(arr)
+    }
+
+    //carousel responsive
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 1
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 1
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 680 },
+          items: 1
+        },
+        mobile: {
+          breakpoint: { max: 680, min: 464 },
+          items: 1
+        },
+        smallmobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+          }
+      };
 
     return (
-        <div >
+        <div className={Styles.SingleProvider}>
            <div className="my-container">
                <Filter/>
-
-           <div>
-               <div>
-                   <div><img src="./images/test1.png" alt="Provider" /></div>
-                   <div>
-                       <h3>Adara Beauty & Hairstyling Saloon</h3>
-                       <p>10b Ajike Faleye Street, Opposite Egbeda rd, Lagos, Nigeria.</p>
-                       <div>
-                           <div>
-                                <div> 
-                                    <FontAwesomeIcon  icon={faStar} />
-                                    <FontAwesomeIcon  icon={faStar} />
-                                    <FontAwesomeIcon  icon={faStar} />
-                                    <FontAwesomeIcon  icon={faStar} />
-                                    <p>4.8</p>
+                <Backbtn/>
+           <div className={Styles.inner}>
+               {provider && <div className={Styles.details}>
+                <div className={Styles.top}>
+                   <div className={Styles.images}>
+                    <Carousel
+                    className={Styles.carousel}
+                    responsive={responsive}
+                    swipeable={true}
+                    draggable={true}
+                    infinite={true}
+                    showDots={true}
+                    keyBoardControl={true}
+                    transitionDuration={500}
+                    arrows={true}
+                    >
+                        {provider.images.map((image) => (
+                            <div key={image}><button><FontAwesomeIcon  icon={faBookmark} /></button><img src={image} alt={image}  /></div>
+                        ))}
+                    </Carousel>
+                    </div>
+                   <div className={Styles.location}>
+                       <h3>{provider.name}</h3>
+                       <p>{provider.address}</p>
+                       <div className={Styles.miniloc}>
+                           <div className={Styles.box}>
+                                <div className={Styles.boxx}> 
+                                {count(provider.stars).map((number) => (
+                                     <div key={number}><FontAwesomeIcon key={number} className={Styles.icon} icon={faStar} /></div>
+                                ))}
+                                    <p>{provider.stars}</p>
                                 </div>
-                                <p>132 ratings</p>
+                                <h5>{provider.ratings} ratings</h5>
                            </div>
 
-                           <div>
-                               <a href="/">Book Now</a>
-                               <a href="/"><FontAwesomeIcon  icon={faComments} />Chat</a> 
+                           <div className={Styles.links}>
+                               <a href="/" className={Styles.book}>Book Now</a>
+                               <a href="/" className={Styles.chat}><FontAwesomeIcon  icon={faComments} /> Chat</a> 
                             </div>
                        </div>
-                       <h3>About Adara Beauty & Hairstyling Saloon</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi enim tempus nisi suspendisse urna feugiat. Amet ornare leo purus felis. Quam ullamcorper sagittis urna, massa ultrices nullam consectetur massa enim. Elit orci consequat a ut erat. Enim aliquam feugiat fames odio. Gravida sem id auctor amet donec cras vel faucibus odio. Pulvinar tristique at sed arcu, a, ut ullamcorper pulvinar eu. Platea vestibulum vulputate amet, tristique aliquam integer laoreet amet, nec. Nunc, mus egestas eget consectetur urna. Vulputate venenatis euismod nisl malesuada sit turpis ullamcorper pellentesque.Commodo suspendisse tellus enim purus a aliquet non rhoncus. Viverra et sed varius nulla velit gravida mollis. </p>
+                    </div>
+                   </div>
+
+                <div className={Styles.remainder}>
+                    <h3>About {provider.name}</h3>
+                       <p className={Styles.p}>{provider.about}</p>
                        <hr />
-                       <div>
-                           <div>
+                       <div className={Styles.extras}>
+                           <div className={Styles.location}>
                                <h3>Location</h3>
-                               <p>10b Ajike Faleye Street, Opposite Egbeda rd, Lagos, Nigeria.</p>
+                               <p>{provider.address}</p>
                                <a href="/">Get directions</a>
                            </div>
-                           <div>
+                           <div className={Styles.open}>
                                <h3>Opening Hours</h3>
                                <p>Open now 7:30am - 6:00pm</p>
-                               <a href="/">see more schedules</a>
+                               {schedule && <div className ={Styles.fullsch}>
+                                   {provider.schdule.map((schedule)=> (
+                                        <div><h4>{schedule.day}</h4> <p>{schedule.time}</p></div>
+                                   ))}
+                               </div>}
+                               <button onClick={handleSchedule}>{schedule ? "see less schedules" : "see more schedules"}</button>
                            </div>
                        </div>
-                   </div>
-               </div>
+                    </div>
+               </div>}
            </div>
            </div>
+           <Giftcard/>
+           <Services/>
+           <Reviews/>
+           <OtherCustomers provider={provider}/>
+          <DynamicFooter/>
         </div>
     )
 }

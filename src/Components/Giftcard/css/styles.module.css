@@ -1,0 +1,502 @@
+.giftcard {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.giftcard .inner h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #636363;
+}
+
+.giftcard .inner .carousel {
+  margin-top: 2%;
+}
+
+.giftcard .inner .carousel a {
+  text-decoration: none;
+}
+
+.giftcard .inner .carousel a .single {
+  width: 100%;
+  padding: 10%;
+  background-image: url("../Subtract.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.giftcard .inner .carousel a .single h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.375rem;
+  color: #636363;
+}
+
+.giftcard .inner .carousel a .single h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-top: 2%;
+  color: #636363;
+}
+
+.giftcard .inner .carousel a .single hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: rgba(181, 181, 181, 0.4);
+  background: rgba(181, 181, 181, 0.4);
+}
+
+.giftcard .inner .carousel a .single p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #3423A6;
+}
+
+.giftcard .inner a {
+  display: block;
+  margin-top: 2%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  color: #3423A6;
+  text-decoration: none;
+}
+
+.giftcard .inner a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .giftcard {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .giftcard .inner h3 {
+    font-size: 1.5rem;
+  }
+  .giftcard .inner .carousel a .single {
+    width: 100%;
+    padding: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .giftcard .inner .carousel a .single h5 {
+    font-size: 1rem;
+  }
+  .giftcard .inner .carousel a .single h6 {
+    font-size: 0.8rem;
+  }
+  .giftcard .inner .carousel a .single p {
+    font-size: 1.5rem;
+  }
+  .giftcard .inner a {
+    font-size: 0.8rem;
+  }
+}
+
+.AllGiftCards .inner {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.AllGiftCards .inner .gifty h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #636363;
+}
+
+.AllGiftCards .inner .gifty .grid {
+  margin-top: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+}
+
+.AllGiftCards .inner .gifty .grid a {
+  text-decoration: none;
+  background-image: url("../Subtract.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.AllGiftCards .inner .gifty .grid a .single {
+  padding: 5%;
+}
+
+.AllGiftCards .inner .gifty .grid a .single h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  color: #636363;
+  margin-left: 5%;
+}
+
+.AllGiftCards .inner .gifty .grid a .single h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-top: 2%;
+  color: #636363;
+  margin-left: 5%;
+}
+
+.AllGiftCards .inner .gifty .grid a .single hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: rgba(181, 181, 181, 0.4);
+  background: rgba(181, 181, 181, 0.4);
+  width: 90%;
+  margin-left: 5%;
+}
+
+.AllGiftCards .inner .gifty .grid a .single p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #3423A6;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .AllGiftCards .inner {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .AllGiftCards .inner .gifty h3 {
+    font-size: 1.5rem;
+  }
+  .AllGiftCards .inner .gifty .grid {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 2rem;
+  }
+  .AllGiftCards .inner .gifty .grid a {
+    text-decoration: none;
+    background-image: url("../Subtract.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .AllGiftCards .inner .gifty .grid a .single {
+    padding: 5%;
+  }
+  .AllGiftCards .inner .gifty .grid a .single h5 {
+    font-size: 1rem;
+  }
+  .AllGiftCards .inner .gifty .grid a .single h6 {
+    font-size: 0.8rem;
+  }
+  .AllGiftCards .inner .gifty .grid a .single p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .AllGiftCards .inner .gifty h3 {
+    text-align: center;
+  }
+  .AllGiftCards .inner .gifty .grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 1rem;
+    margin-top: 5%;
+  }
+}
+
+.SingleGiftcard .inner {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.SingleGiftcard .inner .confirm {
+  width: 100%;
+  background: #3423A6;
+  color: #fff;
+  margin-top: 5%;
+  border: none;
+  padding: 2%;
+  border-radius: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+}
+
+.SingleGiftcard .inner h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #636363;
+}
+
+.SingleGiftcard .inner .single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+}
+
+.SingleGiftcard .inner .single .card {
+  width: 60%;
+  background-image: url("../Subtract.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.SingleGiftcard .inner .single .card .amount {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SingleGiftcard .inner .single .card .amount button {
+  height: 30px;
+  width: 30px;
+  margin: 0.5rem;
+  outline: none;
+  text-align: center;
+  color: #636363;
+  font-size: 1rem;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.SingleGiftcard .inner .single .card .amount input {
+  height: 30px;
+  width: 50px;
+  background: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  color: #636363;
+  font-size: 1rem;
+}
+
+.SingleGiftcard .inner .single .card h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.4rem;
+  color: #636363;
+  margin-top: 0%;
+}
+
+.SingleGiftcard .inner .single .card h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.75rem;
+  margin-top: 2%;
+  color: #636363;
+}
+
+.SingleGiftcard .inner .single .card hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: rgba(181, 181, 181, 0.4);
+  background: rgba(181, 181, 181, 0.4);
+}
+
+.SingleGiftcard .inner .single .card p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.8rem;
+  color: #3423A6;
+}
+
+.SingleGiftcard .inner .single .matrix {
+  width: 30%;
+}
+
+.SingleGiftcard .inner .single .matrix h6 {
+  margin-top: 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.SingleGiftcard .inner .single .matrix p {
+  margin-top: 7%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.SingleGiftcard .inner .single .matrix .blue {
+  background: #3423A6;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.SingleGiftcard .inner .single .matrix .blue div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SingleGiftcard .inner .single .matrix .blue div h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+.SingleGiftcard .inner .single .matrix .blue div h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.SingleGiftcard .inner .single .matrix .blue hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.SingleGiftcard .inner .single .matrix .blue .space {
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+  .SingleGiftcard .inner .confirm {
+    font-size: 1rem;
+  }
+  .SingleGiftcard .inner h3 {
+    font-size: 1.5rem;
+  }
+  .SingleGiftcard .inner .single .card {
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+  }
+  .SingleGiftcard .inner .single .card .amount {
+    bottom: 10%;
+    right: 5%;
+  }
+  .SingleGiftcard .inner .single .card .amount input {
+    font-size: 0.8rem;
+  }
+  .SingleGiftcard .inner .single .card h5 {
+    font-size: 2rem;
+  }
+  .SingleGiftcard .inner .single .card h6 {
+    font-size: 1rem;
+  }
+  .SingleGiftcard .inner .single .card p {
+    font-size: 3.2rem;
+    width: 100%;
+  }
+  .SingleGiftcard .inner .single .matrix {
+    width: 35%;
+  }
+  .SingleGiftcard .inner .single .matrix h6 {
+    font-size: 0.6rem;
+    color: #636363;
+  }
+  .SingleGiftcard .inner .single .matrix p {
+    margin-top: 7%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6rem;
+    color: #636363;
+    width: 100%;
+  }
+  .SingleGiftcard .inner .single .matrix .blue {
+    background: #3423A6;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5%;
+  }
+  .SingleGiftcard .inner .single .matrix .blue div h5 {
+    font-size: 0.6rem;
+  }
+  .SingleGiftcard .inner .single .matrix .blue div h4 {
+    font-size: 0.6rem;
+  }
+  .SingleGiftcard .inner .single .matrix .blue .space {
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .SingleGiftcard .inner .confirm {
+    padding: 5%;
+  }
+  .SingleGiftcard .inner h3 {
+    text-align: center;
+  }
+  .SingleGiftcard .inner .single {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5%;
+  }
+  .SingleGiftcard .inner .single .card {
+    width: 100%;
+    padding: 2%;
+  }
+  .SingleGiftcard .inner .single .card .amount {
+    bottom: 5%;
+    right: 5%;
+  }
+  .SingleGiftcard .inner .single .card .amount button {
+    width: 20px;
+    height: 20px;
+  }
+  .SingleGiftcard .inner .single .card .amount input {
+    font-size: 0.6rem;
+    width: 30px;
+    height: 20px;
+  }
+  .SingleGiftcard .inner .single .card hr {
+    margin-left: 5%;
+    width: 90%;
+  }
+  .SingleGiftcard .inner .single .card h5 {
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+  .SingleGiftcard .inner .single .card h6 {
+    font-size: 0.8rem;
+    margin-left: 5%;
+  }
+  .SingleGiftcard .inner .single .card p {
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 5%;
+  }
+  .SingleGiftcard .inner .single .matrix {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */
