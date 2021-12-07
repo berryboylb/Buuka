@@ -151,8 +151,9 @@ const SingleProvider = () => {
                     </div>
                </div>}
            </div>
-           </div>
            <Giftcard/>
+           </div>
+          
            <Services/>
            <Reviews/>
            <OtherCustomers provider={provider}/>

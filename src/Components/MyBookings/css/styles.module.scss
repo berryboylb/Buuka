@@ -46,6 +46,8 @@
                     }
                 }
 
+               
+
                 .trigger {
                     button {
                         background: none;
@@ -104,6 +106,12 @@
                     margin-left: 2%;
                     margin-right: 2%;
                 }
+            }
+            .none {
+                button {
+                    display: none;
+                }
+               
             }
 
             .triggerBox {

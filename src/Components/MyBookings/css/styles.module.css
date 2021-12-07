@@ -123,6 +123,10 @@
   margin-right: 2%;
 }
 
+.pending .grid .pend .none button {
+  display: none;
+}
+
 .pending .grid .pend .triggerBox {
   position: absolute;
   background: #fff;
