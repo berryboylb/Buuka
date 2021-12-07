@@ -1301,7 +1301,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 540px) {
   .SetNotifications {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -1315,6 +1315,344 @@
   }
   .SetNotifications .pow div h4 {
     font-size: 0.8rem;
+  }
+}
+
+.basicInfo {
+  background: rgba(229, 229, 229, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basicInfo form {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 2%;
+  width: 40%;
+  position: relative;
+}
+
+.basicInfo form .fit {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.basicInfo form .fit:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.basicInfo form h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+  text-align: center;
+}
+
+.basicInfo form .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3%;
+}
+
+.basicInfo form .check div {
+  width: 48%;
+}
+
+.basicInfo form .check div label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.basicInfo form .check div input {
+  margin-top: 5%;
+  background: none;
+  outline: none;
+  padding: 5%;
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  color: #636363;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.basicInfo form .check div input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .check div input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .check div input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .check div input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .check div input:focus {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+}
+
+.basicInfo form .email {
+  margin-top: 3%;
+}
+
+.basicInfo form .email label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.basicInfo form .email input {
+  margin-top: 3%;
+  background: none;
+  outline: none;
+  padding: 3%;
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  color: #636363;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.basicInfo form .email input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .email input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .email input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .email input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .email input:focus {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+}
+
+.basicInfo form .genTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3%;
+}
+
+.basicInfo form .genTime div {
+  width: 48%;
+}
+
+.basicInfo form .genTime div label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.basicInfo form .genTime div input {
+  margin-top: 5%;
+  background: none;
+  outline: none;
+  padding: 5%;
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  color: #636363;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.basicInfo form .genTime div input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .genTime div input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .genTime div input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .genTime div input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #CCCCCC;
+}
+
+.basicInfo form .genTime div input:focus {
+  border: 2px solid #3423A6;
+  color: #3423A6;
+}
+
+.basicInfo form .genTime div select {
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  color: #636363;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5%;
+  padding: 5%;
+  background: none;
+  outline: none;
+}
+
+.basicInfo form .pop {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.basicInfo form .pop button {
+  width: 48%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 4%;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.basicInfo form .pop .cancel {
+  border: 1px solid #F2F2F2;
+}
+
+.basicInfo form .pop .cancel:hover {
+  border: 1px solid #3423A6;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.basicInfo form .pop .log {
+  background: #3423A6;
+  color: #fff;
+  border: 1px solid #3423A6;
+}
+
+.basicInfo form .pop .log:hover {
+  background: none;
+  color: #3423A6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .basicInfo form .fit {
+    font-size: 1rem;
+  }
+  .basicInfo form h3 {
+    font-size: 1.1rem;
+  }
+  .basicInfo form label {
+    font-size: 0.675rem;
+  }
+  .basicInfo form input {
+    font-size: 0.675rem;
+  }
+  .basicInfo form input::-webkit-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .basicInfo form input:-ms-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .basicInfo form input::-ms-input-placeholder {
+    font-size: 0.675rem;
+  }
+  .basicInfo form input::placeholder {
+    font-size: 0.675rem;
+  }
+  .basicInfo form select {
+    font-size: 0.675rem;
+  }
+  .basicInfo form .pop button {
+    font-size: 0.675rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .basicInfo .fit {
+    right: 2%;
+    top: 2%;
+  }
+  .basicInfo form {
+    width: 90%;
+    padding: 5%;
   }
 }
 /*# sourceMappingURL=styles.module.css.map */

@@ -6,9 +6,10 @@ import AddressForm from "./AddressForm";
 import PaymentMethod from "./PaymentMethod";
 import AddCardForm from "../Wallet/AddCardForm"
 import Profile from "./Profile";
-import RemoveCard from "./RemoveCard";
+
 import SocialLogin from "./SocialLogin";
 import SetNotifications from "./SetNotifications";
+import BasicInformationForm from "./BasicInformationForm";
 
 const Settings = ({togglelogout, logout}) => {
     const [addressForm, setAddressForm] = useState(false);
@@ -27,7 +28,8 @@ const Settings = ({togglelogout, logout}) => {
              <PaymentMethod handleCardForm={handleCardForm}/>
              <SocialLogin/>
              <SetNotifications/>
-             {/* <RemoveCard/> */}
+             {/* <BasicInformationForm/> */}
+            
             {addCard && <AddCardForm handleCardForm = {handleCardForm}/>}
              {addressForm && <AddressForm handleAddressForm={handleAddressForm}/>}
              {logout && <Logout togglelogout={togglelogout}/>}

@@ -1,7 +1,6 @@
 import Miscellenous from "../miscellenous/Miscellenous"
 import Logout from '../Logout/Logout';
 import Pending from "./Pending";
-import Test from "./Test"
 import Completed from "./Completed";
 import Cancelled from "./Cancelled";
 
@@ -14,7 +13,6 @@ const MyBookings = ({togglelogout, logout}) => {
                 <Pending/>
                 <Completed/>
                 <Cancelled/>
-                <Test/>
                 {logout && <Logout togglelogout={togglelogout}/>}
             </div>
         </div>

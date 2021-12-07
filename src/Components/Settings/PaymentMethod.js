@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import RemoveCard from "./RemoveCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faTimes} from '@fortawesome/free-solid-svg-icons'
 import Styles from "./css/styles.module.css"
@@ -7,6 +8,9 @@ const PaymentMethod = ({handleCardForm}) => {
         activeObject: null,
         objects: null,
     });
+
+    const [deleted, setDeleted] = useState(null);
+    const [popup, setPopup] = useState(false)
 
     useEffect(()=> {
         let isMounted = true;
@@ -28,6 +32,9 @@ const PaymentMethod = ({handleCardForm}) => {
 
     const handleActive = (index) =>{
         setCards({...cards, activeObject: cards.objects[index]});
+        setDeleted(cards.activeObject);
+        //setPopup(!popup);
+        console.log(deleted)
     }
 
     const toggleClass = (index) => {
@@ -95,6 +102,7 @@ const PaymentMethod = ({handleCardForm}) => {
             <div className={Styles.add}>
                 <button onClick={handleCardForm}  type='button'><FontAwesomeIcon  icon={faPlus} /></button>
             </div>
+             {popup && <RemoveCard deleted = {deleted} />}
         </div>
     )
 }
