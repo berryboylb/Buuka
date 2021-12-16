@@ -1,0 +1,167 @@
+.more {
+  margin-top: 7%;
+}
+
+.newnotifications {
+  margin-top: 5%;
+}
+
+.newnotifications h4 {
+  font-family: Open Sans, sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.newnotifications .notCon {
+  margin-top: 2%;
+  padding: 1%;
+}
+
+.newnotifications .notCon:hover {
+  background: #636363;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.newnotifications .notCon:hover hr {
+  border: 0.5px solid #fff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.newnotifications .notCon:hover h3, .newnotifications .notCon:hover p, .newnotifications .notCon:hover span {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.newnotifications .notCon hr {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 0.5px solid #E5E5E5;
+}
+
+.newnotifications .notCon h3 {
+  width: 100%;
+  font-family: Open Sans, sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.newnotifications .notCon p {
+  width: 100%;
+  font-family: Open Sans, sans-serif;
+  font-size: 0.75rem;
+  color: #C4C4C4;
+}
+
+.newnotifications .notCon span {
+  font-family: Open Sans, sans-serif;
+  font-style: italic;
+  font-size: 0.875rem;
+  text-align: right;
+  color: #636363;
+}
+
+.newnotifications .notCon .notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+}
+
+.newnotifications .notCon .notification .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.newnotifications .notCon .notification .content .imgCon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.newnotifications .notCon .notification .content .imgCon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.newnotifications .notCon .notification .content .nameInfo {
+  margin-left: 2%;
+}
+
+.newnotifications .notCon .notification .time {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .newnotifications h4 {
+    font-size: 0.675rem;
+  }
+  .newnotifications .notCon h3 {
+    font-size: 0.675rem;
+  }
+  .newnotifications .notCon p {
+    font-size: 0.55rem;
+    line-height: 2;
+  }
+  .newnotifications .notCon span {
+    font-size: 0.675rem;
+  }
+  .newnotifications .notCon .notification .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newnotifications .notCon .notification .content .imgCon {
+    width: 30px;
+    height: 30px;
+  }
+  .newnotifications .notCon .notification .content .nameInfo {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .newnotifications .notCon {
+    margin-top: 5%;
+    padding: 2%;
+  }
+  .newnotifications .notCon hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .newnotifications .notCon .notification .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newnotifications .notCon .notification .content .imgCon {
+    border-radius: 0;
+  }
+  .newnotifications .notCon .notification .content .nameInfo {
+    margin-left: 5%;
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

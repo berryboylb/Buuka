@@ -3,14 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown} from '@fortawesome/free-solid-svg-icons'
 import Styles from "./css/styles.module.css"
 const Pending = () => {
-    const [trigger, setTrigger] = useState(false);
     const [tasks, setTasks] = useState({
         activeObject: null,
         objects: null,
     });
-    const toggleTrigger = () => {
-        setTrigger(!trigger);
-    }
+
     const handleActive = (index) =>{
         setTasks({...tasks, activeObject: tasks.objects[index]});
     }
@@ -31,7 +28,7 @@ const Pending = () => {
             console.log(error.message)
         })
         return () => { isMounted = false };
-    }, []);
+    }, [tasks]);
 
     const toggleClass = (index) => {
         if(tasks.objects[index] === tasks.activeObject){

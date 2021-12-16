@@ -1348,6 +1348,13 @@
   position: relative;
 }
 
+.basicInfo form .error {
+  font-size: 0.6rem;
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
 .basicInfo form .fit {
   font-size: 1.5rem;
   position: absolute;

@@ -1,0 +1,181 @@
+.notifications {
+
+}
+
+.more {
+    margin-top: 7%;
+}
+
+
+
+    
+.newnotifications {
+        margin-top: 5%;
+        h4 {
+            font-family: Open Sans, sans-serif;
+            font-size: 0.875rem;
+            color: #636363;
+        }
+        .notCon {
+            margin-top: 2%;
+            padding: 1%;
+            &:hover {
+                background: #636363;
+                transition: all 0.3s ease-in;
+            }
+            &:hover hr {
+                border: 0.5px solid #fff;
+                transition: all 0.3s ease-in;
+            }
+            &:hover h3, &:hover p, &:hover span {
+                color: #fff;
+                transition: all 0.3s ease-in;
+            }
+
+            hr {
+                margin-top: 2%;
+                margin-bottom: 2%;
+                border: 0.5px solid #E5E5E5;
+            }
+
+            h3 {
+                width: 100%;
+                font-family: Open Sans, sans-serif;
+                font-size: 0.875rem;
+                color: #636363;
+            }
+
+            p {
+                width: 100%;
+                font-family: Open Sans, sans-serif;
+                font-size: 0.75rem;
+                color: #C4C4C4;
+            }
+
+            span {
+                font-family: Open Sans, sans-serif;
+                font-style: italic;
+                font-size: 0.875rem;
+                text-align: right;
+                color: #636363;
+            }
+    
+           
+        
+            .notification {
+               
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+
+                
+        
+                .content {
+                    display: flex;
+                    align-items: center;
+                    width: 80%;
+        
+                    .imgCon {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+        
+                    .nameInfo {
+                        margin-left: 2%;
+                        
+                    }
+                }
+        
+                .time {
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-end;
+                   
+                }
+        
+               
+            }
+        } 
+}    
+
+
+@media screen and (max-width:1024px) {
+    .newnotifications {
+        h4 {
+            font-size: 0.675rem;
+        }
+        .notCon {
+
+            h3 {
+                font-size: 0.675rem;
+            }
+
+            p {
+                font-size: 0.55rem;
+                line-height: 2;
+            }
+
+            span {
+                font-size: 0.675rem;
+            }
+    
+           
+        
+            .notification {
+                .content {
+                    align-items: center;
+        
+                    .imgCon {
+                        width: 30px;
+                        height: 30px;
+                    }
+        
+                    .nameInfo {
+                        margin-left: 2%;
+                        
+                    }
+                }
+    
+            }
+        } 
+    }    
+}
+
+@media screen and (max-width:540px) {
+    .newnotifications {
+        .notCon {
+           margin-top: 5%;
+           padding: 2%;
+
+           hr {
+            margin-top: 5%;
+            margin-bottom: 5%;
+           }
+            .notification {
+                .content {
+                    align-items: center;
+        
+                    .imgCon {
+                        border-radius: 0;
+                    }
+                    
+        
+                    .nameInfo {
+                        margin-left: 5%;
+                        width: 70%;
+                        
+                    }
+                }
+    
+            }
+        } 
+    }    
+}

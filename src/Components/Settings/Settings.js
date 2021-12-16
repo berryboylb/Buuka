@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Logout from "../Logout/Logout";
 import Miscellenous from "../miscellenous/Miscellenous";
 import Address from "./Address";
 import AddressForm from "./AddressForm";
@@ -11,11 +10,14 @@ import SocialLogin from "./SocialLogin";
 import SetNotifications from "./SetNotifications";
 import BasicInformationForm from "./BasicInformationForm";
 
-const Settings = ({togglelogout, logout}) => {
+const Settings = ({togglelogout}) => {
     const [addressForm, setAddressForm] = useState(false);
     const [addCard, setAddCard] = useState(false);
+    const [basicInformation, setBasicInformation] = useState(false);
+
     const handleCardForm = () => setAddCard(!addCard);
     const handleAddressForm = () => setAddressForm(!addressForm);
+    const handleBasicInformation = () => setBasicInformation(!basicInformation)
     
     const name = "Settings";
     const address = "10b Ajike Faleye Street, Opposite Egbeda rd, Lagos, Nigeria.";
@@ -23,16 +25,14 @@ const Settings = ({togglelogout, logout}) => {
     return (
         <div className="my-container">
              <Miscellenous togglelogout={togglelogout} name={name}/>
-             <Profile/>
+             <Profile handleBasicInformation={handleBasicInformation}/>
              <Address address={address} handleAddressForm={handleAddressForm}/>
              <PaymentMethod handleCardForm={handleCardForm}/>
              <SocialLogin/>
              <SetNotifications/>
-             {/* <BasicInformationForm/> */}
-            
-            {addCard && <AddCardForm handleCardForm = {handleCardForm}/>}
+             {addCard && <AddCardForm handleCardForm = {handleCardForm}/>}
+             {basicInformation && <BasicInformationForm handleBasicInformation={handleBasicInformation}/>}
              {addressForm && <AddressForm handleAddressForm={handleAddressForm}/>}
-             {logout && <Logout togglelogout={togglelogout}/>}
         </div>
     )
 }

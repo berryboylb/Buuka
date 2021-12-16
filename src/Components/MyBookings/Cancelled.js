@@ -2,12 +2,12 @@ import React,{ useState, useEffect} from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown} from '@fortawesome/free-solid-svg-icons'
 import Styles from "./css/styles.module.css"
-const Cancelled = () => {
-    const [trigger, setTrigger] = useState(false);
+const Pending = () => {
     const [tasks, setTasks] = useState({
         activeObject: null,
         objects: null,
     });
+    
     const handleActive = (index) =>{
         setTasks({...tasks, activeObject: tasks.objects[index]});
     }
@@ -28,7 +28,7 @@ const Cancelled = () => {
             console.log(error.message)
         })
         return () => { isMounted = false };
-    }, []);
+    }, [tasks]);
 
     const toggleClass = (index) => {
         if(tasks.objects[index] === tasks.activeObject){
@@ -82,4 +82,4 @@ const Cancelled = () => {
     )
 }
 
-export default Cancelled
+export default Pending

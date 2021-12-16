@@ -1,0 +1,200 @@
+.Sidebar {
+  background: #3423A6;
+  max-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 20vw;
+}
+
+.Sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Sidebar::-webkit-scrollbar-track {
+  background: none;
+}
+
+.Sidebar::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.Sidebar::-webkit-scrollbar-thumb:hover {
+  background: #3b5bfe;
+}
+
+.Sidebar .logo {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Sidebar .logo a {
+  width: 80%;
+  height: 70px;
+  text-decoration: none;
+}
+
+.Sidebar .logo a img {
+  width: 60%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.Sidebar ul {
+  margin-bottom: 10%;
+}
+
+.Sidebar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+  margin-top: 5%;
+}
+
+.Sidebar ul li:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(12.63%, #221386), color-stop(94.62%, rgba(34, 19, 134, 0)));
+  background: linear-gradient(90deg, #221386 12.63%, rgba(34, 19, 134, 0) 94.62%);
+  position: relative;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.Sidebar ul li:hover::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 5px solid #fff;
+  content: '';
+}
+
+.Sidebar ul li a {
+  width: 90%;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Sidebar ul li a .con {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.Sidebar ul .active {
+  background: -webkit-gradient(linear, left top, right top, color-stop(12.63%, #221386), color-stop(94.62%, rgba(34, 19, 134, 0)));
+  background: linear-gradient(90deg, #221386 12.63%, rgba(34, 19, 134, 0) 94.62%);
+  position: relative;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.Sidebar ul .active::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 5px solid #fff;
+  content: '';
+}
+
+.Sidebar ul hr {
+  width: 80%;
+  border: 0.5px solid #4434B4;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 50%;
+  margin-right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.Sidebar ul button {
+  width: 80%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 5%;
+  margin-left: 50%;
+  margin-right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+}
+
+.Sidebar ul button .con {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.Sidebar ul button:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(12.63%, #221386), color-stop(94.62%, rgba(34, 19, 134, 0)));
+  background: linear-gradient(90deg, #221386 12.63%, rgba(34, 19, 134, 0) 94.62%);
+  position: relative;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  width: 100%;
+}
+
+.Sidebar ul button:hover::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 5px solid #fff;
+  content: '';
+}
+
+@media screen and (max-width: 1024px) {
+  .Sidebar .logo a {
+    width: 80%;
+    height: 50px;
+    text-decoration: none;
+  }
+  .Sidebar .logo a img {
+    width: 60%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .Sidebar ul li a {
+    font-size: 0.7rem;
+  }
+  .Sidebar ul li a .con {
+    font-size: 1rem;
+  }
+  .Sidebar ul button {
+    font-size: 0.7rem;
+  }
+  .Sidebar ul button .con {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

@@ -461,11 +461,199 @@
     },
     {
       "name": "Daramola OLorunfemi Winner",
-      "cardNo": "5412751234123459",
-      "expiryDate": "12/23",
-      "cvc": "891",
+      "cardNo": "4000123456784266",
+      "expiryDate": "03/23",
+      "cvc": "699",
       "cardtype": "MasterCard",
       "id": 2
+    },
+    {
+      "name": "Olorunfemi Daramola",
+      "cardNo": "5234567812349011",
+      "expiryDate": "01/22",
+      "cvc": "669",
+      "cardtype": "MasterCard",
+      "id": 3
+    },
+    {
+      "name": "Olorunfemi Daramola",
+      "cardNo": "5234567812349011",
+      "expiryDate": "01/22",
+      "cvc": "669",
+      "cardtype": "MasterCard",
+      "id": 4
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "title": "Mary from Adara Beauty",
+      "message": "Hi there, please can I get to...",
+      "img_src": "/Images/test2.png",
+      "time": "2021-12-08T16:07:45"
+    },
+    {
+      "id": 2,
+      "title": "Adara Beauty accepted your special order",
+      "message": "No extra message attached...",
+      "img_src": "/Images/test2.png",
+      "time": "2021-12-08T16:07:45"
+    },
+    {
+      "id": 3,
+      "title": "There is a new trending hairstyle in town, will you like to check it out?",
+      "message": "This hairstyle makes you a prince charming, comes in different...",
+      "img_src": "/Images/test2.png",
+      "time": "2021-12-08T16:07:45"
+    },
+    {
+      "id": 4,
+      "title": "Giftcard purchase successful",
+      "message": "Hello dear user, your giftcard purchase was successful. You can start Booking usi...",
+      "img_src": "/Images/test2.png",
+      "time": "2021-12-08T16:07:45"
+    },
+    {
+      "id": 5,
+      "title": "Wallet funding successful",
+      "message": "Your wallet funding of NGN20,000 was successfully updated. You can use it for...",
+      "img_src": "/Images/test2.png",
+      "time": "2021-12-08T16:07:45"
+    },
+    {
+      "id": 6,
+      "title": "Mary from Adara Beauty",
+      "message": "Hi there, please can I get to...",
+      "img_src": "/Images/test2.png",
+      "time": "2021-12-08T16:07:45"
+    }
+  ],
+  "allChatUsers": [
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "id": 1,
+      "name": "Tim Hover",
+      "active": true,
+      "isOnline": true
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "id": 2,
+      "name": "Ayub Rossi",
+      "active": false,
+      "isOnline": false
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQEZrATmgHOi5ls0YCCQBTkocia_atSw0X-Q&usqp=CAU",
+      "id": 3,
+      "name": "Hamaad Dejesus",
+      "active": false,
+      "isOnline": false
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ6tM7Nj72bWjr_8IQ37Apr2lJup_pxX_uZA&usqp=CAU",
+      "id": 4,
+      "name": "Eleni Hobbs",
+      "active": false,
+      "isOnline": true
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
+      "id": 5,
+      "name": "Elsa Black",
+      "active": false,
+      "isOnline": false
+    },
+    {
+      "image": "https://huber.ghostpool.com/wp-content/uploads/avatars/3/596dfc2058143-bpfull.png",
+      "id": 6,
+      "name": "Kayley Mellor",
+      "active": false,
+      "isOnline": true
+    },
+    {
+      "image": "https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png",
+      "id": 7,
+      "name": "Hasan Mcculloch",
+      "active": false,
+      "isOnline": true
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "id": 8,
+      "name": "Autumn Mckee",
+      "active": false,
+      "isOnline": false
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSM6p4C6imkewkCDW-9QrpV-MMAhOC7GnJcIQ&usqp=CAU",
+      "id": 9,
+      "name": "Allen Woodley",
+      "active": false,
+      "isOnline": true
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "id": 10,
+      "name": "Manpreet David",
+      "active": false,
+      "isOnline": true
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
+      "type": "",
+      "msg": "Hi Tim, How are you?"
+    },
+    {
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "type": "other",
+      "msg": "I am fine."
+    },
+    {
+      "id": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "type": "other",
+      "msg": "What about you?"
+    },
+    {
+      "id": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
+      "type": "",
+      "msg": "Awesome these days."
+    },
+    {
+      "id": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "type": "other",
+      "msg": "Finally. What's the plan?"
+    },
+    {
+      "id": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
+      "type": "",
+      "msg": "what plan mate?"
+    },
+    {
+      "id": 7,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+      "type": "other",
+      "msg": "I'm taliking about the tutorial"
+    },
+    {
+      "id": 8,
+      "image": "",
+      "type": "",
+      "msg": "hi"
+    },
+    {
+      "id": 9,
+      "image": "",
+      "type": "",
+      "msg": "hmm"
     }
   ]
 }

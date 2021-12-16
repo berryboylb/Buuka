@@ -30,11 +30,17 @@ const PaymentMethod = ({handleCardForm}) => {
         return () => { isMounted = false }; 
     }, [cards]);
 
+    useEffect(()=> {
+        if(cards.activeObject){
+            setDeleted(cards.activeObject);
+           
+        }
+    },[cards.activeObject]);
+
     const handleActive = (index) =>{
         setCards({...cards, activeObject: cards.objects[index]});
-        setDeleted(cards.activeObject);
-        //setPopup(!popup);
-        console.log(deleted)
+        setPopup(!popup);
+        //console.log(deleted)
     }
 
     const toggleClass = (index) => {
@@ -102,7 +108,7 @@ const PaymentMethod = ({handleCardForm}) => {
             <div className={Styles.add}>
                 <button onClick={handleCardForm}  type='button'><FontAwesomeIcon  icon={faPlus} /></button>
             </div>
-             {popup && <RemoveCard deleted = {deleted} />}
+             {popup && <RemoveCard deleted = {deleted} setPopup = {setPopup} />}
         </div>
     )
 }

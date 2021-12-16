@@ -11,6 +11,7 @@ const Navbar = ({togglelogout}) => {
     const boxRef = useRef();
     const [mobileNav, setmobileNav] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(true);
+    //setIsLoggedIn(true);
     const [box, setBox] = useState(false)
     const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
     const handleMobileNav = () => {
@@ -49,8 +50,8 @@ const Navbar = ({togglelogout}) => {
                     <hr />
                     <ul>
                         <li><Link to="/pending"><FontAwesomeIcon  icon={faCalendarMinus} /> My Bookings</Link></li>
-                        <li><Link to="/"><FontAwesomeIcon  icon={faEnvelope} /> Messages</Link></li>
-                        <li><Link to="/"><FontAwesomeIcon  icon={faBell} /> Notifications</Link></li>
+                        <li><Link to="/chats"><FontAwesomeIcon  icon={faEnvelope} /> Messages</Link></li>
+                        <li><Link to="/notications"><FontAwesomeIcon  icon={faBell} /> Notifications</Link></li>
                         <li><Link to="/giftcards"><FontAwesomeIcon  icon={faGift} /> Giftcards</Link></li>
                         <li><Link to="/wallet"><FontAwesomeIcon  icon={faWallet} /> Wallet</Link></li>
                         <li><Link to="/"><FontAwesomeIcon  icon={faDownload} /> Download App</Link></li>

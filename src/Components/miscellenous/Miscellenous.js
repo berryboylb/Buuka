@@ -25,6 +25,7 @@ const Miscellenous = ({name, togglelogout}) => {
         if(box){
             gsap.from(boxRef.current, { x:100, opacity:0, duration: 1.5, ease: "elastic" });
         }
+        setIsLoggedIn(true);
       }, [box]);
     return (
         <div className={Styles.loginNav}>
@@ -40,10 +41,10 @@ const Miscellenous = ({name, togglelogout}) => {
                     <h3>Adara Beauty</h3>
                     <hr />
                     <ul>
-                    <li><Link to="/pending"><FontAwesomeIcon  icon={faCalendarMinus} /> My Bookings</Link></li>
-                        <li><Link to="/"><FontAwesomeIcon  icon={faEnvelope} /> Messages</Link></li>
-                        <li><Link to="/"><FontAwesomeIcon  icon={faBell} /> Notifications</Link></li>
-                        <li><Link to="/giftcards"><FontAwesomeIcon  icon={faGift} /> Giftcards</Link></li>
+                    <li><Link to="/activities"><FontAwesomeIcon  icon={faCalendarMinus} /> My Bookings</Link></li>
+                        <li><Link to="/chats"><FontAwesomeIcon  icon={faEnvelope} /> Messages</Link></li>
+                        <li><Link to="/notications"><FontAwesomeIcon  icon={faBell} /> Notifications</Link></li>
+                        <li><Link to="/buygiftcard"><FontAwesomeIcon  icon={faGift} /> Giftcards</Link></li>
                         <li><Link to="/wallet"><FontAwesomeIcon  icon={faWallet} /> Wallet</Link></li>
                         <li><Link to="/"><FontAwesomeIcon  icon={faDownload} /> Download App</Link></li>
                         <li><Link to="/settings"><FontAwesomeIcon  icon={faCogs} /> Settings</Link></li>

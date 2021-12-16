@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import Styles from "./css/styles.module.css";
-const Profile = () => {
+const Profile = ({handleBasicInformation}) => {
     return (
         <div className={Styles.profile}>
             <form action="" className={Styles.hide}>
@@ -40,7 +40,7 @@ const Profile = () => {
                         <p>elijahsmithmedia@gmail.com</p>
                     </div>
                 </div>
-                <button className={Styles.edit} type="button">Edit basic information</button>
+                <button onClick={handleBasicInformation} className={Styles.edit} type="button">Edit basic information</button>
             </div>
 
            <form action="" className={Styles.show}>

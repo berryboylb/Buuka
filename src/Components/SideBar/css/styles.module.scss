@@ -1,0 +1,188 @@
+.Sidebar {
+    background: #3423A6;
+    max-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 20vw;
+    &::-webkit-scrollbar {
+        width: 5px;
+    } 
+    
+   
+     &::-webkit-scrollbar-track {
+        background: none;
+    }
+    
+    
+     &::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 10px;
+    }
+    
+    
+     &::-webkit-scrollbar-thumb:hover {
+        background: #3b5bfe;
+    } 
+
+    .logo {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            width: 80%;
+            height: 70px;
+            text-decoration: none;
+
+            img {
+                width: 60%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    ul {
+        margin-bottom: 10%;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+            margin-top: 5%;
+
+            &:hover {
+                background: linear-gradient(90deg, #221386 12.63%, rgba(34, 19, 134, 0) 94.62%);
+                position: relative;
+                transition: all .5s ease-in-out;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    bottom: 0;
+                    border-left: 5px solid #fff ;
+                    content: '';
+                }
+            }
+            a {
+                width: 90%;
+                text-align: left;
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.875rem;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+
+                .con {
+                    font-size: 1.2rem;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .active {
+            background: linear-gradient(90deg, #221386 12.63%, rgba(34, 19, 134, 0) 94.62%);
+            position: relative;
+            transition: all .5s ease-in-out;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    bottom: 0;
+                    border-left: 5px solid #fff ;
+                    content: '';
+                }
+        }
+
+        hr {
+            width: 80%;
+            border: 0.5px solid #4434B4;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 50%;
+            margin-right: 50%;
+            transform: translate(-50%);
+        }
+    
+        button {
+            width: 80%;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 5%;
+            margin-left: 50%;
+            margin-right: 50%;
+            transform: translate(-50%);
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.875rem;
+            color: #FFFFFF;
+            .con {
+                font-size: 1.2rem;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background: linear-gradient(90deg, #221386 12.63%, rgba(34, 19, 134, 0) 94.62%);
+                position: relative;
+                transition: all .5s ease-in-out;
+                width: 100%;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    bottom: 0;
+                    border-left: 5px solid #fff ;
+                    content: '';
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .Sidebar {
+    
+        .logo {
+            a {
+                width: 80%;
+                height: 50px;
+                text-decoration: none;
+    
+                img {
+                    width: 60%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+        }
+    
+        ul {
+    
+            li {
+                a {
+                    font-size: 0.7rem;
+    
+                    .con {
+                        font-size: 1rem;
+                    }
+                }
+            }
+    
+            
+        
+            button {
+                font-size: 0.7rem;
+                .con {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

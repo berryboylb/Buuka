@@ -1,0 +1,34 @@
+.dashboard {
+    display: flex;
+    max-height: calc(100vh - 0 );
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+        background: pink;
+        width: 80vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        } 
+        
+       
+         &::-webkit-scrollbar-track {
+            background: none;
+        }
+        
+        
+         &::-webkit-scrollbar-thumb {
+            background: #fff;
+            border-radius: 10px;
+        }
+        
+        
+         &::-webkit-scrollbar-thumb:hover {
+            background: #3b5bfe;
+        } 
+    }
+}

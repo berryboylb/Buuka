@@ -51,7 +51,7 @@ const AddCardForm = ({handleCardForm}) => {
     useEffect(()=> {
         //console.log(errors)
         if(Object.keys(errors).length === 0 && isSubmit){
-            console.log(formValues)
+            //console.log(formValues)
         }
         // if(formValues) {
         //    cardImage();
