@@ -12,11 +12,11 @@
 }
 
 .dashboard .content {
-  background: pink;
   width: 80vw;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  padding: 2%;
 }
 
 .dashboard .content::-webkit-scrollbar {
@@ -34,5 +34,22 @@
 
 .dashboard .content::-webkit-scrollbar-thumb:hover {
   background: #3b5bfe;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard .content {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  .dashboard .content::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 /*# sourceMappingURL=styles.module.css.map */

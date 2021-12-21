@@ -1,0 +1,173 @@
+.con {
+    background: #FCF7F7;
+    border-radius: 20px;
+    padding: 2%;
+    position: relative;
+    .top_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sales {
+            h3 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.125rem;
+                color: #000000;
+                line-height: 1;
+            }
+
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.875rem;
+                color: #636363;
+                line-height: 1;
+                margin-top: 5%;
+                width: 100%;
+            }
+        }
+
+        .appointment {
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.875rem;
+                color: #636363;
+                line-height: 1;
+                width: 100%;
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .ment {
+                margin-top: 5%;
+            }
+        }
+
+        .amount {
+            h3 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.125rem;
+                color: #000000;
+                line-height: 1;
+            }
+        }
+
+        .toggle {
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 1.2rem;
+                color: #B5B5B5;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .con {
+        .top_content {
+    
+            .sales {
+                h3 {
+                    font-size: 0.8rem;
+                }
+    
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+    
+            .appointment {
+                p {
+                    font-size: 0.7rem;
+                }
+    
+                .ment {
+                    margin-top: 5%;
+                }
+            }
+    
+            .amount {
+                h3 {
+                    font-size: 0.8rem;
+                }
+            }
+    
+            .toggle {
+                button {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .con {
+        padding: 3%;
+        .top_content {
+            margin-bottom: 5%;
+            .sales {
+                h3 {
+                    font-size: 0.8rem;
+                }
+    
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+    
+            .appointment {
+                p {
+                    font-size: 0.7rem;
+                }
+    
+                .ment {
+                    margin-top: 5%;
+                }
+            }
+    
+            .amount {
+                h3 {
+                    font-size: 0.8rem;
+                }
+            }
+    
+            .toggle {
+                button {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:540px) {
+    .con {
+        padding: 5%;
+        .top_content {
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            .sales {
+                p {
+                    line-height: 2;
+                }
+            }
+            .appointment, .amount {
+                margin-top: 5%;
+            }
+
+            .toggle {
+                position: absolute;
+                top: 5%;
+                right: 2.5%;
+            }
+        }
+    }
+}

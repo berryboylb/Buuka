@@ -655,5 +655,117 @@
       "type": "",
       "msg": "hmm"
     }
+  ],
+  "appointment" : [
+    {
+      "id" : 1,
+      "name" :"Tall Afro Hairstyling",
+      "about" : "Home service, 7hours with Davidson",
+      "date" : "Sat, 31st Oct 2021",
+      "dateOnly" : "31st Oct",
+      "time" : "07:00",
+      "amount" : 7000,
+      "status" : "Canceled"
+    },
+    {
+      "id" : 2,
+      "name" :"Tall Afro Hairstyling",
+      "about" : "Home service, 7hours with Davidson",
+      "date" : "Sat, 31st Oct 2021",
+      "dateOnly" : "31st Oct",
+      "time" : "07:00",
+      "amount" : 7000,
+      "status" : "New"
+    },{
+      "id" : 3,
+      "name" :"Tall Afro Hairstyling",
+      "about" : "Home service, 7hours with Davidson",
+      "date" : "Sat, 31st Oct 2021",
+      "dateOnly" : "31st Oct",
+      "time" : "07:00",
+      "amount" : 7000,
+      "status" : "New"
+    },
+    {
+      "id" : 4,
+      "name" :"Tall Afro Hairstyling",
+      "about" : "Home service, 7hours with Davidson",
+      "date" : "Sat, 31st Oct 2021",
+      "dateOnly" : "31st Oct",
+      "time" : "07:00",
+      "amount" : 7000,
+      "status" : "New"
+    },
+    {
+      "id" : 5,
+      "name" :"Tall Afro Hairstyling",
+      "about" : "Home service, 7hours with Davidson",
+      "date" : "Sat, 31st Oct 2021",
+      "dateOnly" : "31st Oct",
+      "time" : "07:00",
+      "amount" : 7000,
+      "status" : "New"
+    }
+  ],
+
+
+
+  "values" : [
+    {
+      "id" : 1,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "Beauty Braid"
+    },
+    {
+      "id" : 2,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "Full Afro Hairstlye"
+    },
+    {
+      "id" : 3,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "Tiny Fixing Attachment"
+    },
+    {
+      "id" : 4,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "Low Obama"
+    },
+    {
+      "id" : 5,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "Low Skin Cut"
+    },
+    {
+      "id" : 6,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "All back tiny braiding"
+    },
+    {
+      "id" : 7,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "Beauty Braid"
+    },
+    {
+      "id" : 8,
+      "lastMonth" : 12,
+      "thisMonth" : 18,
+      "total": 88,
+      "service" : "High Afro"
+    }
   ]
 }

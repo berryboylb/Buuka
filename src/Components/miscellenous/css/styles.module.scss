@@ -194,3 +194,208 @@
     }
 }
 
+
+//dashboard header starts here
+.dasboardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //padding-top: 5%;
+    padding-bottom: 5%;
+
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125rem;
+        color: #000000;
+    }
+
+    .searchPic {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+
+        form {
+            background: #FBF7F7;
+            border-radius: 15px;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3%;
+            input {
+                width: 80%;
+                font-size: 1.125rem;
+                background: none;
+                padding: 0;
+                border: none;
+                outline: none;
+                font-family: 'Open Sans', sans-serif;
+                color: #B5B5B5;
+                &::placeholder {
+                    color: #B5B5B5;
+                    font-size: 1.125rem;
+                }
+            }
+
+            button {
+                width: 20%;
+                border: none;
+                background: none;
+                outline: none;
+                color: #B5B5B5;
+                font-size: 1.125rem;
+                cursor: pointer;
+            }
+        }
+
+        .profile {
+            text-decoration: none;
+            display: block;
+
+            div {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                padding: 10%;
+                border: 1px solid #CCCCCC;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .dasboardHeader {
+        h3 {
+            font-size: 1rem;
+        }
+    
+        .searchPic {
+            width: 50%;
+            form {
+                input {
+                    font-size: 1rem;
+                    &::placeholder {
+                        font-size: 1.125rem;
+                    }
+                }
+    
+                button {
+                    font-size: 1rem;
+                }
+            }
+    
+            .profile {
+    
+                div {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:768px) {
+    .dasboardHeader {
+        width: 100%;
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        .searchPic {
+            width: 100%;
+            margin-right: 0;
+            margin-top: 5%;
+            form {
+                padding: 2%;
+                width: 80%;
+            }
+
+        }
+    } 
+}
+
+@media screen and (max-width:540px) {
+    .dasboardHeader {
+        .searchPic {
+            form {
+                padding: 2%;
+                width: 80%;
+
+                input {
+                    padding: 3%;
+                }
+            }
+
+        }
+    } 
+}
+
+
+//appoint header starts here 
+.appoint {
+    display: flex;
+    justify-content: space-between;
+
+    .content {
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #3423A6;
+            line-height: 1;
+        }
+
+        p {
+            width: 100%;
+            line-height: 1;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.875rem;
+            color: #636363;
+            margin-top: 5%;
+        }
+    }
+
+    .toggle {
+        button {
+            background: none;
+            border: none;
+            outline: none;
+            font-size: 1.2rem;
+            color: #B5B5B5;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .appoint {
+    
+        .content {
+            h3 {
+                font-size: 0.8rem;
+            }
+    
+            p {
+                font-size: 0.7rem;
+                line-height: 2;
+            }
+        }
+    
+        .toggle {
+            button {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,588 @@
+.appointment {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appointment .today {
+  background: #FCF7F7;
+  border-radius: 20px;
+  padding: 3%;
+  width: 49%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.appointment .today .title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+}
+
+.appointment .today .appointment_list {
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.appointment .today .appointment_list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.appointment .today .appointment_list::-webkit-scrollbar-track {
+  background: none;
+}
+
+.appointment .today .appointment_list::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 10px;
+}
+
+.appointment .today .appointment_list::-webkit-scrollbar-thumb:hover {
+  background: #3423A6;
+}
+
+.appointment .today .appointment_list .single_appointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+.appointment .today .appointment_list .single_appointment .content h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.appointment .today .appointment_list .single_appointment .content p {
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #636363;
+  margin-top: 2%;
+}
+
+.appointment .today .appointment_list .single_appointment .amount p {
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.appointment .upcoming {
+  background: #FCF7F7;
+  border-radius: 20px;
+  padding: 3%;
+  width: 49%;
+  height: 400px;
+}
+
+.appointment .upcoming .numbers {
+  margin-bottom: 2%;
+}
+
+.appointment .upcoming .numbers p {
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.appointment .upcoming .numbers .bold {
+  font-weight: 800;
+  color: #000;
+}
+
+.appointment .upcoming .numbers .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.appointment .upcoming .numbers .space {
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+  .appointment .today .title {
+    font-size: 0.8rem;
+  }
+  .appointment .today .appointment_list .single_appointment .content h4 {
+    font-size: 0.7rem;
+  }
+  .appointment .today .appointment_list .single_appointment .content p {
+    font-size: 0.7rem;
+  }
+  .appointment .today .appointment_list .single_appointment .amount p {
+    font-size: 0.7rem;
+  }
+  .appointment .upcoming .numbers p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appointment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3%;
+  }
+  .appointment .today {
+    width: 100%;
+  }
+  .appointment .upcoming {
+    width: 100%;
+    margin-top: 3%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .appointment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5%;
+  }
+  .appointment .today {
+    width: 100%;
+    padding: 5%;
+    height: 300px;
+  }
+  .appointment .upcoming {
+    width: 100%;
+    margin-top: 5%;
+    padding: 5%;
+    height: 300px;
+  }
+}
+
+.secondAppointment {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondAppointment .activity {
+  background: #FCF7F7;
+  border-radius: 20px;
+  padding: 3%;
+  width: 49%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondAppointment .activity .appointment_list {
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.secondAppointment .activity .appointment_list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.secondAppointment .activity .appointment_list::-webkit-scrollbar-track {
+  background: none;
+}
+
+.secondAppointment .activity .appointment_list::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 10px;
+}
+
+.secondAppointment .activity .appointment_list::-webkit-scrollbar-thumb:hover {
+  background: #3423A6;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content .date {
+  background: #c4c4c4;
+  background: #E5E5E5;
+  border-radius: 7px;
+  height: 70px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content .date p {
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #636363;
+  text-align: center;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content .info {
+  margin-left: 3%;
+  width: 80%;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content .info h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content .info p {
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #636363;
+  margin-top: 2%;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content .info .error {
+  color: #E34F4F;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .content .info .new {
+  color: #3423A6;
+}
+
+.secondAppointment .activity .appointment_list .single_appointment .amount p {
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.secondAppointment .activity .empty h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+  line-height: 1;
+}
+
+.secondAppointment .services {
+  background: #FCF7F7;
+  border-radius: 20px;
+  padding: 3%;
+  width: 49%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondAppointment .services .title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+  line-height: 1;
+}
+
+.secondAppointment .services .meg {
+  height: 90%;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+.secondAppointment .services .meg::-webkit-scrollbar {
+  width: 5px;
+}
+
+.secondAppointment .services .meg::-webkit-scrollbar-track {
+  background: none;
+}
+
+.secondAppointment .services .meg::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 10px;
+}
+
+.secondAppointment .services .meg::-webkit-scrollbar-thumb:hover {
+  background: #3423A6;
+}
+
+.secondAppointment .services .meg .prob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondAppointment .services .meg .prob .king {
+  width: 40%;
+}
+
+.secondAppointment .services .meg .prob .king h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.secondAppointment .services .meg .prob .others {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondAppointment .services .meg .prob .others div h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.secondAppointment .services .meg .prob2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondAppointment .services .meg .prob2 .king {
+  width: 40%;
+  margin-top: 5%;
+}
+
+.secondAppointment .services .meg .prob2 .king h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.secondAppointment .services .meg .prob2 .others {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.secondAppointment .services .meg .prob2 .others div h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+@media screen and (max-width: 1024px) {
+  .secondAppointment .activity .appointment_list .single_appointment .content .date {
+    height: 60px;
+    width: 40px;
+  }
+  .secondAppointment .activity .appointment_list .single_appointment .content .date p {
+    font-size: 0.7rem;
+  }
+  .secondAppointment .activity .appointment_list .single_appointment .content .info {
+    margin-left: 3%;
+  }
+  .secondAppointment .activity .appointment_list .single_appointment .content .info h4 {
+    font-size: 0.7rem;
+  }
+  .secondAppointment .activity .appointment_list .single_appointment .content .info p {
+    font-size: 0.7rem;
+  }
+  .secondAppointment .activity .appointment_list .single_appointment .amount p {
+    font-size: 0.7rem;
+  }
+  .secondAppointment .activity .empty h3 {
+    font-size: 1rem;
+  }
+  .secondAppointment .services .title {
+    font-size: 0.8rem;
+  }
+  .secondAppointment .services .meg .prob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondAppointment .services .meg .prob .king {
+    width: 40%;
+  }
+  .secondAppointment .services .meg .prob .king h4 {
+    font-size: 0.7rem;
+  }
+  .secondAppointment .services .meg .prob .others div h4 {
+    font-size: 0.7rem;
+  }
+  .secondAppointment .services .meg .prob2 .king h4 {
+    font-size: 0.7rem;
+  }
+  .secondAppointment .services .meg .prob2 .others div h4 {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .secondAppointment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3%;
+  }
+  .secondAppointment .activity {
+    width: 100%;
+  }
+  .secondAppointment .activity .appointment_list .single_appointment .content .info {
+    margin-left: 3%;
+  }
+  .secondAppointment .services {
+    margin-top: 3%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .secondAppointment {
+    margin-top: 5%;
+  }
+  .secondAppointment .activity {
+    width: 100%;
+    padding: 5%;
+    height: 300px;
+  }
+  .secondAppointment .activity .appointment_list .single_appointment .content .info {
+    margin-left: 3%;
+  }
+  .secondAppointment .services {
+    margin-top: 5%;
+    width: 100%;
+    padding: 5%;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

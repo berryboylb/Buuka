@@ -3,13 +3,15 @@
     max-height: calc(100vh - 0 );
     align-items: center;
     justify-content: space-between;
+    
 
     .content {
-        background: pink;
+        //background: green;
         width: 80vw;
         height: 100vh;
         overflow-x: hidden;
         overflow-y: scroll;
+        padding: 2%;
 
         &::-webkit-scrollbar {
             width: 5px;
@@ -30,5 +32,20 @@
          &::-webkit-scrollbar-thumb:hover {
             background: #3b5bfe;
         } 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .dashboard {
+        flex-direction: column;
+        .content {
+            width: 100%;
+            padding: 0;
+            height: auto;
+
+            &::-webkit-scrollbar {
+                width: 0px;
+            } 
+        }
     }
 }

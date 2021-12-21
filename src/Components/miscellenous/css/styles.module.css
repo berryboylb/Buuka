@@ -191,4 +191,229 @@
             transform: translate(-100%);
   }
 }
+
+.dasboardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5%;
+}
+
+.dasboardHeader h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #000000;
+}
+
+.dasboardHeader .searchPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.dasboardHeader .searchPic form {
+  background: #FBF7F7;
+  border-radius: 15px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3%;
+}
+
+.dasboardHeader .searchPic form input {
+  width: 80%;
+  font-size: 1.125rem;
+  background: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #B5B5B5;
+}
+
+.dasboardHeader .searchPic form input::-webkit-input-placeholder {
+  color: #B5B5B5;
+  font-size: 1.125rem;
+}
+
+.dasboardHeader .searchPic form input:-ms-input-placeholder {
+  color: #B5B5B5;
+  font-size: 1.125rem;
+}
+
+.dasboardHeader .searchPic form input::-ms-input-placeholder {
+  color: #B5B5B5;
+  font-size: 1.125rem;
+}
+
+.dasboardHeader .searchPic form input::placeholder {
+  color: #B5B5B5;
+  font-size: 1.125rem;
+}
+
+.dasboardHeader .searchPic form button {
+  width: 20%;
+  border: none;
+  background: none;
+  outline: none;
+  color: #B5B5B5;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.dasboardHeader .searchPic .profile {
+  text-decoration: none;
+  display: block;
+}
+
+.dasboardHeader .searchPic .profile div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10%;
+  border: 1px solid #CCCCCC;
+}
+
+.dasboardHeader .searchPic .profile div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .dasboardHeader h3 {
+    font-size: 1rem;
+  }
+  .dasboardHeader .searchPic {
+    width: 50%;
+  }
+  .dasboardHeader .searchPic form input {
+    font-size: 1rem;
+  }
+  .dasboardHeader .searchPic form input::-webkit-input-placeholder {
+    font-size: 1.125rem;
+  }
+  .dasboardHeader .searchPic form input:-ms-input-placeholder {
+    font-size: 1.125rem;
+  }
+  .dasboardHeader .searchPic form input::-ms-input-placeholder {
+    font-size: 1.125rem;
+  }
+  .dasboardHeader .searchPic form input::placeholder {
+    font-size: 1.125rem;
+  }
+  .dasboardHeader .searchPic form button {
+    font-size: 1rem;
+  }
+  .dasboardHeader .searchPic .profile div {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dasboardHeader {
+    width: 100%;
+    margin-top: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .dasboardHeader .searchPic {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 5%;
+  }
+  .dasboardHeader .searchPic form {
+    padding: 2%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .dasboardHeader .searchPic form {
+    padding: 2%;
+    width: 80%;
+  }
+  .dasboardHeader .searchPic form input {
+    padding: 3%;
+  }
+}
+
+.appoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appoint .content h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+  line-height: 1;
+}
+
+.appoint .content p {
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #636363;
+  margin-top: 5%;
+}
+
+.appoint .toggle button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: #B5B5B5;
+}
+
+@media screen and (max-width: 1024px) {
+  .appoint .content h3 {
+    font-size: 0.8rem;
+  }
+  .appoint .content p {
+    font-size: 0.7rem;
+    line-height: 2;
+  }
+  .appoint .toggle button {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=styles.module.css.map */

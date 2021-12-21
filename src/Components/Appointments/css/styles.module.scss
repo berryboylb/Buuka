@@ -1,0 +1,624 @@
+.appointment {
+    margin-top: 2%;
+    //padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .today {
+        background: #FCF7F7;
+        border-radius: 20px;
+        padding: 3%;
+        width: 49%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        
+        .title {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #3423A6;
+        }
+
+        .appointment_list {
+           // margin-top: 3%;
+            height: 90%;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                width: 5px;
+            } 
+            
+           
+             &::-webkit-scrollbar-track {
+                background: none;
+            }
+            
+            
+             &::-webkit-scrollbar-thumb {
+                background: #C4C4C4;
+                border-radius: 10px;
+            }
+            
+            
+             &::-webkit-scrollbar-thumb:hover {
+                background: #3423A6;
+            } 
+    
+
+            .single_appointment {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 3%;
+
+                .content {
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 0.875rem;
+                        color: #000000;
+                    }
+
+                    p {
+                        width: 100%;
+                        line-height: 1;
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 0.875rem;
+                        color: #636363;
+                        margin-top: 2%;
+                    }
+                }
+
+                .amount {
+                    p {
+                        width: 100%;
+                        line-height: 1;
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 0.875rem;
+                        color: #636363;
+                    }
+                }
+            }
+        }
+    }
+
+    .upcoming {
+        background: #FCF7F7;
+        border-radius: 20px;
+        padding: 3%;
+        width: 49%;
+        height: 400px;
+
+        .numbers {
+            margin-bottom: 2%;
+            p {
+                width: 100%;
+                line-height: 1;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.875rem;
+                color: #636363;
+            }
+
+            .bold {
+                font-weight: 800;
+                color: #000;
+            }
+
+
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 2%;
+            }
+
+            .space {
+                margin-top: 2%;
+            }
+        }
+        
+    }
+
+    
+}
+
+@media screen and (max-width:1024px) {
+    .appointment {
+    
+        .today {
+            
+            .title {
+                font-size: 0.8rem;
+            }
+    
+            .appointment_list {
+               
+                .single_appointment {
+    
+                    .content {
+                        h4 {
+                            font-size: 0.7rem;
+                        }
+    
+                        p {
+                            font-size: 0.7rem;
+                        }
+                    }
+    
+                    .amount {
+                        p {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .upcoming {
+    
+            .numbers {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            
+        }
+    
+    }
+}
+
+@media screen and (max-width:768px) {
+    .appointment {
+        flex-direction: column;
+        margin-top: 3%;
+        .today {
+            width: 100%;
+        }
+    
+        .upcoming {
+            width: 100%;
+            margin-top: 3%; 
+        }
+    
+    }
+} 
+
+@media screen and (max-width:540px) {
+    .appointment {
+        flex-direction: column;
+        margin-top: 5%;
+        .today {
+            width: 100%;
+            padding: 5%;
+            height: 300px;
+        }
+    
+        .upcoming {
+            width: 100%;
+            margin-top: 5%; 
+            padding: 5%;
+            height: 300px;
+        }
+    
+    }
+} 
+
+//second appointment starts here
+
+.secondAppointment {
+    //background: pink;
+    margin-top: 2%;
+    //padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .activity {
+        background: #FCF7F7;
+        border-radius: 20px;
+        padding: 3%;
+        width: 49%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .appointment_list {
+            // margin-top: 3%;
+             height: 90%;
+             overflow-y: scroll;
+             &::-webkit-scrollbar {
+                 width: 5px;
+             } 
+             
+            
+              &::-webkit-scrollbar-track {
+                 background: none;
+             }
+             
+             
+              &::-webkit-scrollbar-thumb {
+                 background: #C4C4C4;
+                 border-radius: 10px;
+             }
+             
+             
+              &::-webkit-scrollbar-thumb:hover {
+                 background: #3423A6;
+             } 
+     
+ 
+             .single_appointment {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 margin-top: 3%;
+ 
+                 .content {
+                     display: flex;
+                     align-items: center;
+                     width: 80%;
+
+                     .date {
+                         background: #c4c4c4;
+                         background: #E5E5E5;
+                         border-radius: 7px;
+                         height: 70px;
+                         width: 50px;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+
+                         p {
+                            width: 100%;
+                            line-height: 1;
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 0.875rem;
+                            color: #636363;
+                            text-align: center;
+                        }
+                     }
+
+                     .info {
+                         margin-left: 3%;
+                         width: 80%;
+
+                         h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 0.875rem;
+                            color: #000000;
+                        }
+    
+                        p {
+                            width: 100%;
+                            line-height: 1;
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 0.875rem;
+                            color: #636363;
+                            margin-top: 2%;
+                        }
+
+                        .error {
+                            color: #E34F4F;
+                        }
+
+                        .new {
+                            color: #3423A6;
+                        }
+                     }
+                     
+                 }
+ 
+                 .amount {
+                     p {
+                         width: 100%;
+                         line-height: 1;
+                         font-family: 'Open Sans', sans-serif;
+                         font-style: normal;
+                         font-weight: bold;
+                         font-size: 0.875rem;
+                         color: #636363;
+                     }
+                 }
+             }
+         }
+
+
+
+        .empty {
+
+            h3 {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.125rem;
+                color: #3423A6;
+                line-height: 1;
+            }
+        }
+    }
+
+    .services {
+        background: #FCF7F7;
+        border-radius: 20px;
+        padding: 3%;
+        width: 49%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .title {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #3423A6;
+            line-height: 1;
+        }
+        .meg {
+            height: 90%;
+            overflow-y: scroll;
+            overflow-x: none;
+            &::-webkit-scrollbar {
+                width: 5px;
+            } 
+            
+           
+             &::-webkit-scrollbar-track {
+                background: none;
+            }
+            
+            
+             &::-webkit-scrollbar-thumb {
+                background: #C4C4C4;
+                border-radius: 10px;
+            }
+            
+            
+            &::-webkit-scrollbar-thumb:hover {
+                background: #3423A6;
+            } 
+
+            .prob {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .king {
+                    width: 40%;
+    
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 0.875rem;
+                        color: #000000;
+                    }
+                }
+    
+                .others {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    div {
+                        //width: 20%;
+                        h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 0.875rem;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+    
+            .prob2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .king {
+                    width: 40%;
+                    margin-top: 5%;
+    
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 0.875rem;
+                        color: #636363;
+                    }
+                }
+    
+                .others {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 5%;
+                    div {
+                        //width: 20%;
+                        h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 0.875rem;
+                            color: #636363;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .secondAppointment {
+    
+        .activity {
+            .appointment_list {
+                 .single_appointment {
+     
+                     .content {
+    
+                         .date {
+                             height: 60px;
+                             width: 40px;
+    
+                             p {
+                                font-size: 0.7rem;
+                               }
+                         }
+    
+                         .info {
+                             margin-left: 3%;
+    
+                             h4 {
+                                font-size: 0.7rem;
+                            }
+        
+                            p {
+                                font-size: 0.7rem;
+                                //line-height: 1.5;
+                            }
+                         }
+                         
+                     }
+     
+                     .amount {
+                         p {
+                             font-size: 0.7rem;
+                         }
+                     }
+                 }
+             }
+    
+    
+    
+            .empty {
+    
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+        .services {
+    
+            .title {
+                font-size: 0.8rem;
+            }
+
+            .meg {
+    
+                .prob {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+        
+                    .king {
+                        width: 40%;
+                        h4 {
+                            font-size: 0.7rem;
+                        }
+                    }
+        
+                    .others {
+                        div {
+                            //width: 20%;
+                            h4 {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+        
+                .prob2 {
+        
+                    .king {
+        
+                        h4 {
+                            font-size: 0.7rem;
+                        }
+                    }
+        
+                    .others {
+                        div {
+                            //width: 20%;
+                            h4 {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .secondAppointment {
+        flex-direction: column;
+        margin-top: 3%;
+        .activity {
+            width: 100%;
+            .appointment_list {
+                 .single_appointment {
+                     .content {
+                         .info {
+                             margin-left: 3%;
+                         }
+                         
+                     }
+                 }
+             }
+        }
+    
+        .services {
+            margin-top: 3%;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .secondAppointment {
+        margin-top: 5%;
+        .activity {
+            width: 100%;
+            padding: 5%;
+            height: 300px;
+            .appointment_list {
+                 .single_appointment {
+                     .content {
+                         .info {
+                             margin-left: 3%;
+                         }
+                         
+                     }
+                 }
+             }
+        }
+    
+        .services {
+            margin-top: 5%;
+            width: 100%;
+            padding: 5%;
+            height: 300px;
+        }
+    }
+}
