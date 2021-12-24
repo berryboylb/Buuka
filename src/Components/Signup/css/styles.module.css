@@ -79,6 +79,13 @@
           transform: translate(-50%);
 }
 
+.signup .inner form .error {
+  font-size: 0.6rem;
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
 .signup .inner form h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;

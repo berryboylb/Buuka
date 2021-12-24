@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import {NotificationContainer} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 import Home from './Components/Home/Home'
@@ -19,21 +19,39 @@ import Notifications from './Components/Notifications/Notifications';
 import Logout from './Components/Logout/Logout';
 import Chats from './Components/Chats/Chats';
 import Dashboard from './Components/Dashboard/Dashboard';
+import NotFound from './Components/NotFound/NotFound'
 
 function App() {
-  const [logout, setLogout] = useState(false)
-    const togglelogout = () => {
-        setLogout(!logout);
-    }
+  const [logout, setLogout] = useState(false);
+  const [tokenBearer, setTokenBearer] = useState('');
+  const togglelogout = () => {
+    setLogout(!logout);
+  }
 
+  //const [isLoggedIn, setIsLoggedIn] = useState(sessionStorage.getItem('isLoggedIn') === 'false')
+  
+  const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+
+  useEffect(() => {
+    sessionStorage.getItem('isLoggedIn');
+  }, [isLoggedIn])
   return (
     <Router>
        <React.Fragment>
        <NotificationContainer/>
+      
        <Routes>
-          <Route path = "/" element={<Home logout={logout} togglelogout={togglelogout}/>} />
-          <Route path = "/signup" element={<Signup/>} />
-          <Route path ="/login" element={<Login/>}/>
+          <Route path = "/" element={<Home 
+                          logout={logout}
+                           togglelogout={togglelogout}
+                           isLoggedIn={isLoggedIn}
+                           tokenBearer={tokenBearer}
+                           />} />
+          <Route path = "/signup" element={<Signup setTokenBearer={setTokenBearer} />} />
+          <Route path ="/login" element={<Login setTokenBearer={setTokenBearer} 
+                                                // setIsLoggedIn={setIsLoggedIn}  
+                                                isLoggedIn= {isLoggedIn} />}
+                                                />
           <Route path="/provider/:id" element={<SingleProvider/>} />
           <Route path="/search/:word" element={<SearchResult/>}/>
           <Route path="/buygiftcard" element={<AllGiftCards/>}/>
@@ -45,6 +63,7 @@ function App() {
           <Route path="/notications" element={<Notifications logout={logout} togglelogout={togglelogout}/>}/>
           <Route path="/chats" element={<Chats logout={logout} togglelogout={togglelogout}/>}/>
           <Route path="/dashboard" element={<Dashboard logout={logout} togglelogout={togglelogout}/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
         {logout && <Logout togglelogout={togglelogout}/>}
       </React.Fragment>

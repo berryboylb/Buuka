@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faBell, faDownload, faFileImport , faCalendarMinus, faCogs, faWallet, faGift} from '@fortawesome/free-solid-svg-icons'
 import "./css/styles.css"
 
-const Navbar = ({togglelogout}) => {
+const Navbar = ({togglelogout, isLoggedIn, setIsLoggedIn}) => {
     const location = useLocation();
     const boxRef = useRef();
     const [mobileNav, setmobileNav] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+   // const [isLoggedIn, setIsLoggedIn] = useState(true);
     //setIsLoggedIn(true);
     const [box, setBox] = useState(false)
     const isMobile = useMediaQuery({ query: `(max-width: 768px)` });

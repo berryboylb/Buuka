@@ -1,0 +1,10 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container .file {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=styles.module.css.map */

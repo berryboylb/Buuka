@@ -12,6 +12,7 @@
 }
 
 .dashboard .content {
+  background: green;
   width: 80vw;
   height: 100vh;
   overflow-x: hidden;
