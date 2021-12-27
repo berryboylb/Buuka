@@ -767,5 +767,135 @@
       "total": 88,
       "service" : "High Afro"
     }
+  ],
+  "staffs" : [
+    {
+      "id" : 1,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 2,
+      "name" : "Gabriel Cosmic",
+      "bestService" : "Full Afro Hairstyle",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "NGN960,000.00"
+    },
+    {
+      "id" : 3,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 4,
+      "name" : "Richard Adebola",
+      "bestService" : "Beauty Braid",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "960,000.00"
+    },
+    {
+      "id" : 5,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 6,
+      "name" : "Gabriel Cosmic",
+      "bestService" : "Full Afro Hairstyle",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "NGN960,000.00"
+    },
+    {
+      "id" : 7,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 8,
+      "name" : "Richard Adebola",
+      "bestService" : "Beauty Braid",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "960,000.00"
+    },
+    {
+      "id" : 1,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 2,
+      "name" : "Gabriel Cosmic",
+      "bestService" : "Full Afro Hairstyle",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "NGN960,000.00"
+    },
+    {
+      "id" : 3,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 4,
+      "name" : "Richard Adebola",
+      "bestService" : "Beauty Braid",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "960,000.00"
+    },
+    {
+      "id" : 5,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 6,
+      "name" : "Gabriel Cosmic",
+      "bestService" : "Full Afro Hairstyle",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "NGN960,000.00"
+    },
+    {
+      "id" : 7,
+      "name" : "Naomi Adasa",
+      "bestService" : "All back Tiny Braiding",
+      "thisMonth" : "452,000.00",
+      "lastMonth" : "440,000.00",
+      "total" : "1,440,000.00"
+    },
+    {
+      "id" : 8,
+      "name" : "Richard Adebola",
+      "bestService" : "Beauty Braid",
+      "thisMonth" : "354,000.00",
+      "lastMonth" : "300,000.00",
+      "total" : "960,000.00"
+    }
   ]
 }

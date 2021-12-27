@@ -6,24 +6,24 @@ const SecondAppointment = () => {
     const [values, setValues] = useState(null);
     const title = "Appointment Activity";
     const numberofDays = "Next 7days";
-    const headers = [
-        {
-            id : 1,
-            title: "Service"
-        },
-        {
-            id : 2,
-            title: "This month"
-        },
-        {
-            id : 3,
-            title: "Last month"
-        },
-        {
-            id : 4,
-            title: "Total"
-        }
-    ];
+    // const headers = [
+    //     {
+    //         id : 1,
+    //         title: "Service"
+    //     },
+    //     {
+    //         id : 2,
+    //         title: "This month"
+    //     },
+    //     {
+    //         id : 3,
+    //         title: "Last month"
+    //     },
+    //     {
+    //         id : 4,
+    //         title: "Total"
+    //     }
+    // ];
 
     useEffect(()=> {
         let isMounted = true;
@@ -133,7 +133,7 @@ const SecondAppointment = () => {
                             </div>
                             
                             :
-                            <div>
+                            <div className={Styles.empty}>
                                 <h3>No Services</h3>
                             </div>
                         }

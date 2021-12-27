@@ -11,6 +11,15 @@
           align-items: center;
 }
 
+.appointment .empty h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+  line-height: 1;
+}
+
 .appointment .today {
   background: #FCF7F7;
   border-radius: 20px;
@@ -144,6 +153,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .appointment .empty h3 {
+    font-size: 0.8rem;
+  }
   .appointment .today .title {
     font-size: 0.8rem;
   }
@@ -210,6 +222,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.secondAppointment .empty h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+  line-height: 1;
 }
 
 .secondAppointment .activity {
@@ -385,6 +406,16 @@
   height: 90%;
   overflow-y: scroll;
   overflow-x: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .secondAppointment .services .meg::-webkit-scrollbar {
@@ -493,6 +524,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .secondAppointment .empty h3 {
+    font-size: 0.8rem;
+  }
   .secondAppointment .activity .appointment_list .single_appointment .content .date {
     height: 60px;
     width: 40px;
@@ -583,6 +617,215 @@
     width: 100%;
     padding: 5%;
     height: 300px;
+  }
+}
+
+.bottom {
+  margin-top: 2%;
+  background: #FCF7F7;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.bottom .empty {
+  margin-top: 2%;
+}
+
+.bottom .empty h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+  line-height: 1;
+}
+
+.bottom .title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #3423A6;
+}
+
+.bottom .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.bottom .names .staff {
+  width: 30%;
+}
+
+.bottom .names .staff h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.bottom .names .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.bottom .names .others div {
+  width: 23.3%;
+}
+
+.bottom .names .others div h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.bottom .con {
+  height: 300px;
+  overflow: scroll;
+}
+
+.bottom .con::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.bottom .con::-webkit-scrollbar-track {
+  background: none;
+}
+
+.bottom .con::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 10px;
+}
+
+.bottom .con::-webkit-scrollbar-thumb:hover {
+  background: #3423A6;
+}
+
+.bottom .con .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.bottom .con .content .staff {
+  width: 30%;
+}
+
+.bottom .con .content .staff h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+  font-weight: 300;
+}
+
+.bottom .con .content .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.bottom .con .content .others div {
+  width: 23.3%;
+}
+
+.bottom .con .content .others div h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #636363;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .bottom .empty {
+    margin-top: 2%;
+  }
+  .bottom .empty h3 {
+    font-size: 0.8rem;
+  }
+  .bottom .title {
+    font-size: 0.8rem;
+  }
+  .bottom .names .staff h4 {
+    font-size: 0.7rem;
+    word-wrap: break-word;
+  }
+  .bottom .names .others div h4 {
+    font-size: 0.7rem;
+    word-wrap: break-word;
+  }
+  .bottom .con .content .staff h4 {
+    font-size: 0.7rem;
+    word-wrap: break-word;
+  }
+  .bottom .con .content .others div h4 {
+    font-size: 0.7rem;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    padding: 3%;
+    margin-top: 3%;
+  }
+  .bottom .empty {
+    margin-top: 3%;
+  }
+  .bottom .names {
+    margin-top: 3%;
+  }
+  .bottom .con .content {
+    margin-top: 3%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .bottom {
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .bottom .empty {
+    margin-top: 5%;
+  }
+  .bottom .names {
+    margin-top: 3%;
+  }
+  .bottom .con {
+    height: 250px;
+  }
+  .bottom .con .content {
+    margin-top: 3%;
   }
 }
 /*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,754 @@
+.VendorBookings {
+    display: flex;
+    max-height: calc(100vh - 0 );
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+        //background: green;
+        width: 80vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 2%;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        } 
+        
+       
+         &::-webkit-scrollbar-track {
+            background: none;
+        }
+        
+        
+         &::-webkit-scrollbar-thumb {
+            background: #fff;
+            border-radius: 10px;
+        }
+        
+        
+         &::-webkit-scrollbar-thumb:hover {
+            background: #3b5bfe;
+        } 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .VendorBookings {
+        flex-direction: column;
+        .content {
+            width: 100%;
+            padding: 0;
+            height: auto;
+
+            &::-webkit-scrollbar {
+                width: 0px;
+            } 
+        }
+    }
+}
+
+
+
+
+//bookinglist starts here
+.bookinglist {
+    //background: chartreuse;
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 1.5rem;
+
+        .list {
+            background: #FCF7F7;
+            border-radius: 20px;
+            padding: 5%;
+            cursor: pointer;
+            .top {
+                display: flex;
+                justify-content: space-between;
+
+                .name {
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        color: #000000;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 0.875rem;
+                        color: #636363;
+                        margin-top: 2%;
+                        line-height: 1.5;
+                        width: 100%;
+                    }
+                }
+
+                .imgCon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: #F2F2F2;
+                    padding: 2%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                         height: 50%;
+                        width: 50%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            hr {
+                border: 0.5px solid #EDEDED;
+                margin-top: 15%;
+                margin-bottom: 5%;
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                //justify-content: space-between;
+                h4 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.875rem;
+                    color: #636363;
+                    font-weight: 300;
+                }
+
+                span {
+                    margin-left: 2%;
+                    margin-right: 2%;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:1024px) {
+    .bookinglist {
+        .grid {
+            grid-template-columns: auto auto;
+            grid-gap: 1rem;
+    
+            .list {
+                .top {
+                    .name {
+                        h4 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: 0.6rem;
+                            margin-top: 2%;
+                        }
+                    }
+    
+                    .imgCon {
+                        width: 40px;
+                        height: 40px;
+    
+                        img {
+                             height: 50%;
+                             width: 50%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .bottom {
+                    h4 {
+                        font-size: 0.675rem;
+                    }
+    
+                    span {
+                        margin-left: 2%;
+                        margin-right: 2%;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:540px) {
+    .bookinglist {
+        margin-bottom: 1rem;
+        .grid {
+            grid-template-columns: auto;
+    
+            .list {
+                .top {
+                    .name {
+                        h4 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: 0.6rem;
+                            margin-top: 2%;
+                        }
+                    }
+    
+                    .imgCon {
+                        width: 40px;
+                        height: 40px;
+    
+                        img {
+                             height: 50%;
+                             width: 50%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .bottom {
+                    h4 {
+                        font-size: 0.675rem;
+                    }
+    
+                    span {
+                        margin-left: 2%;
+                        margin-right: 2%;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+//viewbookings starts here
+.view_bookings {
+    background: rgba(229, 229, 229, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .inner {
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding: 2%;
+        width: 80%;
+        max-height: 90%;
+        // height: 80%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        } 
+        
+       
+         &::-webkit-scrollbar-track {
+            background: none;
+        }
+        
+        
+         &::-webkit-scrollbar-thumb {
+            background: #fff;
+            border-radius: 10px;
+        }
+        
+        
+         &::-webkit-scrollbar-thumb:hover {
+            background: #3b5bfe;
+        } 
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.125rem;
+                color: #000000;
+            }
+
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 1.2rem;
+                &:hover  {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .date {
+            margin-top: 3%;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #636363;
+        }
+
+        .schedule {
+            margin-top: 2%;
+
+            hr {
+                border: 0.5px solid #9DB1BC;
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .thing {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    div {
+                        width: 33%;
+
+                         h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 0.875rem;
+                            color: #636363;
+                        }
+                    }
+                }
+
+                .amount {
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 0.875rem;
+                        color: #636363;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 2%;
+
+                .thing {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    div {
+                        width: 33%;
+
+                         h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.125rem;
+                            color: #636363;
+                        }
+                    }
+                }
+
+                .amount {
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 1.125rem;
+                        color: #636363;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .thing {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    div {
+                        width: 33%;
+
+                         h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.125rem;
+                            color: #000000;
+                        }
+                    }
+                }
+
+                .amount {
+                    h4 {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        color: #000000;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5%;
+
+            button {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.875rem;
+                color: #FFFFFF;
+                border: none;
+                outline: none;
+                padding: 1.5%;
+                background: #3423A6;
+                border-radius: 20px;
+
+                &:hover {
+                    border:  1px solid #3423A6;
+                    color: #3423A6;
+                    background: none;
+                    transition: all .5s ease-in-out;
+                }
+            }
+
+            form {
+                background: #F2F2F2;
+                border-radius: 20px;
+                padding: 1.5%;
+                select {
+                    background: #F2F2F2;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+
+                    option {
+                        font-family: 'Open Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 0.875rem;
+                        background: #3423A6;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #3423A6;   
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .view_bookings {
+    
+    
+        .inner {
+    
+            .top {
+    
+                h4 {
+                    font-size: 0.8rem;
+                }
+    
+                button {
+                    font-size: 1rem;
+                }
+            }
+    
+            .date {
+                font-size: 1.2rem;
+            }
+    
+            .schedule {
+    
+                .title {
+    
+                    .thing {
+                        div {
+                            width: 33%;
+    
+                             h4 {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+    
+                    .amount {
+                        h4 {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+    
+                .list {
+    
+                    .thing {
+                        div {
+    
+                             h4 {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+    
+                    .amount {
+                        h4 {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+    
+                .total {
+    
+                    .thing {
+                        div {
+                             h4 {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+    
+                    .amount {
+                        h4 {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+    
+            .bottom {
+    
+                button {
+                    font-size: 0.7rem;
+                }
+    
+                form {
+                    select {
+    
+                        option {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .view_bookings {
+        .inner {
+            padding: 3%;
+    
+           
+    
+            .date {
+                font-size: 1.2rem;
+            }
+    
+            .schedule {
+    
+                .title {
+    
+                    .thing {
+                        div {
+                            width: 33%;
+    
+                             h4 {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+    
+                    .amount {
+                        h4 {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+    
+                .list {
+    
+                    .thing {
+                        div {
+    
+                             h4 {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+    
+                    .amount {
+                        h4 {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+    
+                .total {
+    
+                    .thing {
+                        div {
+                             h4 {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+    
+                    .amount {
+                        h4 {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+    
+            .bottom {
+    
+                button {
+                    font-size: 0.7rem;
+                    padding: 3%;
+                }
+    
+                form {
+                    padding: 3%;
+                    select {
+    
+                        option {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .view_bookings {
+        .inner {
+            padding: 5%;
+            .date {
+                font-size: 1.2rem;
+            }
+    
+            .schedule {
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+
+                hr {
+                    width: 600px;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    height: 5px;
+                } 
+                
+               
+                 &::-webkit-scrollbar-track {
+                    background: #ddd;
+                }
+                
+                
+                 &::-webkit-scrollbar-thumb {
+                    background: #3423A6;
+                    border-radius: 10px;
+                }
+                
+                
+                 &::-webkit-scrollbar-thumb:hover {
+                    background: #3b5bfe;
+                } 
+    
+                .title {
+                    width: 600px;
+                    
+    
+                    .thing {
+                        width: 80%;
+                    }
+    
+                    .amount {
+                        h4 {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+    
+                .list {
+                    width: 600px;
+    
+                    .thing {
+                        width: 80%;
+                    }
+
+                }
+    
+                .total {
+                    width: 600px;
+                     margin-bottom: 2%;
+    
+                    .thing {
+                        width: 80%;
+                    }
+                }
+            }
+    
+            .bottom {
+    
+                button {
+                    width: 48%;
+                }
+    
+                form {
+                    width: 48%;
+                }
+            }
+    
+        }
+    }
+}

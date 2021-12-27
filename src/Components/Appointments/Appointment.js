@@ -68,7 +68,7 @@ const Appointment = () => {
                         </div>
                    ))}
                 </div>: 
-                <div>
+                <div className={Styles.empty}>
                     <h3>No Appointments</h3>
                 </div>
                 }

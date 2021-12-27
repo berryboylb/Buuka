@@ -5,6 +5,18 @@
     justify-content: space-between;
     align-items: center;
 
+    .empty {
+
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #3423A6;
+            line-height: 1;
+        }
+    }
+
     .today {
         background: #FCF7F7;
         border-radius: 20px;
@@ -133,6 +145,13 @@
 
 @media screen and (max-width:1024px) {
     .appointment {
+
+        .empty {
+
+            h3 {
+                font-size: 0.8rem;
+            }
+        }
     
         .today {
             
@@ -221,6 +240,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .empty {
+
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #3423A6;
+            line-height: 1;
+        }
+    }
 
     .activity {
         background: #FCF7F7;
@@ -375,6 +406,9 @@
             height: 90%;
             overflow-y: scroll;
             overflow-x: none;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
             &::-webkit-scrollbar {
                 width: 5px;
             } 
@@ -468,6 +502,11 @@
 
 @media screen and (max-width:1024px) {
     .secondAppointment {
+        .empty {
+            h3 {
+                font-size: 0.8rem;
+            }
+        }
     
         .activity {
             .appointment_list {
@@ -621,4 +660,239 @@
             height: 300px;
         }
     }
+}
+
+//bottom starts here
+.bottom {
+    margin-top: 2%;
+    background: #FCF7F7;
+    border-radius: 20px;
+    padding: 2%;
+
+    .empty {
+        margin-top: 2%;
+
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #3423A6;
+            line-height: 1;
+        }
+    }
+    .title {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125rem;
+        color: #3423A6;
+    }
+
+    .names {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+
+        .staff {
+            width: 30%;
+    
+                h4 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.875rem;
+                    color: #000000;
+                }
+        }
+
+        .others {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+
+            div {
+                width: 23.3%;
+
+                h4 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.875rem;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .con {
+        height: 300px;
+        overflow: scroll;
+            &::-webkit-scrollbar {
+                width: 5px;
+                height: 5px;
+            } 
+            
+           
+             &::-webkit-scrollbar-track {
+                background: none;
+            }
+            
+            
+             &::-webkit-scrollbar-thumb {
+                background: #C4C4C4;
+                border-radius: 10px;
+            }
+            
+            
+             &::-webkit-scrollbar-thumb:hover {
+                background: #3423A6;
+            } 
+
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 2%;
+        
+                .staff {
+                    width: 30%;
+        
+            
+                        h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 0.875rem;
+                            color: #636363;
+                            font-weight: 300;
+                        }
+                }
+        
+                .others {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 70%;
+        
+                    div {
+                        width: 23.3%;
+        
+                        h4 {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 0.875rem;
+                            color: #636363;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+    
+    }
+
+    
+}
+
+@media screen and (max-width:1024px) {
+    .bottom {
+
+        .empty {
+            margin-top: 2%;
+    
+            h3 {
+                font-size: 0.8rem;
+            }
+        }
+
+        .title {
+            font-size: 0.8rem;
+        }
+    
+        .names {
+    
+            .staff {
+        
+                    h4 {
+                        font-size: 0.7rem;
+                        word-wrap: break-word
+                    }
+            }
+    
+            .others {
+    
+                div {
+                    h4 {
+                        font-size: 0.7rem;
+                        word-wrap: break-word
+                    }
+                }
+            }
+        }
+    
+        .con {
+                .content {
+            
+                    .staff {
+                            h4 {
+                                font-size: 0.7rem;
+                                word-wrap: break-word
+                            }
+                    }
+            
+                    .others {
+            
+                        div {
+                            h4 {
+                                font-size: 0.7rem;
+                                word-wrap: break-word
+                            }
+                        }
+                    }
+                }
+        
+        }
+    } 
+}
+
+@media screen and (max-width:768px) {
+    .bottom {
+        padding: 3%;
+        margin-top: 3%;
+
+        .empty {
+            margin-top: 3%;
+        }
+    
+        .names {
+            margin-top: 3%;
+            
+        }
+    
+        .con {
+            .content {
+                margin-top: 3%;
+            }
+        
+        }
+    } 
+}
+
+@media screen and (max-width:540px) {
+    .bottom {
+        padding: 3%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+        .empty {
+            margin-top: 5%;
+        }
+        .names {
+            margin-top: 3%;
+            
+        }
+    
+        .con {
+            height: 250px;
+            .content {
+                margin-top: 3%;
+            }
+        
+        }
+    } 
 }
