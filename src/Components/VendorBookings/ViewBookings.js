@@ -1,16 +1,42 @@
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import Styles from "./css/styles.module.css";
-const ViewBookings = () => {
+import EditBooking from './EditBooking';
+const ViewBookings = ({activeObject, handlesSingleBooking}) => {
+    const[booking, setBooking] = useState(null);
+    const[editBookings, setEditBookings] = useState(false);
+
+    const handleEditBooking = () => setEditBookings(!editBookings)
+    useEffect(() => {
+        let isMounted = true;
+            fetch(`http://localhost:8000/pending/${activeObject}`)
+            .then(res => {
+            return  res.json()
+            })
+            .then(data => {
+                if(isMounted){
+                    setBooking(data);
+                }
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+        return () => { isMounted = false };
+    }, [activeObject])
     return (
+        <>
         <div className={Styles.view_bookings}>
+            
             <div className={Styles.inner}>
                 <div className={Styles.top}>
+
                     <h4>My Bookings</h4>
-                    <button type="button">
+                    <button type="button" onClick={handlesSingleBooking}>
                         <FontAwesomeIcon className={Styles.icon}  icon={faTimes} />
                     </button>
                 </div>
+                {booking ? <p>{booking.name}</p> : "efwufw"}
                 <h3 className={Styles.date}>Friday 29th October</h3>
                 <div className={Styles.schedule}>
                    <div className={Styles.title}>
@@ -110,10 +136,12 @@ const ViewBookings = () => {
                             <option value="1">More Options</option>
                         </select>
                     </form>
-                    <button type='button'>Edit Appointment</button>
+                    <button onClick={handleEditBooking} type='button'>Edit Appointment</button>
                 </div>
             </div>
         </div>
+        {editBookings && <EditBooking handleEditBooking={handleEditBooking}/>}
+        </>
     )
 }
 

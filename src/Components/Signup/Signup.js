@@ -78,7 +78,7 @@ const Signup = () => {
       const handleForm = async (e) => {
           e.preventDefault();
           setErrors(validate(formValues));
-          if(Object.keys(errors).length){
+          if(Object.keys(errors).length === 0 ){
             axios.post('https://lab.buuka.app/api/register?', formValues)
             .then(response => 
                 { 

@@ -53,8 +53,8 @@ function App() {
           <Route path="/activities" element={<MyBookings logout={logout} togglelogout={togglelogout}/>}/>
 
           {/* users have to be loggedin before been able to access this routes. */}
-          {isLoggedIn 
-          ?
+          {/* {isLoggedIn 
+          ? */}
           <>
           <Route path="/wallet" element={<Wallet logout={logout} togglelogout={togglelogout}/>}/>
           <Route path="/settings" element={<Settings logout={logout} togglelogout={togglelogout}/>}/>
@@ -63,9 +63,9 @@ function App() {
           <Route path="/dashboard" element={<Dashboard logout={logout} togglelogout={togglelogout}/>}/>
           <Route path="/vendorbookings" element={<VendorBookings togglelogout={togglelogout}/>}/>
           </>
-          : 
+          {/* : 
           ""
-          }
+          } */}
           <Route path="*" element={<NotFound/>}/>
         </Routes>
         {logout && <Logout togglelogout={togglelogout}/>}

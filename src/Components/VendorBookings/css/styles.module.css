@@ -651,4 +651,279 @@
     width: 48%;
   }
 }
+
+.edit_bookings {
+  background: rgba(229, 229, 229, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit_bookings .inner {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 2%;
+  width: 80%;
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.edit_bookings .inner::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.edit_bookings .inner::-webkit-scrollbar-track {
+  background: none;
+}
+
+.edit_bookings .inner::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.edit_bookings .inner::-webkit-scrollbar-thumb:hover {
+  background: #3b5bfe;
+}
+
+.edit_bookings .inner .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit_bookings .inner .top h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #000000;
+}
+
+.edit_bookings .inner .top button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.edit_bookings .inner .top button:hover {
+  opacity: 0.8;
+}
+
+.edit_bookings .inner .date {
+  margin-top: 1%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #636363;
+}
+
+.edit_bookings .inner form .second {
+  margin-top: 2%;
+}
+
+.edit_bookings .inner form .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit_bookings .inner form .first .select {
+  width: 20%;
+}
+
+.edit_bookings .inner form .first .input {
+  width: 40%;
+}
+
+.edit_bookings .inner form .first div {
+  padding: 1%;
+}
+
+.edit_bookings .inner form .first div label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.edit_bookings .inner form .first div select {
+  margin-top: 2%;
+  padding: 5%;
+  width: 100%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+
+.edit_bookings .inner form .first div select option {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  background: #3423A6;
+  color: #fff;
+}
+
+.edit_bookings .inner form .first div select option:hover {
+  background-color: #3423A6;
+}
+
+.edit_bookings .inner form .first div input {
+  margin-top: 2%;
+  width: 100%;
+  padding: 3%;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  font-size: 0.875rem;
+  color: #636363;
+}
+
+.edit_bookings .inner form .first div input:focus {
+  border: 1px solid #3423A6;
+}
+
+.edit_bookings .inner form .link {
+  display: block;
+  margin-left: 1%;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #3423A6;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  margin-top: 2%;
+}
+
+.edit_bookings .inner form .submit {
+  margin-top: 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  padding: 1.5%;
+  background: #3423A6;
+  border-radius: 20px;
+  margin-left: 1%;
+}
+
+.edit_bookings .inner form .submit:hover {
+  border: 1px solid #3423A6;
+  color: #3423A6;
+  background: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .edit_bookings .inner .top h4 {
+    font-size: 0.8rem;
+  }
+  .edit_bookings .inner .top button {
+    font-size: 1rem;
+  }
+  .edit_bookings .inner .date {
+    font-size: 1.2rem;
+  }
+  .edit_bookings .inner form .first div label {
+    font-size: 0.7rem;
+  }
+  .edit_bookings .inner form .first div select option {
+    font-size: 0.7rem;
+  }
+  .edit_bookings .inner form .first div input {
+    font-size: 0.7rem;
+  }
+  .edit_bookings .inner form .link {
+    font-size: 0.7rem;
+  }
+  .edit_bookings .inner form .submit {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .edit_bookings .inner {
+    padding: 3%;
+    width: 90%;
+  }
+  .edit_bookings .inner form .first div label {
+    font-size: 0.7rem;
+  }
+  .edit_bookings .inner form .first div select option {
+    font-size: 0.7rem;
+  }
+  .edit_bookings .inner form .first div input {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .edit_bookings .inner {
+    padding: 5%;
+    width: 90%;
+  }
+  .edit_bookings .inner form {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .edit_bookings .inner form::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .edit_bookings .inner form::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  .edit_bookings .inner form::-webkit-scrollbar-thumb {
+    background: #3423A6;
+    border-radius: 10px;
+  }
+  .edit_bookings .inner form::-webkit-scrollbar-thumb:hover {
+    background: #3b5bfe;
+  }
+  .edit_bookings .inner form .first {
+    width: 600px;
+  }
+  .edit_bookings .inner form .submit {
+    margin-bottom: 3%;
+    padding: 3%;
+  }
+}
 /*# sourceMappingURL=styles.module.css.map */

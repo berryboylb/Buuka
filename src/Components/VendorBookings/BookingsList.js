@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import Styles from "./css/styles.module.css";
+import ViewBookings from './ViewBookings';
 const BookingsList = () => {
 
-    const [tasks, setTasks] = useState({
-        activeObject: null,
-        objects: null,
-    });
+    const [tasks, setTasks] = useState(null);
+    const [activeObject, setActiveObject] = useState(null);
 
     const handleActive = (index) =>{
-        setTasks({...tasks, activeObject: tasks.objects[index]});
+        //setTasks({...tasks, activeObject: tasks.objects[index]});
+        setActiveObject(index);
+        handlesSingleBooking();
     }
 
     useEffect(()=> {
@@ -17,22 +18,25 @@ const BookingsList = () => {
         .then(res => { return  res.json() })
         .then(data => {
             if(isMounted){
-                setTasks({...tasks, objects : data});
+                setTasks(data);
             }
         })
         .catch(error => {
             console.log(error.message)
         })
         return () => { isMounted = false };
-    }, [tasks]);
+    }, []);
+
+    const [singleBooking, setSingleBooking] = useState(false);
+    const handlesSingleBooking = () => setSingleBooking(!singleBooking);
 
     return (
         <div className={Styles.bookinglist}>
             {/* <pre>{JSON.stringify(tasks.activeObject)}</pre> */}
-            {tasks.objects && 
+            {tasks && 
             <div className={Styles.grid}>
-                {tasks.objects.map((task,index)=> (
-                    <div key={task.id} className={Styles.list} onClick={() => handleActive(index)}>
+                {tasks.map((task,index)=> (
+                    <div key={task.id} className={Styles.list} onClick={() => handleActive(task.id)}>
                         <div className={Styles.top}>
                             <div className={Styles.name}>
                                 <h4>{task.name}</h4>
@@ -51,6 +55,7 @@ const BookingsList = () => {
                     </div>
                 ))}
             </div>}
+            {singleBooking && <ViewBookings activeObject={activeObject} handlesSingleBooking={handlesSingleBooking} />}
         </div>
     )
 }
